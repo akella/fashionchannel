@@ -1,0 +1,22 @@
+/*breadcrumps
+=================================================================*/
+.breadcrumps {
+	margin: 9px 0;
+	overflow: hidden;
+}
+	.breadcrumps a {
+		position: relative;
+		float: left;
+		padding: 0 2px 0 10px;		
+		height: 14px;
+		background: #dbeef6;
+		font: 13px/14px 'Conv_DINCondensedC';
+		color: #2a7b9e;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.breadcrumps span {
+		
+	}
+/*photo styles
+=================================================================*/
