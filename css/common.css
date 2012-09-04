@@ -645,7 +645,7 @@ nav {
 			width: 84px;
 			height: 25px;
 			background: #243954;
-			font: 13px/25px 'Conv_DINCondensedC';
+			font: 13px/25px 'Conv_DINCondensedC', Arial, sans-serif;
 			color: #fff;
 			text-transform: uppercase;
 			text-align: center;
@@ -657,9 +657,54 @@ nav {
 			width: 25px;
 			background:url(../images/rss.jpg) no-repeat 0 0;
 		}
-.date-view-com {
-
+.detail {
+	overflow: hidden;
 }
-	.date-view-com span {
-		
+	.detail span {
+		float: left;
+		font: 14px/20px 'Conv_DINCondensedC', Arial, sans-serif;
 	}
+	.detail__view {
+		padding-left: 16px;
+		margin-right: 7px;		
+	}
+	.detail__com {
+		padding-left: 16px;
+	}	
+.detail_album {
+	margin-top: 5px;	
+}
+	.detail_album span {
+		color: #a8a8a8;
+	}
+	.detail_album .detail__date {margin-right: 20px;}
+	.detail_album .detail__view {
+		background:url(../images/view-com.png) no-repeat 0 0;
+	}
+	.detail_album .detail__view {
+		background:url(../images/view-com.png) no-repeat 0 -15px
+	}
+.detail_photo {
+	position: absolute;
+	left: 9px;
+	bottom: 9px;
+	height: 20px;
+	padding: 0 5px;
+	line-height: 20px;
+	background: #013144;
+	z-index: 10;
+}
+	.detail_photo span {
+		color: #fff;
+	}
+	.detail_photo .detail__view {
+		background:url(../images/view-com1.png) no-repeat 0 0;
+	}
+	.detail_photo .detail__com {
+		padding-left: 16px;
+		background:url(../images/view-com1.png) no-repeat 0 -15px;
+	}
+.social-buttons {
+	height: 22px;
+	margin: 10px 0 15px 0;
+}
