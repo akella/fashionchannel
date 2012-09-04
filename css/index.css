@@ -106,7 +106,7 @@
 				.entry__wrapper {overflow: hidden;}
 					.entry__img {display: block;}
 					.entry__img_padd {
-						padding: 9px 9px 11px;
+						padding: 11px 9px;
 					}
 					.entry__title-level-3 {
 						padding: 4px  0;
@@ -354,6 +354,9 @@
 				background-position: 4px 49px;
 				cursor: pointer;
 			}
+			.slider-nav span:hover {
+				background-color: #0f577b;
+			}
 			.slider-nav__prev {
 				float: left;
 				background: url(../images/prev.png) no-repeat;
@@ -365,4 +368,7 @@
 			.slider-nav .disabled {
 				background-image: none;
 				cursor: default;
+			}
+			.slider-nav .disabled:hover {
+				background-color: #184459;
 			}

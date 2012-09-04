@@ -93,7 +93,7 @@ body {
 			height: 31px;
 			-moz-box-sizing: border-box;
 			box-sizing: border-box;
-			padding: 2px 5px;
+			padding: 2px 30px 2px 5px;
 			border: 0;
 			background: #e8f3f8;
 		}
@@ -393,7 +393,91 @@ nav {
 				text-transform: uppercase;
 				color: #fff;
 			}
-/* ------------------------------------- //Independent blocks ------------------------------ */
+
+/* most discussed */
+.most-disc {
+	background: url(../images/filter.png) 0 0 repeat;
+	padding: 11px;
+}
+	.most-disc__wrapper {
+		background: #fff;
+		text-align: center;
+		padding: 13px 28px 10px;
+	}
+		.most-disc__title-level-3 {
+			color: #003146;
+			font: normal 24px 'myriad_pro_condbold';
+		}
+		.most-disc__trend {
+			font: normal 13px 'Conv_DINCondensedC';
+			color: #6b6b6b;
+			text-transform: uppercase;
+		}
+		.most-disc__item {
+			font: normal 13px/18px 'Helvetica', sans-serif;
+			margin-bottom: 18px;
+		}
+			.most-disc__number {
+				position: relative;
+				font: normal 44px 'Conv_DINCondensedC';
+				color: #003146;
+				padding: 0 16px;
+			}
+				.most-disc__number:before,
+				.most-disc__number:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					height: 7px;
+					width: 7px;
+					margin-top: -3px;
+					background: #003146;
+					-moz-border-radius: 7px;
+					-o-border-radius: 7px;
+					-webkit-border-radius: 7px;
+					border-radius: 7px;
+				}
+				.most-disc__number:before {
+					right: 0;
+				}
+				.most-disc__number:after {
+					left: 0;
+				}
+/* social */
+.fb-plugin {
+	padding: 10px 12px;
+	background: #fff;
+	margin-bottom: -11px;
+}
+.vk-plugin {
+	padding: 10px 12px;
+	background: #fff;
+}
+
+/* big pagination */
+.big-pagin {
+	overflow: hidden;
+	height: 72px;
+	border-top: 1px solid #d0e2ea;
+	background: #deeaf0; /* Old browsers */
+	background: -moz-linear-gradient(left, #deeaf0 0%, #e9f1f5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#deeaf0), color-stop(100%,#e9f1f5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #deeaf0 0%,#e9f1f5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #deeaf0 0%,#e9f1f5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #deeaf0 0%,#e9f1f5 100%); /* IE10+ */
+	background: linear-gradient(to right, #deeaf0 0%,#e9f1f5 100%); /* W3C */
+}
+	.big-pagin li {
+		float: left;
+		width: 50%;
+	}
+		.big-pagin a {
+			display: block;
+			font: normal 24px/72px 'myriad_pro_condbold';
+			text-align: center;
+			color: #003146;
+		}
+/* ------------------------------------- //END Independent blocks -------------------------- */
 
 /* ------------------------------------- Footer -------------------------------------------- */
 .footer {
