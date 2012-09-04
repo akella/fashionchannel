@@ -362,4 +362,7 @@
 				float: right;
 				background: url(../images/next.png) no-repeat;
 			}
-			.slider-nav .disabled {background-image: none;}
+			.slider-nav .disabled {
+				background-image: none;
+				cursor: default;
+			}

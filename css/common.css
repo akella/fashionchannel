@@ -280,18 +280,32 @@ nav {
 .banner_small {
 	top: 38px;
 	right: 9px;
+	width: 342px;
 }
 	.banner__title_small {
 		padding: 11px;
 		font: normal 30px/23px 'myriad_pro_condbold';
-		width: 320px;
 	}
 	.banner__descr_small {
-		width: 250px;
 		margin-left: 54px;
 		padding: 8px 15px 10px 23px;
 		font: normal 13px/18px 'Helvetica', sans-serif;
 	}
+.banner_smaller {
+	top: 38px;
+	right: 9px;
+	width: 321px;
+}
+	.banner__title_smaller {
+		padding: 11px;
+		font: normal 30px/23px 'myriad_pro_condbold';
+		margin-left: 52px;
+	}
+	.banner__descr_smaller {
+		padding: 8px 15px 10px 16px;
+		font: normal 13px/18px 'Helvetica', sans-serif;
+	}
+
 
 /* title */
 .title {
