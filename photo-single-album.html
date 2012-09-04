@@ -12,19 +12,19 @@
 </head>
 <body>
 <div class="layout">
-<!-- ================================== Header ============================================== -->
+<!-- BEGIN .header -->
 <header>
 	<div class="header">
-		<!--  search  -->
+		<!-- search -->
 		<div class="search">
 			<form>
 				<input type="text" class="search__input">
 				<input type="submit" value="" class="search__submit">
 			</form>
 		</div>
-		<!-- logo  -->
+		<!-- logo -->
 		<a href="#" class="header__logo"></a>
-		<!--  social  -->
+		<!-- social -->
 		<ul class="header__soc">
 			<li><a class="header__soc-fb" href="#"></a></li>
 			<li><a class="header__soc-tw" href="#"></a></li>
@@ -33,9 +33,9 @@
 			<li><a class="header__soc-yt" href="#"></a></li>
 			<li><a class="header__soc-rss" href="#"></a></li>
 		</ul>
-		<!--  on air  -->
+		<!-- on air -->
 		<a href="#" class="header__on-air"></a>
-		<!--  languages  -->
+		<!-- languages -->
 		<div class="header__lang">
 			<a href="#" class="header__lang-active">RU</a>
 			<a href="#">UA</a>
@@ -43,8 +43,8 @@
 		</div>
 	</div>
 </header>
-<!-- ============================== //END Header ============================================ -->
-<!-- ================================== Menu ========================================== -->
+<!-- END .header -->
+<!-- BEGIN .menu -->
 <nav>
 	<ul class="menu">
 		<li><a href="#">видео</a></li>
@@ -67,18 +67,36 @@
 		<li><a href="#">о нас</a></li>
 	</ul>
 </nav>                                                                   
-<!-- ============================== //END Menu ======================================== -->
-<!-- ================================= Breadcrumps ============================================== -->
-<div class="breadcrumps">
-	<a href="#">Главная<span></span></a><a href="#">Главная</a>
+<!-- END .menu -->	
+<!-- BEGIN .content -->
+<div class="content">
+	<!-- breadcrumps -->
+	<div class="breadcrumps">
+		<a href="#">Главная<span></span><i></i></a>
+		<a href="#">Галерея<span></span><i></i></a>
+	</div>
+	<!-- content title -->
+	<div class="content__title">
+		<h1 class="tl-1">Презентація BMW 6 Gran Coupe</h1>
+		<div class="content__subscribe">
+			<input type="text" placeholder="Ваш e-mail">
+			<a href="#">Подписаться</a>
+			<a class="content__subscribe-rss" href="#"></a>
+		</div>
+	</div>	
+	<!-- single album -->
+	<div class="single-album">
+		<div class="date-view-com">
+			<span>10.07.2012</span>			
+			<span>20 384</span>
+			<span>51</span>
+		</div>
+	</div>
 </div>
-<!-- ================================= //END Breadcrumps ============================================== -->
-<!-- ================================= Photo ============================================== -->
-
-<!-- ================================= //END Photo ============================================== -->
+<!-- END .content -->
 	<div class="push"></div>
 </div>
-<!-- ================================== Footer ============================================== -->
+<!-- BEGIN .footer -->
 <footer class="l-container">
 	<div class="footer">
 		<strong class="footer__logo">Ukranion fashion Мода в деталях</strong>
@@ -184,7 +202,6 @@
 		</div>
 	</div>
 </footer>
-<!-- =============================== //END Footer =========================================== -->
-<!--<div class="compare" style="background: url(images/test.png) 0 0 no-repeat;width:960px;height:542px;opacity:0.2;position:absolute;left:50%;margin-left:-480px;bottom:-176px;"></div>-->
+<!-- END .footer -->
 </body>
 </html>

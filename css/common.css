@@ -52,6 +52,10 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     background: #fff;
 }
+a {
+	color: #003146;
+	text-decoration: none;
+}
 .layout {
 	width: 960px;
 	margin: 0 auto -542px;
@@ -72,6 +76,10 @@ body {
 	position: relative;
 }
 .clr {clear: both;}
+.tl-1 {
+	font: normal 40px 'myriad_pro_condbold';
+	color: #003146;
+}
 /* ------------------------------------- //END Main styles --------------------------------- */
 
 /* ------------------------------------- Header -------------------------------------------- */
@@ -228,6 +236,7 @@ nav {
 			background: url(../images/menu.png) 0 0 repeat-x;
 			overflow: hidden;
 			padding-left: 12px;
+			z-index: 100;
 		}
 			.menu__sub li:last-child {float: right;}
 				.menu__sub a {
@@ -607,4 +616,50 @@ nav {
 		.footer__links a {
 			margin-left: 10px;
 		}
-/* ------------------------------------- //END Footer -------------------------------------- */
+/*content
+=================================================================*/
+.content {margin-bottom: 26px;}
+.content__title {
+	position: relative;
+	padding-right: 320px;
+}
+	.content__subscribe {
+		position: absolute;
+		top: 9px;
+		right: 0;
+		width: 301px;
+		height: 25px;
+	}
+		.content__subscribe input {
+			width: 158px;
+			height: 23px;
+			padding: 0 10px;
+			border: 1px solid #d0d0d0;
+			font: 13px/23px Helvetica, Arial, sans-serif;
+			color: #7d7d7d;
+		}
+		.content__subscribe a {
+			position: absolute;
+			top: 0;
+			left: 179px;
+			width: 84px;
+			height: 25px;
+			background: #243954;
+			font: 13px/25px 'Conv_DINCondensedC';
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			text-decoration: none;
+		}
+		.content__subscribe .content__subscribe-rss {
+			left: auto;
+			right: 0;
+			width: 25px;
+			background:url(../images/rss.jpg) no-repeat 0 0;
+		}
+.date-view-com {
+
+}
+	.date-view-com span {
+		
+	}
