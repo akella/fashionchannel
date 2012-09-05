@@ -145,9 +145,6 @@
 		.last-albums__info {
 			overflow: hidden;
 		}
-			.last-albums__info a {
-				font: normal 18px 'myriad_pro_condbold';
-			}
 			.last-albums__info .detail {
 				margin-top: 2px;
 			}
@@ -168,6 +165,22 @@
 		.pop-albums__item_c1 {background: #126288;}
 		.pop-albums__item_c2 {background: #184459;}
 		.pop-albums__item_c3 {background: #0c2c3d;}
+		.pop-albums__item img {
+			margin-bottom: 10px;
+		}
 		.pop-albums__item a {
 			color: #fff;
 		}
+		.pop-albums__item .detail {
+			margin-top: 0px;
+		}
+		.pop-albums__item .detail span {
+			color: #fff;
+		}
+		.pop-albums__item .detail__view {
+			background:url(../images/view-com1.png) no-repeat 0 0;
+		}
+		.pop-albums__item .detail__com {
+			background:url(../images/view-com1.png) no-repeat 0 -15px;
+		}
+
