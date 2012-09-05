@@ -55,7 +55,7 @@ body {
 a {
 	color: #003146;
 	text-decoration: none;
-	font-family: 'myriad_pro_condbold';
+	font: normal 18px 'myriad_pro_condbold', Arial, sans-serif;
 }
 .layout {
 	width: 960px;
