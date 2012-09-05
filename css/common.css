@@ -55,6 +55,7 @@ body {
 a {
 	color: #003146;
 	text-decoration: none;
+	font-family: 'myriad_pro_condbold';
 }
 .layout {
 	width: 960px;
@@ -74,9 +75,13 @@ a {
 	position: relative;
 }
 .clr {clear: both;}
-.tl-1 {
+.h1 {
 	font: normal 40px 'myriad_pro_condbold';
 	color: #003146;
+}
+.h2 {
+	font: normal 30px 'myriad_pro_condbold';
+	color: #2a7b9e;
 }
 /* ------------------------------------- //END Main styles --------------------------------- */
 
@@ -630,6 +635,9 @@ nav {
 	position: relative;
 	padding-right: 320px;
 }
+.content__title_s .content__subscribe {
+	top: -3px;
+}
 	.content__subscribe {
 		position: absolute;
 		top: 9px;
@@ -687,7 +695,7 @@ nav {
 	.detail_album .detail__view {
 		background:url(../images/view-com.png) no-repeat 0 0;
 	}
-	.detail_album .detail__view {
+	.detail_album .detail__com {
 		background:url(../images/view-com.png) no-repeat 0 -15px
 	}
 .detail_photo {
