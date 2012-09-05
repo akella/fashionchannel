@@ -31,52 +31,58 @@
 						float: left;
 						border-left: 1px solid #ececec;
 					}
-						.tab-big-banner__first {
+						.tab-big-banner__1 {
+							width: 155px;
 							border-left: 0 !important;
 						}
-						.tab-big-banner__first a {
-							padding: 0 34px !important;
-						}
-						.tab-big-banner a {
-							font: normal 18px/37px 'myriad_pro_condbold';
-							color: #003146;
-							display: block;
-							padding: 0 29px;
-							height: 39px;
-						}
-						.tab-big-banner__active,
-						.tab-big-banner a:hover {
-							background: #dbeef6;
-							position: relative;
-						}
-						.tab-big-banner__active:before,
-						.tab-big-banner__active:after,
-						.tab-big-banner li:hover a:before,
-						.tab-big-banner li:hover a:after {
-							content: '';
-							position: absolute;
-							left: 50%;
-							height: 0;
-							width: 0;
-						}
-						.tab-big-banner__active:before,
-						.tab-big-banner li:hover a:before {
-							top: -9px;
-							z-index: 2;
-							border-left: 12px solid transparent;
-						    border-right: 12px solid transparent;
-						    border-bottom: 9px solid #dbeef6;
-						    margin-left: -10px;
-						}
-						.tab-big-banner__active:after,
-						.tab-big-banner li:hover a:after {
-							z-index: 1;
-							top: -10px;
-							border-left: 18px solid transparent;
-						    border-right: 18px solid transparent;
-						    border-bottom: 10px solid #fff;
-						    margin-left: -16px;
-						}
+						.tab-big-banner__2 {width: 199px;}
+						.tab-big-banner__3 {width: 174px;}
+						.tab-big-banner__4 {width: 172px;}
+						.tab-big-banner__5 {width: 256px;}
+							.tab-big-banner a {
+								font: normal 18px/37px 'myriad_pro_condbold';
+								color: #003146;
+								display: block;
+								height: 39px;
+								text-align: center;
+								-webkit-transition: 0.7s;
+								-moz-transition: 0.7s;
+								-o-transition: 0.7s;
+								transition: 0.7s;
+							}
+							.tab-big-banner__active,
+							.tab-big-banner a:hover {
+								background: #dbeef6;
+								position: relative;
+							}
+							.tab-big-banner__active:before,
+							.tab-big-banner__active:after,
+							.tab-big-banner li:hover a:before,
+							.tab-big-banner li:hover a:after {
+								content: '';
+								position: absolute;
+								left: 50%;
+								height: 0;
+								width: 0;
+							}
+							.tab-big-banner__active:before,
+							.tab-big-banner li:hover a:before {
+								top: -9px;
+								z-index: 2;
+								border-left: 12px solid transparent;
+							    border-right: 12px solid transparent;
+							    border-bottom: 9px solid #dbeef6;
+							    margin-left: -10px;
+							}
+							.tab-big-banner__active:after,
+							.tab-big-banner li:hover a:after {
+								z-index: 1;
+								top: -10px;
+								border-left: 18px solid transparent;
+							    border-right: 18px solid transparent;
+							    border-bottom: 10px solid #fff;
+							    margin-left: -16px;
+							}
 
 /* ------------------------------------- columns ------------------------------------ */
 .index-cols {
@@ -84,6 +90,7 @@
 	border-right: 1px solid #ececec;
 	border-left: 1px solid #ececec;
 	padding-bottom: 30px;
+	background: url(../images/index-col-border.png) 319px 0 repeat-y;
 }
 	.index-left-wrapper {
 		float: left;
@@ -98,7 +105,6 @@
 	.index-col-wrapper {
 		width: 638px;
 		overflow: hidden;
-		background: url(../images/border.png) 319px 0 repeat-y;
 	}
 		.index-col {
 			float: left;
@@ -184,7 +190,10 @@
 							font: normal 13px/23px 'Helvetica', sans-serif;
 							color: #003146;
 							display: inline-block;
-							margin-left: 13px;
+							margin: 20px 0 0 13px;
+						}
+						.entry_little {
+							overflow: hidden;
 						}
 	.index-col-solid {
 		position: relative;
@@ -194,6 +203,7 @@
 		position:relative;
 		margin-bottom: 0;
 		border-bottom: 1px solid #ececec;
+		background: #fff;
 	}
 	.entry-tab-slider {
 		padding: 10px 9px;
@@ -205,12 +215,14 @@
 			height: 39px;
 			margin-bottom: 2px;
 		}
-			.entry-tabs li {float: left;}
+			.entry-tabs li {
+				float: left;
+				width: 50%;
+			}
 			
 				.entry-tabs a {
 					display: block;
 					height: 35px;
-					padding: 0 30px;
 					text-align: center;
 					font: normal 22px/35px 'myriad_pro_condbold';
 					border-top: 1px solid #ececec;
@@ -298,7 +310,8 @@
 	.slider-wrapper {
 		border-top: 2px solid #003146;
 		position: relative;
-		margin-bottom: 21px;
+		padding-bottom: 21px;
+		background: #fff;
 	}
 		.slider {
 			position: relative;
