@@ -76,11 +76,11 @@ a {
 }
 .clr {clear: both;}
 .h1 {
-	font: normal 40px 'myriad_pro_condbold';
+	font: normal 40px 'myriad_pro_condbold', Arial, sans-serif;
 	color: #003146;
 }
 .h2 {
-	font: normal 30px 'myriad_pro_condbold';
+	font: normal 30px 'myriad_pro_condbold', Arial, sans-serif;
 	color: #2a7b9e;
 }
 /* ------------------------------------- //END Main styles --------------------------------- */
@@ -727,4 +727,8 @@ nav {
 *:first-child+html .search__input {
 	width: 263px;
 	line-height: 15px;
+}
+*+html .last-albums__item-b {
+	display: inline;
+	zoom: 1;
 }

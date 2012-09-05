@@ -11,7 +11,8 @@
 		padding: 0 3px 0 10px;		
 		height: 14px;
 		background: #dbeef6;
-		font: 13px/14px 'Conv_DINCondensedC';
+		font-size: 13px;
+		line-height: 14px;
 		color: #2a7b9e;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -182,5 +183,22 @@
 		}
 		.pop-albums__item .detail__com {
 			background:url(../images/view-com1.png) no-repeat 0 -15px;
+		}
+.last-albums__item-b {
+	float: left;
+	display: inline-block;
+	width: 302px;		
+	margin: 0 27px 20px 0;
+	vertical-align: top;
+}
+	.last-albums__item-b .last-albums__pic {
+		float: none;
+		margin-bottom: 5px;
+		width: 302px;
+		height: 191px;
+	}
+		.last-albums__item-b .last-albums__pic span {
+			width: 296px;
+			height: 186px;
 		}
 
