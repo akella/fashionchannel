@@ -39,4 +39,9 @@ $(".entry-slider-wrapper:first").show();
       $(activeTab).show();  
       return false; 
   });
+// ---------------------- entry Tabs ---------------------------- //
+Galleria.run('#gallery', {
+    showInfo: false,
+    showCounter: false
+});
 })
