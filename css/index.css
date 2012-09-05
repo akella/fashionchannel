@@ -295,6 +295,9 @@
 				color: #ccc;
 				cursor: pointer;
 			}
+			.entry-slider-nav span:hover {
+				color: #b7b5b5;
+			}
 			.entry-slider-nav .disabled {display: none;}
 			.entry-slider-nav__prev {
 				float: left;

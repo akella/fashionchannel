@@ -6,5 +6,44 @@
 	}
 		.search-form {
 			padding: 10px;
-			background: url(../images/filter.png) 0 0 repeat;
+			background: #e7f2f7 url(../images/menu-hover.png) 0 0 repeat;
+			overflow: hidden;
 		}
+			.search-form__input {
+				float: left;
+				font: normal 22px 'myriad_pro_condbold';
+				color: #002d41;
+				border: 0;
+				margin: 0;
+				height: 31px;
+				width: 801px;
+				padding: 0 10px;
+			} 
+			.search-form__submit {
+				float: right;
+				font: normal 22px/31px 'myriad_pro_condbold';
+				color: #fff;
+				width: 99px;
+				border: 0;
+				height: 31px;
+				padding-left: 24px;
+				background: #002d41 url(../images/glass-2.png) 11px 6px no-repeat;
+				background: rgba(0,45,65,0.9) url(../images/glass-2.png) 11px 6px no-repeat;
+			}
+		.search__filter {
+			padding-top: 19px;
+		}
+			.search__filter-counter {
+				font: normal 13px 'Helvetica', sans-serif;
+				color: #003146;
+				margin-right: 16px;
+			}
+			.search__filter a {margin-right: 40px;}
+			.search__filter-empty {color: #9b9b9b;}
+				.search__filter a span {
+					display: inline-block;
+					font: normal 14px 'Conv_DINCondensedC', sans-serif;
+					color: #9b9b9b;
+					padding: 1px 0 0 2px;
+					vertical-align: top;
+				}
