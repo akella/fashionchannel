@@ -4,6 +4,7 @@
 	overflow: hidden;
 	padding-bottom: 10px;
 }
+.search_tag {padding-bottom: 25px;}
 	.search__head {
 		padding: 9px;
 		-moz-box-shadow: 0 4px 35px #e5eef3;
@@ -54,7 +55,16 @@
 					padding: 1px 0 0 2px;
 					vertical-align: top;
 				}
-
+		.search__filter_mod {
+			padding: 15px 0 7px;
+		}
+			.search__filter_mod a {
+				font: normal 22px 'myriad_pro_condbold';
+			}
+			.search__filter_mod a span {
+				vertical-align: middle;
+				padding-top: 0;
+			}
 	.search__content {
 		padding-top: 23px;
 	}
@@ -81,7 +91,7 @@
 					background: #e9f5fa;
 				}
 				.search-result__block p {margin-bottom: 5px;}
-				.search-result__date {
+				.search-date {
 					color: #a8a8a8;
 					font: normal 11px 'Arial', sans-serif;
 					background: none !important;
@@ -90,4 +100,88 @@
 				float: left;
 				width: 130px;
 				text-align: center;
+			}
+/* search tag */
+.search-tag {
+	padding: 0 9px;
+}
+	.search-tag__title {
+		color: #003146;
+		font: normal 24px/20px 'myriad_pro_condbold';
+		margin-bottom: 12px;
+	}
+		.more {
+			position: relative;
+			display: block;
+			background: #e9f1f5;
+			border-top: 1px solid #d0e2ea;
+		}
+		.more:hover {
+			display: block;
+			background: #e9f1f5 url(../images/more-hover.jpg) 100% 100% no-repeat;
+		}
+		.more_video {height: 128px;}
+			.more_video span {
+				position: absolute;
+				top: 50%;
+				margin-top: -12px;
+				height: 23px;
+				width: auto !important;
+				background: url(../images/icon-video.png) 100% 0 no-repeat !important;
+				padding: 0 29px;
+				line-height: 23px;
+			}
+		.more_photo {height: 107px;}
+			.more_photo span {
+				position: absolute;
+				top: 50%;
+				margin-top: -7px;
+				height: 15px;
+				width: auto !important;
+				background: url(../images/icon-img.png) 100% 0 no-repeat !important;
+				padding: 0 18px;
+				line-height: 15px;
+				border: 0;
+			}
+		.more_pub {
+			height: 53px;
+			width: 710px;
+			text-align: center;
+			margin: -9px 0 27px 0;
+		}
+			.more_pub span {
+				line-height: 53px;
+			}
+		.more_events {
+			height: 141px;
+			width: 113px;
+			text-align: center;
+			margin: 24px 0 0;
+		}
+			.more_events span {
+				display: block;
+				width: 65px;
+				margin: 45px auto 0;
+			}
+	.search-public {
+		overflow: hidden;
+		margin-bottom: 19px;
+	}
+		.search-public__img {
+			float: left;
+			margin: 5px 20px 0 0;
+		}
+		.search-public__cont {
+			width: 850px;
+			float: left;
+		}
+			.search-public__title {
+				margin: 7px 0 2px 0;
+			}
+				.search-public__title a {
+					font: normal 20px 'myriad_pro_condbold';
+				}
+			.search-public__cont p {
+				font: normal 13px/20px 'Helvetica', sans-serif;
+				margin-bottom: 3px;
 			}

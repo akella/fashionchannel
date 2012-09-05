@@ -534,7 +534,7 @@ nav {
 	}
 	.pagin .pagin_prev,
 	.pagin .pagin_next {
-		font: normal 13px/71px 'Conv_DINCondensedC';
+		font: normal 13px/71px 'Conv_DINCondensedC', sans-serif;
 		text-transform: uppercase;
 		color: #2a7b9e;
 		width: 342px;
@@ -560,7 +560,68 @@ nav {
 	.pagin .pagin__active:hover {
 		background:#fff;
 		border-top: 1px solid #fff;
+		color: #7ea8be;
 	}
+/* video */
+.video-items {
+	overflow: hidden;
+	margin-bottom: 36px;
+}
+	.video-item_s {
+		float: left;
+		width: 202px;
+		margin-right: 5px;
+	}
+		.video-item_s a {
+			position: relative;
+			display: block;
+		}
+		.video-item_s h4 {
+			margin-top: 11px;
+		}
+			.video-item_s img {display: block;}
+			.video-item_s a span {
+				position: absolute;
+				height: 23px;
+				width: 23px;
+				background: url(../images/icon-video.png) 0 0 no-repeat;
+				bottom: 7px;
+				left: 6px;
+			}
+
+/* afisha */
+.afisha-items {
+	overflow: hidden;
+}
+	.afisha-item {
+		float: left;
+		width: 135px;
+		text-align: left;
+		margin-right: 25px;
+	}
+		.afisha-item__date {
+			height: 25px;
+			padding-left: 3px;
+			font: normal 18px/25px 'myriad_pro_condbold', sans-serif;
+			color: #000;
+			border-left: 1px solid #dadada;
+		}
+		.afisha-item__img {
+			width: 105px;
+			padding: 3px;
+			display: block;
+			border: 1px solid #dadada;
+		}
+			.afisha-item__img img {
+				display: block;
+			}
+		.afisha-item__title {
+			margin: 11px 0 0 0;
+		}
+		.afisha-item__descr {
+			font: normal 14px 'Conv_DINCondensedC';
+			color: #a8a8a8;
+		}
 /* ------------------------------------- //END Independent blocks -------------------------- */
 
 /* ------------------------------------- Footer -------------------------------------------- */
@@ -770,6 +831,9 @@ nav {
 			color: #fff;
 			text-transform: uppercase;
 			text-align: center;
+		}
+		.content__subscribe a:hover {
+			background:#365f8d;
 		}
 		.content__subscribe .content__subscribe-rss {
 			left: auto;
