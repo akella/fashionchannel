@@ -4,6 +4,7 @@
 	.search__head {
 		padding: 9px;
 	}
-		.search__form {
-			
+		.search-form {
+			padding: 10px;
+			background: url(../images/filter.png) 0 0 repeat;
 		}
