@@ -481,9 +481,10 @@ nav {
 	}
 		.big-pagin a {
 			display: block;
-			font: normal 24px/72px 'myriad_pro_condbold';
+			font: normal 24px/71px 'myriad_pro_condbold';
 			text-align: center;
 			color: #003146;
+			height: 71px;
 		}
 		.big-pagin_prev {
 			border-right: 1px solid #d0e2ea;
@@ -499,6 +500,67 @@ nav {
 		width: 100% !important;
 	}
 	.big-pagin_index li:first-child {display: none;}
+
+.pagin {
+	overflow: hidden;
+	height: 72px;
+	background: #deeaf0; /* Old browsers */
+	background: -moz-linear-gradient(top, #deeaf0 1%, #e8f0f5 25%, #e9f1f5 26%, #e9f1f5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#deeaf0), color-stop(25%,#e8f0f5), color-stop(26%,#e9f1f5), color-stop(100%,#e9f1f5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #deeaf0 1%,#e8f0f5 25%,#e9f1f5 26%,#e9f1f5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #deeaf0 1%,#e8f0f5 25%,#e9f1f5 26%,#e9f1f5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #deeaf0 1%,#e8f0f5 25%,#e9f1f5 26%,#e9f1f5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #deeaf0 1%,#e8f0f5 25%,#e9f1f5 26%,#e9f1f5 100%); /* W3C */
+}
+	.pagin li {
+		float: left;
+	}
+	.pagin a, .pagin span {
+		display: block;
+		height: 71px;
+		font: normal 24px/71px 'myriad_pro_condbold';
+		width: 39px;
+		text-align: center;
+		border-top: 1px solid #d0e2ea;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+	}
+	.pagin a:hover, 
+	.pagin span:hover {
+		background: #d7eaf3;
+
+	}
+	.pagin .pagin_prev,
+	.pagin .pagin_next {
+		font: normal 13px/71px 'Conv_DINCondensedC';
+		text-transform: uppercase;
+		color: #2a7b9e;
+		width: 342px;
+		text-align: center;
+	}
+	.pagin .pagin_prev {
+		border-right: 1px solid #d0e2ea;
+		background: url(../images/pagin-prev.png) 15px 24px no-repeat;
+	}
+	.pagin .pagin_prev:hover {
+		color: #2a7b9e;
+		background: #d8e9f1 url(../images/pagin-prev-hover.png) 15px 24px no-repeat;
+	}
+	.pagin .pagin_next {
+		border-left: 1px solid #d0e2ea;
+		background: url(../images/pagin-next.png) 313px 24px no-repeat;
+	}
+	.pagin .pagin_next:hover {
+		color: #2a7b9e;
+		background: #d8e9f1 url(../images/pagin-next-hover.png) 313px 24px no-repeat;
+	}
+	.pagin .pagin__active,
+	.pagin .pagin__active:hover {
+		background:#fff;
+		border-top: 1px solid #fff;
+	}
 /* ------------------------------------- //END Independent blocks -------------------------- */
 
 /* ------------------------------------- Footer -------------------------------------------- */
@@ -674,6 +736,7 @@ nav {
 /*content
 =================================================================*/
 .content {margin-bottom: 26px;}
+.content_search {margin-bottom: 0;}
 .content__title {
 	position: relative;
 	padding-right: 320px;

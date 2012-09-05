@@ -1,8 +1,15 @@
 .search {
 	border: 1px solid #ececec;
+	border-bottom: 0;
+	overflow: hidden;
+	padding-bottom: 10px;
 }
 	.search__head {
 		padding: 9px;
+		-moz-box-shadow: 0 4px 35px #e5eef3;
+		-o-box-shadow: 0 4px 35px #e5eef3;
+		-webkit-box-shadow: 0 4px 35px #e5eef3;
+		box-shadow: 0 4px 35px #e5eef3;
 	}
 		.search-form {
 			padding: 10px;
@@ -31,7 +38,7 @@
 				background: rgba(0,45,65,0.9) url(../images/glass-2.png) 11px 6px no-repeat;
 			}
 		.search__filter {
-			padding-top: 19px;
+			padding: 19px 0 27px;
 		}
 			.search__filter-counter {
 				font: normal 13px 'Helvetica', sans-serif;
@@ -47,3 +54,40 @@
 					padding: 1px 0 0 2px;
 					vertical-align: top;
 				}
+
+	.search__content {
+		padding-top: 23px;
+	}
+		.search-result {
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+			.search-result__categ {
+				float: left;
+				width: 75px;
+				text-align: left;
+			}
+			.search-result__block {
+				float: left;
+				width: 717px;
+				padding: 0 9px;
+				font: normal 13px/18px 'Helvetica', sans-serif;
+			}
+				.search-result__title {margin-bottom: 5px;}
+					.search-result__title a {
+						font: normal 24px/20px 'myriad_pro_condbold';
+					}
+				.search-result__block span {
+					background: #e9f5fa;
+				}
+				.search-result__block p {margin-bottom: 5px;}
+				.search-result__date {
+					color: #a8a8a8;
+					font: normal 11px 'Arial', sans-serif;
+					background: none !important;
+				}
+			.search-result__img {
+				float: left;
+				width: 130px;
+				text-align: center;
+			}
