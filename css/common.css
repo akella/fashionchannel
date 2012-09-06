@@ -878,11 +878,46 @@ nav {
 		}
 			.footer__friends li {
 				display: inline-block;
-				margin-left: 25px;
 			}
-				.footer__friends img {
-					vertical-align: middle;
+				.footer__friends a {
+					display: block;
+					height: 55px;
+					background-image: url(../images/footer-fr.png);
+					background-repeat: no-repeat;
 				}
+				.footer__fr1 {
+					width: 127px;
+					background-position: 28px 0;
+				}
+				.footer__fr2 {
+					width: 160px;
+					background-position: -106px 0;
+				}
+				.footer__fr3 {
+					width: 130px;
+					background-position: -263px 0;
+				}
+				.footer__fr4 {
+					width: 130px;
+					background-position: -388px 0;
+				}
+				.footer__fr5 {
+					width: 100px;
+					background-position: -523px 0;
+				}
+				.footer__fr6 {
+					width: 80px;
+					background-position: -624px 0;
+				}
+				.footer__fr7 {
+					width: 80px;
+					background-position: -710px 0;
+				}
+				.footer__fr8 {
+					width: 80px;
+					background-position: -792px 0;
+				}
+
 	/* footer links */
 	.footer__links {
 		position: absolute;
