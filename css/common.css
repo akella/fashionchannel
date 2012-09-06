@@ -679,7 +679,7 @@ nav {
 /*content
 =================================================================*/
 .content {margin-bottom: 26px;}
-.content_search {margin-bottom: 0;}
+.content_mod {margin-bottom: 0;}
 .content__title {
 	position: relative;
 	padding-right: 320px;
