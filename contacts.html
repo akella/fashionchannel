@@ -1,15 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>photo-single-album</title>
+	<title>photo-gallery-all</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/master.css" media="screen" />
 	<!--[if lt IE 9]> 
  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
 	<![endif]-->
     <script src="js/jquery.tools.min.js"></script>
-    <script src="js/galleria-1.2.8.min.js"></script>
-    <script src="js/galleria.classic.min.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
@@ -51,123 +49,78 @@
 	<ul class="menu">
 		<li><a href="#">видео</a></li>
 		<li><a href="#">публикации</a></li>
-		<li><a class="menu__active" href="#">галерея</a></li>
+		<li><a href="#">галерея</a></li>
 		<li><a href="#">афиша</a></li>
 		<li><a href="#">fashionpedia</a></li>
 		<li><a href="#">луки </a></li>
-		<li><a href="#">о нас</a></li>
+		<li>
+			<a class="menu__active" href="#">о нас</a>
+			<ul class="menu__sub">
+				<li><a href="#">Команда </a></li>
+				<li><a href="#">Программа</a></li>
+				<li><a href="#">Контроль качества</a></li>
+				<li><a href="#">Контактная информация</a></li>
+				<li><a href="#">Карта сайта</a></li>
+				<li><a href="#">Рекламодателям</a></li>
+				<li><a href="#">Вакансии</a></li>
+			</ul>                                                                    
+		</li>
 	</ul>
-</nav>                                                                   
+</nav>                                                                     
 <!-- END .menu -->	
 <!-- BEGIN .content -->
 <div class="content">
 	<!-- breadcrumps -->
 	<div class="breadcrumps">
 		<a href="#">Главная<span></span><i></i></a>
-		<a href="#">Галерея<span></span><i></i></a>
 	</div>
 	<!-- content title -->
-	<div class="content__title">
-		<h1 class="h1">Презентація BMW 6 Gran Coupe</h1>
+	<div class="content__title content__title_s">
+		<h2 class="h2">Популярные альбомы</h1>
 		<div class="content__subscribe">
 			<input type="text" placeholder="Ваш e-mail">
 			<a href="#">Подписаться</a>
 			<a class="content__subscribe-rss" href="#"></a>
 		</div>
 	</div>	
-	<!-- album detail -->
-	<div class="detail detail_album">
-		<span class="detail__date">10.07.2012</span>			
-		<span class="detail__view">20 384</span>
-		<span class="detail__com">51</span>
+	<!-- pop albums -->
+	<div class="pop-albums">
+		<div class="pop-albums__item pop-albums__item_c1">
+			<a href="#"><img src="http://placehold.it/300x190" alt=""></a>
+			<a href="#">Презентація Yasya Minochkina Cruise Collection 2012</a>
+			<div class="detail detail_album">
+				<span class="detail__date">10.07.2012</span>			
+				<span class="detail__view">20 384</span>
+				<span class="detail__com">51</span>
+			</div>
+		</div>
+		<div class="pop-albums__item pop-albums__item_c2">
+			<a href="#"><img src="http://placehold.it/300x190" alt=""></a>
+			<a href="#">Презентація BMW 6 Gran Coupe</a>
+			<div class="detail detail_album">
+				<span class="detail__date">10.07.2012</span>			
+				<span class="detail__view">20 384</span>
+				<span class="detail__com">51</span>
+			</div>
+		</div>
+		<div class="pop-albums__item pop-albums__item_c3">
+			<a href="#"><img src="http://placehold.it/300x190" alt=""></a>
+			<a href="#">Презентація BMW 6 Gran Coupe</a>
+			<div class="detail detail_album">
+				<span class="detail__date">10.07.2012</span>			
+				<span class="detail__view">20 384</span>
+				<span class="detail__com">51</span>
+			</div>
+		</div>
 	</div>
-	<!-- social buttons -->
-	<div class="social-buttons">
-		<img src="images/soc-buttons.jpg" alt="">
-	</div>
-	<!-- single album -->
-	<div class="album">
-		<div class="album__photo album__photo_1">
-			<img src="http://placehold.it/470x375" alt="">
-			<i></i>
-			<div class="detail detail_photo">
-				<span class="detail__view">20 384</span>
-				<span class="detail__com">51</span>
-			</div>
-		</div>
-		<div class="album__photo album__photo_2">
-			<img src="http://placehold.it/235x185" alt="">
-			<i></i>
-			<div class="detail detail_photo">
-				<span class="detail__view">20 384</span>
-				<span class="detail__com">51</span>
-			</div>
-		</div>
-		<div class="album__photo album__photo_2">
-			<img src="http://placehold.it/235x185" alt="">
-			<i></i>
-			<div class="detail detail_photo">
-				<span class="detail__view">20 384</span>
-				<span class="detail__com">51</span>
-			</div>
-		</div>
-		<div class="album__photo album__photo_3">
-			<img src="http://placehold.it/153x180" alt="">
-			<i></i>
-			<div class="detail detail_photo">
-				<span class="detail__view">20 384</span>
-				<span class="detail__com">51</span>
-			</div>
-		</div>
-		<div class="album__photo album__photo_3">
-			<img src="http://placehold.it/153x180" alt="">
-			<i></i>
-			<div class="detail detail_photo">
-				<span class="detail__view">20 384</span>
-				<span class="detail__com">51</span>
-			</div>
-		</div>
-		<div class="album__photo album__photo_3">
-			<img src="http://placehold.it/153x180" alt="">
-			<i></i>
-			<div class="detail detail_photo">
-				<span class="detail__view">20 384</span>
-				<span class="detail__com">51</span>
-			</div>
-		</div>
-		<div class="album__photo album__photo_4">
-			<img src="http://placehold.it/313x205" alt="">
-			<i></i>
-			<div class="detail detail_photo">
-				<span class="detail__view">20 384</span>
-				<span class="detail__com">51</span>
-			</div>
-		</div>
-		<div class="album__photo album__photo_4">
-			<img src="http://placehold.it/313x205" alt="">
-			<i></i>
-			<div class="detail detail_photo">
-				<span class="detail__view">20 384</span>
-				<span class="detail__com">51</span>
-			</div>
-		</div>
-		<div class="album__photo album__photo_4">
-			<img src="http://placehold.it/313x205" alt="">
-			<i></i>
-			<div class="detail detail_photo">
-				<span class="detail__view">20 384</span>
-				<span class="detail__com">51</span>
-			</div>
-		</div>
-	</div>	
 	<!-- last albuml -->	
-	<div class="last-albums">
+	<div class="last-albums last-albums_b">
 		<h2 class="h2">Последние альбомы</h2>
-		<div class="last-albums__item-s">
+		<div class="last-albums__item-b">
 			<div class="last-albums__pic">
 				<span class="last-albums__rect-1"></span>
 				<span class="last-albums__rect-2"></span>
-				<a href="#"><img src="http://placehold.it/142x97" alt=""></a>
+				<a href="#"><img src="http://placehold.it/290x180" alt=""></a>
 			</div>
 			<div class="last-albums__info">
 				<a href="#">Погляд у майбутнє. Конкурс молодих дизайнерів</a>
@@ -178,14 +131,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="last-albums__item-s">
+		<div class="last-albums__item-b">
 			<div class="last-albums__pic">
 				<span class="last-albums__rect-1"></span>
 				<span class="last-albums__rect-2"></span>
-				<a href="#"><img src="http://placehold.it/142x97" alt=""></a>
+				<a href="#"><img src="http://placehold.it/290x180" alt=""></a>
 			</div>
 			<div class="last-albums__info">
-				<a href="#">Ermanno Scervino Fashion show</a>
+				<a href="#">Погляд у майбутнє. Конкурс молодих дизайнерів</a>
 				<div class="detail detail_album">
 					<span class="detail__date">10.07.2012</span>			
 					<span class="detail__view">20 384</span>
@@ -193,11 +146,56 @@
 				</div>
 			</div>
 		</div>
-		<div class="last-albums__item-s">
+		<div class="last-albums__item-b">
 			<div class="last-albums__pic">
 				<span class="last-albums__rect-1"></span>
 				<span class="last-albums__rect-2"></span>
-				<a href="#"><img src="http://placehold.it/142x97" alt=""></a>
+				<a href="#"><img src="http://placehold.it/290x180" alt=""></a>
+			</div>
+			<div class="last-albums__info">
+				<a href="#">Погляд у майбутнє. Конкурс молодих дизайнерів</a>
+				<div class="detail detail_album">
+					<span class="detail__date">10.07.2012</span>			
+					<span class="detail__view">20 384</span>
+					<span class="detail__com">51</span>
+				</div>
+			</div>
+		</div>
+		<div class="last-albums__item-b">
+			<div class="last-albums__pic">
+				<span class="last-albums__rect-1"></span>
+				<span class="last-albums__rect-2"></span>
+				<a href="#"><img src="http://placehold.it/290x180" alt=""></a>
+			</div>
+			<div class="last-albums__info">
+				<a href="#">Погляд у майбутнє. Конкурс молодих дизайнерів</a>
+				<div class="detail detail_album">
+					<span class="detail__date">10.07.2012</span>			
+					<span class="detail__view">20 384</span>
+					<span class="detail__com">51</span>
+				</div>
+			</div>
+		</div>
+		<div class="last-albums__item-b">
+			<div class="last-albums__pic">
+				<span class="last-albums__rect-1"></span>
+				<span class="last-albums__rect-2"></span>
+				<a href="#"><img src="http://placehold.it/290x180" alt=""></a>
+			</div>
+			<div class="last-albums__info">
+				<a href="#">Погляд у майбутнє. Конкурс молодих дизайнерів</a>
+				<div class="detail detail_album">
+					<span class="detail__date">10.07.2012</span>			
+					<span class="detail__view">20 384</span>
+					<span class="detail__com">51</span>
+				</div>
+			</div>
+		</div>
+		<div class="last-albums__item-b">
+			<div class="last-albums__pic">
+				<span class="last-albums__rect-1"></span>
+				<span class="last-albums__rect-2"></span>
+				<a href="#"><img src="http://placehold.it/290x180" alt=""></a>
 			</div>
 			<div class="last-albums__info">
 				<a href="#">Погляд у майбутнє. Конкурс молодих дизайнерів</a>
@@ -209,6 +207,10 @@
 			</div>
 		</div>
 	</div>	
+	<ul class="big-pagin big-pagin_index">
+		<li><a href="#" class="big-pagin_prev">Предыдущая страница</a></li>
+		<li><a href="#" class="big-pagin_next">Следующая страница</a></li>
+	</ul>
 </div>
 <!-- END .content -->
 	<div class="push"></div>
@@ -320,85 +322,5 @@
 	</div>
 </footer>
 <!-- END .footer -->
-<!-- BEGIN .gallery -->
-<div class="gallery-out"></div>
-<div class="gallery">
-	<div class="gallery__close"></div>
-	<div class="gallery__ins" id="gallery">
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-		<a href="images/slide-big.jpg">
-			<img src="images/slide-mini.jpg" alt="">
-		</a>
-		<a href="images/slide1-big.jpg">
-			<img src="images/slide1-mini.jpg" alt="">
-		</a>
-	</div>
-</div>
-<!-- END .gallery -->
 </body>
 </html>
