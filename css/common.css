@@ -684,9 +684,15 @@ nav {
 	position: relative;
 	padding-right: 320px;
 }
-.content__title_s .content__subscribe {
+.content__title_mod {padding: 0;}
+	.content__title_mod .h1 {
+		font: normal 72px/62px 'myriad_pro_condbold';
+	}
+.content__title_s 
+.content__subscribe {
 	top: -3px;
 }
+
 	.content__subscribe {
 		position: absolute;
 		top: 9px;

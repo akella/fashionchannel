@@ -1,0 +1,117 @@
+.article {
+	overflow: hidden;
+	padding-top: 14px;
+}
+	.article img {display: block;}
+	.article__imp {
+		font: normal 30px 'myriad_pro_condbold', Arial, sans-serif;
+		color: #2a7b9e;
+		margin-bottom: 6px;
+	}
+	.date_article {
+		padding-left: 0;
+		margin-bottom: 24px;
+	}
+	.article__cont {
+		padding: 17px 9px;
+		overflow: hidden;
+		border: 1px solid #ececec;
+		border-bottom: 0;
+		font: normal 14px/22px 'Helveticaupright', 'Helvetica', sans-serif;
+	}
+		.article__cont img {margin-bottom: 11px;}
+		.article__col-left {
+			float: left;
+			width: 620px;
+			padding-right: 10px;
+			overflow: hidden;
+		}
+		.article__h2 {
+			font: normal 44px/44px 'myriad_pro_condbold', Arial, sans-serif;
+			color: #2a7b9e;
+			padding-bottom: 34px;
+		}
+		.article__col-right {
+			float: left;
+			width: 310px;
+		}
+			.article__cont p {
+				margin-bottom: 22px;
+				overflow: hidden;
+			}
+				.article__col p a {
+					font: normal 14px/22px 'Helveticaupright', 'Helvetica', sans-serif;
+					color: #2a7b9e;
+				}
+			.quote {
+				color: #003146;
+				font: normal 24px/28px 'Conv_DINCondensedC','Arial', sans-serif;
+			}
+			.quote_small {
+				padding-left: 9px;
+				border-left: 4px solid #003146;
+			}	
+			.quote_width {
+				width: 490px;
+				margin: 0 auto;
+				text-align: center;
+			}	
+				.quote_width:before,
+				.quote_width:after {
+					content: '';
+					display: block;
+					width: 420px;
+					margin: 0 auto;
+					height: 4px;
+					background: #003146;
+					margin-bottom: 30px;
+				}
+				.quote_width:before {
+					margin-bottom: 23px;
+				}
+				.quote_width:after {
+					margin-top: 16px;
+				}
+			.article__img-s {
+				margin: 0 0 11px 9px;
+			}
+		.article__item {overflow: hidden;}
+			.article__item img {
+				float: left;
+				margin-right: 16px;
+			}
+		.article__video-wrapp {
+			width: 560px;
+			float: left;
+		}
+			.article__video {
+				height: 325px;
+			}
+			.article__scroll {
+				position: relative;
+				height: 89px;
+				overflow: hidden;
+			}
+				.article__scroll-items {
+					position: absolute;
+					width: 2000em;
+					height: 89px;
+				}
+					.article__scroll-item {
+						float: left;
+						width: 125;
+					}	
+						.article__scroll-item a {
+							display: block;
+							position: relative;
+							height: 89px;
+						}
+						.icon-video_yt {
+							width: 54px;
+							height: 38px;
+							background: url(../images/icon-video2.png) 0 0 no-repeat;
+						}
+		.article__video-descr {
+			float: left;
+		}
+
