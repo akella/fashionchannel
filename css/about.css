@@ -290,3 +290,72 @@
 				font-size: 18px;
 				color: #2a7b9e;
 			}
+/*schedule
+=================================================================*/
+.schedule {
+	margin-top: 15px;
+}
+	.schedule__days {
+		position: relative;
+		padding: 0 40px;
+		height: 45px;
+		background:url(../images/days-bg.jpg);
+	}
+		.schedule__days ul {
+			height: 45px;
+		}
+			.schedule__days ul li {
+				position: relative;
+				float: left;
+				padding: 0 18px;
+				margin: 0 10px;
+				height: 45px;
+				text-align: center;
+			}
+				.schedule__days li b {
+					display: block;
+					margin-top: 8px;
+					font: 18px 'myriad_pro_condbold', Arial, sans-serif;
+					color: #003146;
+					text-transform: uppercase;
+				}
+				.schedule__days li span {
+					display: block;
+					font: 12px Helvetica, Arial, sans-serif;
+					margin-top: -3px;
+					color: #2a7b9e;
+				}
+		.schedule__days i {
+			position: absolute;
+			top: 13px;
+			width: 19px;
+			height: 19px;		
+			cursor: pointer;	
+		}	
+			.schedule__days-prev {
+				left: 12px;
+				background:url(../images/days-nav.png) no-repeat 0 0;
+			}
+			.schedule__days-next {
+				right: 12px;
+				background:url(../images/days-nav.png) no-repeat -19px 0;
+			}
+		.schedule__days .schedule__days-last b, .schedule__days .schedule__days-last span {
+			color: #717171;
+		}
+		.schedule__days .schedule__days-curr {
+			background:url(../images/days-curr-bg.png);
+		}
+		.schedule__days .schedule__days-curr b, .schedule__days .schedule__days-curr span {
+			color: #fff;
+		}
+		.schedule__days .schedule__days-curr em {
+			position: absolute;
+			display: block;
+			top: 45px;
+			left: 50%;
+			width: 28px;
+			height: 8px;
+			margin-left: -14px;
+			background:url(../images/days-curr-tr.png) no-repeat 0 0;
+		}
