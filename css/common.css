@@ -16,7 +16,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 /* ------------------------------------- Reset css -------------------------------------------- */
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5,
 h6, p, blockquote, pre,a, abbr, acronym, address, big,
@@ -178,8 +177,20 @@ a {
 		right: 0;
 		width: 96px;
 		height: 32px;
-		background: url(../images/on-air.png) 0 0 no-repeat;
+		background: #013348;
+		text-align: center;
 	}
+		.header__on-air b {
+			font: bold 13px 'Conv_DINCondensedC','Arial', sans-serif;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		.header__on-air span {
+			margin-top: -4px;
+			display: block;
+			color: #76a8be;
+			font: normal 11px 'Helvetica',sans-serif;
+		}
 	/* languages */
 	.header__lang {
 		position: absolute;
@@ -619,7 +630,7 @@ nav {
 			margin: 11px 0 0 0;
 		}
 		.afisha-item__descr {
-			font: normal 14px 'Conv_DINCondensedC';
+			font: normal 14px 'Conv_DINCondensedC','Arial', sans-serif;
 			color: #a8a8a8;
 		}
 
