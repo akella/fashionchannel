@@ -25,6 +25,11 @@ $(document).ready(function () {
 			next:'.slider-nav__next',
 			prev:'.slider-nav__prev'
 	});
+// -------------------- team slider ---------------------------- //
+	$('.team__slider').scrollable({
+			next:'.team__nav-next',
+			prev:'.team__nav-prev'
+	});
 // ---------------------- entry Tabs ---------------------------- //
 //reset
 $(".entry-slider-wrapper").hide();
