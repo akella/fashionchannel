@@ -83,6 +83,7 @@
 		.article__video-wrapp {
 			width: 560px;
 			float: left;
+			position: relative;
 		}
 			.article__video {
 				height: 325px;
@@ -91,26 +92,78 @@
 				position: relative;
 				height: 89px;
 				overflow: hidden;
+				width: 500px;
+				margin: 0 auto;
+				z-index: 2;
 			}
 				.article__scroll-items {
 					position: absolute;
 					width: 2000em;
-					height: 89px;
 				}
 					.article__scroll-item {
 						float: left;
-						width: 125;
+						width: 125px;
 					}	
 						.article__scroll-item a {
 							display: block;
 							position: relative;
 							height: 89px;
+							overflow: hidden;
 						}
-						.icon-video_yt {
-							width: 54px;
-							height: 38px;
-							background: url(../images/icon-video2.png) 0 0 no-repeat;
+						.article__video-active {
+							width: 119px;
+							height: 86px !important;
+							border: 3px solid #003146;
+							border-top: 0;
 						}
+						.article__video-active .icon-video_yt,
+						.article__video-active .above-video {
+							display: none;
+						}
+							.icon-video_yt {
+								top: 50%;
+								left: 50%;
+								margin-top: -19px;
+								margin-left: -29px;
+								width: 58px;
+								height: 39px;
+								background: url(../images/icon-video2.png) 0 0 no-repeat;
+							}
+							.above-video {
+								position: absolute;
+								top: 0;
+								width: 125px;
+								height: 89px;
+								background: rgba(255,255,255,0.5)
+							}
+			.article__scroll-nav {
+				position: absolute;
+				bottom: 0;
+				height: 89px;
+				width: 100%;
+				overflow: hidden;
+				background: #efefef;
+			}
+				.article__scroll-nav span {
+					float: left;
+					width: 30px;
+					height: 89px;
+					cursor: pointer;
+				}
+				.article__scroll-prev {
+					background: #efefef url(../images/prev2.png) 8px 34px no-repeat;
+				}
+				.article__scroll-prev:hover {
+					background: #dbeef6 url(../images/pagin-prev-hover.png) 8px 34px no-repeat;
+				}
+				.article__scroll-next {
+					float: right !important;
+					background: #efefef url(../images/next2.png) 8px 34px no-repeat;
+				}	
+				.article__scroll-next:hover {
+					background: #dbeef6 url(../images/pagin-next-hover.png) 9px 34px no-repeat;
+				}
+				.article__scroll-nav .disabled {display: none;}
 		.article__video-descr {
 			float: left;
 		}
