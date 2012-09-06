@@ -92,6 +92,7 @@
 	padding-bottom: 30px;
 	background: url(../images/index-col-border.png) 319px 0 repeat-y;
 }
+	.index-cols_mod {border-top: 1px solid #ececec;}
 	.index-left-wrapper {
 		float: left;
 		width: 638px;
