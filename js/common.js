@@ -1,5 +1,5 @@
 $(document).ready(function () {
-// -------------------- big banner scroll ---------------------------- //
+// -------------------- big banner scroll ----------------------- //
 	$('.big-banner').scrollable({
 			next:'.next',
 			prev:'.prev'
@@ -20,7 +20,7 @@ $(document).ready(function () {
 			next:'.entry-slider-nav__next',
 			prev:'.entry-slider-nav__prev'
 	});
-// -------------------- slider ---------------------------- //
+// -------------------- slider ---------------------------------- //
 	$('.slider').scrollable({
 			next:'.slider-nav__next',
 			prev:'.slider-nav__prev'
@@ -39,9 +39,22 @@ $(".entry-slider-wrapper:first").show();
       $(activeTab).show();  
       return false; 
   });
-// ---------------------- entry Tabs ---------------------------- //
+
+// ----------------------- ON AIR popup -------------------------- //
+$(".header__on-air").click(function() { 
+	$(".on-air-bg, .on-air-popup").fadeIn();
+      return false; 
+  });
+$(".on-air-popup__close").click(function() { 
+	$(".on-air-bg, .on-air-popup").fadeOut();
+      return false; 
+  });
+
+// ---------------------- Gallery -------------------------------- //
 Galleria.run('#gallery', {
     showInfo: false,
     showCounter: false
 });
+
+
 })

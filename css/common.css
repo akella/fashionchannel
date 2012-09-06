@@ -774,6 +774,74 @@ nav {
 	height: 22px;
 	margin: 10px 0 15px 0;
 }
+
+/* On air popup */
+.on-air-bg {
+	display: none;
+	position: fixed;
+	z-index: 998;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: #05181f;
+}
+.on-air-popup {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	top: 30px;
+	left: 50%;
+	width: 960px;
+	height: 790px;
+	margin-left: -480px;
+}
+	.on-air-popup__wrapper {
+		position: absolute;
+		top: 50px;
+		left: 70px;
+		width: 814px;
+		height: 790px;
+		margin: 0 auto
+	}
+		.on-air-popup__video {
+			height: 611px;
+			border: 1px solid #000;
+			-moz-box-shadow: 0 0 100px #000;
+			-o-box-shadow: 0 0 100px #000;
+			-webkit-box-shadow: 0 0 100px #000;
+			box-shadow: 0 0 100px #000;
+		}
+		.on-air-popup__descr {
+			font: normal 18px 'myriad_pro_condbold', sans-serif;
+			color: #375968;
+			padding-top: 16px;
+		}
+			.on-air-popup__descr h5 {
+				color: #a8a8a8;
+				font-size: 24px;
+				margin-bottom: 9px;
+			}
+				.on-air-popup__descr h5 span {
+					font-size: 18px;
+					padding-left: 12px;
+				}
+			.on-air-popup__descr p {
+
+			}
+				.on-air-popup__descr p span {color: #414c50;}
+			.on-air-popup__program {color: #375968;}
+	.on-air-popup__close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 16px;
+		height: 16px;
+		background: url(../images/close.png) 0 -16px no-repeat;
+	}
+	.on-air-popup__close:hover {
+		background: url(../images/close.png) 0 0px no-repeat;
+	}
 /* ------------------------------------- //END Independent blocks -------------------------- */
 
 /* ------------------------------------- Footer -------------------------------------------- */
