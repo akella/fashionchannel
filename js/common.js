@@ -30,6 +30,21 @@ $(document).ready(function () {
 			next:'.team__nav-next',
 			prev:'.team__nav-prev'
 	});
+// -------------------- article scroll video ---------------------------- //
+	$('.article__scroll').scrollable({
+			next:'.article__scroll-next',
+			prev:'.article__scroll-prev'
+	});
+		var video_url = $('.article__scroll-item:first a').attr("href");
+		$(".article__video iframe").attr("src", video_url);
+		$('.article__scroll-item:first a').addClass("article__video-active");
+	$('.article__scroll-item a').click(function() {
+		$('.article__scroll-item a').removeClass("article__video-active");
+		$(this).addClass("article__video-active");
+		var video_url = $(this).attr("href");
+		$(".article__video iframe").attr("src", video_url);
+		return false;
+	});
 // ---------------------- entry Tabs ---------------------------- //
 //reset
 $(".entry-slider-wrapper").hide();
