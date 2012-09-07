@@ -191,5 +191,97 @@
 					display: block;
 					padding-bottom: 15px;
 				}
+/* news */
+.article__cont_news {
+	overflow: hidden;
+	padding: 0 0 42px;
+}
+.article__left-col {
+	float: left;
+	width: 638px;
 	
+}
+	.article__left-wrapper {
+		border-right: 1px solid #ececec;
+		border-bottom: 1px solid #ececec;
+		padding: 9px;
+	}
+	.gallery-news {
+		width: 620px;
+		height: 585px;
+		margin-bottom: 31px;
+	}
+		.gallery-news .galleria-container {background: #fff;}
+		.gallery-news .galleria-stage {
+			position: static;
+			height: 430px;
+		}
+		.gallery-news 
+		.galleria-thumbnails-container {
+			height: 142px;
+			width: 576px;
+			background: #efefef;
+		}
+			.gallery-news .galleria-image {
+				height: 142px;
+				width: 184px;
+				margin-right: 14px;
+			}
+			.gallery-news 
+			.galleria-thumb-nav-right,
+			.gallery-news 
+			.galleria-thumb-nav-left {
+				background-color: #efefef;
+				height: 142px;
+				background: #efefef url(../images/prev2.png) 50% 50% no-repeat;
+			}
+			.gallery-news 
+			.galleria-thumb-nav-right {
+				background: #efefef url(../images/next2.png) 50% 50% no-repeat;
+			}
+			.gallery-news 
+			.galleria-thumb-nav-right:hover {
+				background: #efefef url(../images/next2.png) 50% 50% no-repeat;
+			}
+			.gallery-news 
+			.galleria-thumb-nav-left:hover {
+				background: #efefef url(../images/prev2.png) 50% 50% no-repeat;
+			}
+			.gallery-news 
+			.galleria-image-nav {display: none;}
 
+	.article__h3 {
+		color: #003146;
+		font: normal 24px 'myriad_pro_condbold';
+		margin-bottom: 18px;
+	}
+	.pop-news {
+		overflow: hidden;
+		margin: 0 -20px 40px 0;
+	}
+		.pop-news__item {
+			float: left;
+			width: 140px;
+			text-align: left;
+			margin-right: 19px;
+		}
+			.pop-news__item a {
+				display: block;
+				font-size: 20px;
+			}
+				.pop-news__img {margin-bottom: 10px;}
+				.pop-news__item img {
+					margin-bottom: 0;
+				}
+			.pop-news__item .date {padding: 0;}
+.article__right-col {
+	float: left;
+	width: 319px;
+}
+	.article__right-col 
+	.describe {
+		margin: 20px 9px 10px;
+	}
+	.article__right-col  .entry {
+		border-top: 0;
+	}
