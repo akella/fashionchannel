@@ -84,6 +84,7 @@
 			width: 560px;
 			float: left;
 			position: relative;
+			margin-bottom: 37px;
 		}
 			.article__video {
 				height: 325px;
@@ -104,6 +105,9 @@
 						float: left;
 						width: 125px;
 					}	
+						.article__scroll-item .js-block {
+							display: none;
+						}
 						.article__scroll-item a {
 							display: block;
 							position: relative;
@@ -128,13 +132,15 @@
 								width: 58px;
 								height: 39px;
 								background: url(../images/icon-video2.png) 0 0 no-repeat;
+								text-indent: -2000em;
 							}
 							.above-video {
 								position: absolute;
 								top: 0;
 								width: 125px;
 								height: 89px;
-								background: rgba(255,255,255,0.5)
+								background: rgba(255,255,255,0.5);
+								text-indent: -2000em;
 							}
 			.article__scroll-nav {
 				position: absolute;
@@ -166,5 +172,83 @@
 				.article__scroll-nav .disabled {display: none;}
 		.article__video-descr {
 			float: left;
+			width: 360px;
+			overflow: hidden;
+			color: #003146;
+			padding-left: 17px;
 		}
+			.article__video-counter {
+				float: left;
+				font: normal 76px 'myriad_pro_condbold';
+			}
+			.article__video-text {
+				overflow: hidden;
+				font: normal 14px/22px 'Helvetica',sans-serif;
+				padding-top: 10px;
+			}
+				.article__video-title {
+					font: normal 30px 'myriad_pro_condbold';
+					display: block;
+					padding-bottom: 15px;
+				}
+	.comments {
+		width: 638px;
+	}
+	.comments_article {
+		margin-left: -9px;
+	}
+		.comments__title {
+			background: url(../images/menu-hover.png) 0 0 repeat;
+			border-top: 1px solid #ececec;
+			border-bottom: 1px solid #ececec;
+			height: 44px;
+			line-height: 44px;
+		}
+			.comments__counter {
+				color: #2a7b9e;
+				font: normal 24px 'myriad_pro_condbold';
+				padding: 0 15px 0 8px;
+			}
+			.comments__write {
+				background: url(../images/com.png) 0 4px no-repeat;
+				padding-left: 24px;
+			}
+			.comment {
+			}
+				.comment__item {
+					overflow: hidden;
+					padding: 16px 0 0 10px;
+				}
+				.comment__item_l2 {
+					padding-left: 104px;
+				}
+				.comment__item_l3 {
+					padding-left: 204px;
+				}
+					.comment__user-pic {
+						float: left;
+						width: 68px;
+						height: 68px;
+						overflow: hidden;
+						border: 1px solid #e1e8ec;
+						margin-right: 11px;
+					}
+						.comment__user-pic img {display: block;}
+					.comment__cont {
+						overflow: hidden;
+						padding-left: 13px;
+						background: url(../images/comm-border.png) 0 100% repeat-x;
+						padding-left: 20px;
+					}
+						.comment__cont p {margin-bottom: 10px;}
+						.comment__author {
+							font: normal 14px 'Helvetica',sans-serif;
+							color: #2a7b9e;
+						}
+						.comment__date {
+							font: normal 11px 'Helvetica',sans-serif;
+							color: #a8a8a8;
+							padding-left: 5px;
+						}
+
 

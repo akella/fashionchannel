@@ -573,6 +573,38 @@ nav {
 		border-top: 1px solid #fff;
 		color: #7ea8be;
 	}
+.pagin_article {
+	margin: 0 0 0 -9px;
+	width: 960px;
+}
+	.pagin_article li {
+		width: 50%;
+		text-align: center;
+	}
+		.pagin_article .pagin_prev {
+			width: 100%;
+		}
+		.pagin_article .pagin_next {
+			width: 100%;
+			background-position: 453px 24px;
+		}
+		.pagin_article .pagin_next:hover {
+			background-position: 453px 24px;
+		}
+			.pagin_article b {
+				display: block;
+				font: normal 24px/24px 'myriad_pro_condbold';
+				text-transform: capitalize;
+				color: #003146;
+				padding-top: 8px;
+			}
+			.pagin_article span {
+				width: 100%;
+				height: 15px;
+				padding-top: 7px;
+				font: normal 13px/24px 'Conv_DINCondensedC', sans-serif;
+
+			}
 /* video */
 .video-items {
 	overflow: hidden;
