@@ -9,7 +9,7 @@ $(document).ready(function () {
 		$('.tab-big-banner a').removeClass("tab-big-banner__active");
 		$(this).addClass("tab-big-banner__active");
 	    ar = $(this).attr('href');
-	    api.seekTo(ar, 300);
+	    api.seekTo(ar, 200);
 	    return false;
 	});
 	$('.tab-big-banner a').click(function() {

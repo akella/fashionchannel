@@ -262,6 +262,9 @@ nav {
 					color: #fff;
 					background: none;
 				}
+		.menu__more {
+			background: url(../images/menu-more.png) 0 0 no-repeat;
+		}
 /* ------------------------------------- //END Menu -------------------------------------- */
 
 /* ------------------------------------- Independent blocks ------------------------------- */
@@ -575,7 +578,7 @@ nav {
 	width: 960px;
 	margin: 0 0 20px -9px;
 }
-.article__left-col .pagin_article {
+.left-col .pagin_article {
 	width: 638px;
 }
 	.pagin_article li {
@@ -758,7 +761,14 @@ nav {
 			left: auto;
 			right: 0;
 			width: 25px;
-			background:url(../images/rss.jpg) no-repeat 0 0;
+			background:url(../images/rss.png) no-repeat 0 0;
+		}
+		.content__subscribe 
+		.content__subscribe-rss:hover {
+			left: auto;
+			right: 0;
+			width: 25px;
+			background:url(../images/rss.png) no-repeat -40px 0;
 		}
 .detail {
 	overflow: hidden;
@@ -1008,6 +1018,25 @@ nav {
 			font-weight: normal;
 			background: #dbeef6;
 		}
+
+.two-cols-wrapper {
+	width: 958px;
+	border: 1px solid #ececec;
+	border-top: 0;
+	overflow: hidden;
+	background: url(../images/border.png) 639px 0 repeat-x;
+}
+	.left-col {
+		float: left;
+		width: 638px;
+	}
+		.left-col__wrapper {
+			padding: 9px;
+		}
+	.right-col {
+		float: left;
+		width: 319px;
+	}
 /* ------------------------------------- //END Independent blocks -------------------------- */
 
 /* ------------------------------------- Footer -------------------------------------------- */

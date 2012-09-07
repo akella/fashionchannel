@@ -196,16 +196,6 @@
 	overflow: hidden;
 	padding: 0 0 42px;
 }
-.article__left-col {
-	float: left;
-	width: 638px;
-	
-}
-	.article__left-wrapper {
-		border-right: 1px solid #ececec;
-		border-bottom: 1px solid #ececec;
-		padding: 9px;
-	}
 	.gallery-news {
 		width: 620px;
 		height: 585px;
@@ -274,14 +264,14 @@
 					margin-bottom: 0;
 				}
 			.pop-news__item .date {padding: 0;}
-.article__right-col {
-	float: left;
-	width: 319px;
-}
-	.article__right-col 
+	.right-col 
 	.describe {
 		margin: 20px 9px 10px;
 	}
-	.article__right-col  .entry {
+	.right-col  .entry {
 		border-top: 0;
+	}
+	.left-col__wrapper_mod {
+		border-right: 1px solid #ececec;
+		border-bottom: 1px solid #ececec;
 	}
