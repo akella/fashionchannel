@@ -574,7 +574,7 @@ nav {
 		color: #7ea8be;
 	}
 .pagin_article {
-	margin: 0 0 0 -9px;
+	margin: 0 0 20px -9px;
 	width: 960px;
 }
 	.pagin_article li {
@@ -880,6 +880,120 @@ nav {
 	.on-air-popup__close:hover {
 		background: url(../images/close.png) 0 0px no-repeat;
 	}
+/* comments */
+.comments {
+		width: 638px;
+	}
+	.comments_article {
+		margin-left: -9px;
+	}
+		.comments__title {
+			background: url(../images/menu-hover.png) 0 0 repeat;
+			border-top: 1px solid #ececec;
+			border-bottom: 1px solid #ececec;
+			height: 44px;
+			line-height: 44px;
+		}
+			.comments__counter {
+				color: #2a7b9e;
+				font: normal 24px 'myriad_pro_condbold';
+				padding: 0 15px 0 8px;
+			}
+			.comments__write {
+				background: url(../images/com.png) 0 4px no-repeat;
+				padding-left: 24px;
+			}
+			.comment {
+				margin-bottom: 18px;
+			}
+				.comment__item {
+					overflow: hidden;
+					padding: 16px 0 0 10px;
+				}
+				.comment__item_l2 {
+					padding-left: 104px;
+				}
+				.comment__item_l3 {
+					padding-left: 204px;
+				}
+					.comment__user-pic {
+						float: left;
+						width: 68px;
+						height: 68px;
+						overflow: hidden;
+						border: 1px solid #e1e8ec;
+						margin-right: 11px;
+					}
+						.comment__user-pic img {display: block;}
+					.comment__cont {
+						overflow: hidden;
+						padding-left: 13px;
+						background: url(../images/comm-border.png) 0 100% repeat-x;
+						padding-left: 20px;
+					}
+						.comment__cont p {margin-bottom: 10px;}
+						.comment__author {
+							font: normal 14px 'Helvetica',sans-serif;
+							color: #2a7b9e;
+						}
+						.comment__date {
+							font: normal 11px 'Helvetica',sans-serif;
+							color: #a8a8a8;
+							padding-left: 5px;
+						}
+		.add-comment {
+			padding: 11px;
+			background:url(../images/menu-hover.png);
+			-webkit-box-shadow: 0px -5px 5px #dbeef6 inset;
+			-moz-box-shadow: 0px -5px 5px #dbeef6 inset;
+			box-shadow: 0px -5px 5px #dbeef6 inset;
+			margin-left: 9px;
+			overflow: hidden;
+		}
+			.add-comment__title {
+				display: block;
+				font: normal 24px 'myriad_pro_condbold';
+				margin-bottom: 5px;
+			}
+			.add-comment__pic {
+				float: left;
+				border: 1px solid #a4c7d5;
+			}
+			.add-comment__cont {
+				float: right;
+				width: 512px;
+				padding-left: 24px; 
+			}
+				.add-comment__text {
+					width: 516px;
+					position: relative;
+					margin-top: 13px;
+				}
+				.add-comment__cont textarea {
+					width: 492px;
+					max-width: 492px;
+					min-height: 56px;
+					padding: 10px;
+					margin: 0;
+					border: 0;
+				}
+				.add-comment__cont span {
+					position: absolute;
+					top: 11px;
+					left: -14px;
+					width: 14px;
+					height: 15px;
+					background: url(../images/comm-corner.png) 0 0 no-repeat;
+				}
+				.btn {
+					height: 32px;
+					padding: 0 8px;
+					background: #013348;
+					border: none;
+					font: bold 15px/32px 'Conv_DINCondensedC', Arial, sans-serif;
+					color: #fff;
+					text-transform: uppercase;
+				}
 /* ------------------------------------- //END Independent blocks -------------------------- */
 
 /* ------------------------------------- Footer -------------------------------------------- */
