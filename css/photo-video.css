@@ -299,6 +299,43 @@
 			}
 			.video-info {
 				color: #a8a8a8;
-				font: 14px 'myriad_pro_condbold', Arial, sans-serif;
+				font: 14px 'Conv_DINCondensedC', Arial, sans-serif;
 			}
-
+.pop-albums_video 
+.pop-albums__item {
+	padding-bottom: 22px;
+	height: auto;
+}
+	.video-preview,
+	.video-preview img {
+		display: block;
+	}
+	.video-preview {
+		position: relative;
+		margin-bottom: 11px;
+	}
+	.pop-albums_video a{
+		display: block;
+		color: #fff;
+		font: 24px/24px 'myriad_pro_condbold', Arial, sans-serif;
+	}
+	.pop-albums_video .label {
+		display: inline-block;
+		margin: 0 0 9px -9px;
+	}
+	.pop-albums_video .video-info {
+		color: #fff;
+	}
+.last-video .video-preview {
+	margin-bottom: 8px;
+}
+.last-video a {
+	display: block;
+	font: 24px/24px 'myriad_pro_condbold', Arial, sans-serif;
+}
+.last-video .label {
+	display: inline-block;
+	margin-bottom: 2px;
+}
+.last-video 
+.last-albums__item-b {margin-bottom: 46px;}

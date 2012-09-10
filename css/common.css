@@ -1233,7 +1233,8 @@ nav {
 	line-height: 15px;
 }
 *+html .last-albums__item-b,
-*+html .footer__friends li {
+*+html .footer__friends li,
+*+html .video {
 	display: inline;
 	zoom: 1;
 }  
