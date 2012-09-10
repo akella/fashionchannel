@@ -259,7 +259,7 @@ nav {
 					color: #76a8be;
 					font-size: 18px;
 					line-height: 37px;
-					padding: 8px 15px;
+					padding: 8px 13`px;
 					text-transform: capitalize;
 				}
 				.menu__sub a:hover {
@@ -1026,7 +1026,6 @@ nav {
 			font-weight: normal;
 			background: #dbeef6;
 		}
-
 .two-cols-wrapper {
 	width: 958px;
 	border: 1px solid #ececec;
@@ -1034,6 +1033,15 @@ nav {
 	overflow: hidden;
 	background: url(../images/border.png) 638px 0 repeat-y;
 }
+.two-cols-wrapper_schedule {
+	background:url(../images/two-col-schedule.jpg) repeat-x;
+}
+	.two-cols-wrapper_schedule .left-col {
+		border-right: 1px solid #ececec;
+	}
+	.two-cols-wrapper_schedule .pagin_article {
+		margin: 0 0 -10px -9px;
+	}
 	.left-col {
 		float: left;
 		width: 638px;
@@ -1050,6 +1058,9 @@ nav {
 		float: left;
 		width: 319px;
 	}
+		.right-col__wrapper {
+			padding: 9px;
+		}
 /* ------------------------------------- //END Independent blocks -------------------------- */
 
 /* ------------------------------------- Footer -------------------------------------------- */

@@ -294,7 +294,22 @@
 =================================================================*/
 .schedule {
 	margin-top: 15px;
+	padding-bottom: 25px;
+	border-left: 1px solid #ECECEC;
+	border-right: 1px solid #ECECEC;
 }
+	.schedule__slide {
+		position: absolute;
+		top: -8px;
+		width: 120px;
+		height: 45px;
+		border: 2px solid #003146;
+		-webkit-box-shadow: 0px 0px 8px #b6d2de;
+		-moz-box-shadow: 0px 0px 8px #b6d2de;
+		box-shadow: 0px 0px 8px #b6d2de;
+		background:url(../images/schedule-slide.png) no-repeat 0 0;
+		cursor: pointer;
+	}
 	.schedule__days {
 		position: relative;
 		padding: 0 40px;
@@ -361,6 +376,7 @@
 		}
 	.schedule__times {
 		position: relative;
+		margin-top: 25px;		
 		background:url(../images/times-bg.jpg);
 	}
 		.schedule__times ul {
@@ -378,3 +394,75 @@
 				.schedule__times .schedule__times-last {
 					color: #8f8f8f;
 				}
+.left-col .programm-all {
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+	.programm-all span {
+		color: #003146;
+		border-bottom: 1px dashed #003146;
+	}
+.programm {
+	margin-bottom: 15px;
+}
+	.programm li {
+		width:382px;
+		padding-left: 18px;
+		height: 32px;
+		font: 18px/32px 'myriad_pro_condbold', Arial, sans-serif;
+		color: #003146;
+	}
+		.programm li span {
+			margin-right: 30px;
+			font: 14px/3px Helvetica, Arial, sans-serif;
+		}
+	.programm .programm__last {
+		color: #717171;
+	}
+	.programm .programm__curr {
+		background:url(../images/prg-cur.png) no-repeat 0 0;
+		color: #fff;
+	}
+.now-ether {
+	margin-top: 20px;
+}
+	.now-ether__time {
+		font: 24px/40px 'myriad_pro_condbold', Arial, sans-serif;
+		color: #003146;
+	}
+	.now-ether__title {
+		position: relative;
+		height: 32px;
+		background:url(../images/now-ether.png) no-repeat 0 0;
+	}
+		.now-ether__title span {
+			display: block;
+			margin-left: 20px;
+			width: 180px;
+			font: 24px/32px 'myriad_pro_condbold', Arial, sans-serif;
+			color: #fff; 
+		}
+		.now-ether__air {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 96px;
+			height: 32px;
+			text-align: center;
+		}
+			.now-ether__air b {
+				font: bold 13px 'Conv_DINCondensedC','Arial', sans-serif;
+				text-transform: uppercase;
+				color: white;
+			}
+			.now-ether__air i {
+				margin-top: -4px;
+				display: block;
+				color: #76A8BE;
+				font: normal 11px 'Helvetica',sans-serif;
+				font-style: normal;
+			}
+		.now-ether img {
+			margin-top: 8px;
+		}
+	
