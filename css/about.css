@@ -359,3 +359,22 @@
 			margin-left: -14px;
 			background:url(../images/days-curr-tr.png) no-repeat 0 0;
 		}
+	.schedule__times {
+		position: relative;
+		background:url(../images/times-bg.jpg);
+	}
+		.schedule__times ul {
+			height: 33px;
+			margin-right: -10px;
+		}
+			.schedule__times li {
+				float: left;
+				height: 33px;
+				width: 87px;
+				text-align: center;
+				font: bold 24px/33px 'Conv_DINCondensedC', Arial, sans-serif;				
+				color: #003146;
+			}
+				.schedule__times .schedule__times-last {
+					color: #8f8f8f;
+				}
