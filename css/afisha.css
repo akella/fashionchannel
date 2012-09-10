@@ -1,0 +1,116 @@
+/* afisha */
+.afisha-items {
+	overflow: hidden;
+	margin: 23px -50px 0 0;
+}
+	.afisha-item {
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		width: 190px;
+		margin: 0 50px 50px 0;
+	}
+		.afisha-item__date {
+			height: 35px;
+			padding-left: 3px;
+			color: #000;
+			border-left: 1px solid #dadada;
+			font: normal 26px 'Conv_DINCondensedC','Arial', sans-serif;
+		}	
+		.afisha-item__img {
+			padding: 3px;
+			display: block;
+			border: 1px solid #dadada;
+		}
+			.afisha-item__img img {
+				display: block;
+			}
+		.afisha-item__title {
+			margin: 11px 0 0 0;
+		}
+		.afisha-item__descr {
+			font: normal 14px 'Conv_DINCondensedC', Arial, sans-serif;
+			color: #a8a8a8;
+		}
+
+.afisha-items_s {margin: 0;}
+	.afisha-items_s 
+	.afisha-item {
+		float: left;
+		width: 135px;
+		margin: 25px 0 0 0;
+	}
+		.afisha-items_s 
+		.afisha-item__date {
+			height: 25px;
+			font: normal 18px/25px 'myriad_pro_condbold', sans-serif;
+		}
+		.afisha-items_s 
+		.afisha-item__img {
+			width: 105px;
+		}
+.afisha-title {
+	position: relative;
+	background: url(../images/filter2.png) 0 0 repeat;
+	overflow: hidden;
+	text-align: center;
+	padding:10px;
+	min-height: 16px;
+	-o-box-shadow: 0px -5px 30px #DBEEF6 inset;
+	-webkit-box-shadow: 0px -5px 30px #DBEEF6 inset;
+	-moz-box-shadow: 0px -5px 30px #dbeef6 inset;
+	box-shadow: 0px -5px 30px #DBEEF6 inset;
+}
+	.afisha-title a span {
+		font: normal 18px Arial, sans-serif;
+		color: #ddd;
+	}
+	.afisha-title__last {
+		left: 10px;
+		background:#fff;
+	}
+	.afisha-title__future {
+		right: 10px;
+		background:#fff;
+	}
+		.afisha-title__last span {padding-right: 8px;}
+		.afisha-title__future span {padding-left: 8px;}
+	.afisha-title__date {
+		right: 10px;
+		padding-left: 30px !important;
+		background: #fff url(../images/cal.png) 6px 50% no-repeat;
+	}
+	.afisha-title__last,
+	.afisha-title__future,
+	.afisha-title__date {
+		position: absolute;
+		top: 50%;
+		margin-top: -12px; 
+		padding: 0 9px;
+		color: #003146;
+		font: normal 13px/25px 'Helvetica', sans-serif;
+	}
+	.afisha-title h2 {
+		color: #2a7b9e;
+		font: normal 36px/35px 'myriad_pro_condbold', sans-serif;
+	}
+	.afisha-item__opt {
+		color: #a8a8a8;
+		font: normal 14px 'Conv_DINCondensedC','Arial', sans-serif;
+		margin-top: 4px;
+	}
+		.afisha-item__opt span {
+			background-image: url(../images/view.png);
+			background-repeat: no-repeat;
+			padding: 0 13px 0 17px;
+		}
+		.afisha-item__viewed {
+			background-position: 0 2px;
+			
+		}
+		.afisha-item__video {
+			background-position: 0 -18px;
+		}
+		.afisha-item__photo {
+			background-position: 0 -40px;
+		}

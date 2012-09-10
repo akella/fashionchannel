@@ -614,6 +614,10 @@ nav {
 				padding-top: 7px;
 				font: normal 13px/24px 'Conv_DINCondensedC', sans-serif;
 			}
+.pagin_easy a {
+	height: 72px;
+	line-height: 72px !important;
+}
 /* video */
 .video-items {
 	overflow: hidden;
@@ -640,40 +644,6 @@ nav {
 				bottom: 7px;
 				left: 6px;
 			}
-
-/* afisha */
-.afisha-items {
-	overflow: hidden;
-}
-	.afisha-item {
-		float: left;
-		width: 135px;
-		text-align: left;
-		margin-right: 25px;
-	}
-		.afisha-item__date {
-			height: 25px;
-			padding-left: 3px;
-			font: normal 18px/25px 'myriad_pro_condbold', sans-serif;
-			color: #000;
-			border-left: 1px solid #dadada;
-		}
-		.afisha-item__img {
-			width: 105px;
-			padding: 3px;
-			display: block;
-			border: 1px solid #dadada;
-		}
-			.afisha-item__img img {
-				display: block;
-			}
-		.afisha-item__title {
-			margin: 11px 0 0 0;
-		}
-		.afisha-item__descr {
-			font: normal 14px 'Conv_DINCondensedC','Arial', sans-serif;
-			color: #a8a8a8;
-		}
 
 /*breadcrumps
 =================================================================*/
@@ -1234,7 +1204,8 @@ nav {
 }
 *+html .last-albums__item-b,
 *+html .footer__friends li,
-*+html .video {
+*+html .video,
+*+html .afisha-item {
 	display: inline;
 	zoom: 1;
 }  
