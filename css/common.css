@@ -911,6 +911,7 @@ nav {
 			.comments__write {
 				background: url(../images/com.png) 0 4px no-repeat;
 				padding-left: 24px;
+				font: normal 24px 'myriad_pro_condbold';
 			}
 			.comment {
 				margin-bottom: 18px;
@@ -1024,15 +1025,20 @@ nav {
 	border: 1px solid #ececec;
 	border-top: 0;
 	overflow: hidden;
-	background: url(../images/border.png) 639px 0 repeat-x;
+	background: url(../images/border.png) 638px 0 repeat-y;
 }
 	.left-col {
 		float: left;
 		width: 638px;
+		font: normal 14px/22px 'Helveticaupright', 'Helvetica', sans-serif;
 	}
 		.left-col__wrapper {
 			padding: 9px;
 		}
+			.left-col p {
+				margin-bottom: 22px;
+				overflow: hidden;
+			}
 	.right-col {
 		float: left;
 		width: 319px;

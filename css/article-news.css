@@ -17,7 +17,6 @@
 		overflow: hidden;
 		border: 1px solid #ececec;
 		border-bottom: 0;
-		font: normal 14px/22px 'Helveticaupright', 'Helvetica', sans-serif;
 	}
 		.article__cont img {margin-bottom: 11px;}
 		.article__col-left {
@@ -35,14 +34,10 @@
 			float: left;
 			width: 310px;
 		}
-			.article__cont p {
-				margin-bottom: 22px;
-				overflow: hidden;
+			.article__col p a {
+				font: normal 14px/22px 'Helveticaupright', 'Helvetica', sans-serif;
+				color: #2a7b9e;
 			}
-				.article__col p a {
-					font: normal 14px/22px 'Helveticaupright', 'Helvetica', sans-serif;
-					color: #2a7b9e;
-				}
 			.quote {
 				color: #003146;
 				font: normal 24px/28px 'Conv_DINCondensedC','Arial', sans-serif;
@@ -274,4 +269,7 @@
 	.left-col__wrapper_mod {
 		border-right: 1px solid #ececec;
 		border-bottom: 1px solid #ececec;
+	}
+	.left-col__wrapper_article {
+		border-right: 1px solid #ececec;
 	}
