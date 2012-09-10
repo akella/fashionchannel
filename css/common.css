@@ -82,6 +82,10 @@ a {
 	font: normal 30px 'myriad_pro_condbold', Arial, sans-serif;
 	color: #2a7b9e;
 }
+.h3 {
+	font: normal 24px/24px 'myriad_pro_condbold', Arial, sans-serif;
+	color: #003146;
+}
 /* ------------------------------------- //END Main styles --------------------------------- */
 
 /* ------------------------------------- Header -------------------------------------------- */
@@ -263,7 +267,10 @@ nav {
 					background: none;
 				}
 		.menu__more {
-			background: url(../images/menu-more.png) 0 0 no-repeat;
+			background: url(../images/menu-more.png) 90% 50% no-repeat;
+		}
+		.menu__more:hover {
+			background: url(../images/menu-more.png) 90% 50% no-repeat !important;
 		}
 /* ------------------------------------- //END Menu -------------------------------------- */
 
