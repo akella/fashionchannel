@@ -837,6 +837,8 @@
 
 	}
 		.vacancy-list li {
-			line-height: 30px;
+			height: 30px;
+			font: normal 18px/30px 'myriad_pro_condbold', Arial, sans-serif;
+			color: #013348;
 		}
 
