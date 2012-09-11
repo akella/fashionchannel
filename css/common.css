@@ -17,15 +17,7 @@
 		font-weight: normal;
 		font-style: normal;
 }
-@font-face {
-	font-family: 'Conv_DINCondensedC';
-	src: url('../fonts/DINCondensedC.eot');
-	src: local('☺'), url('../fonts/DINCondensedC.woff') format('woff'), 
-	url('../fonts/DINCondensedC.ttf') format('truetype'), 
-	url('../fonts/DINCondensedC.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+
 /* ------------------------------------- Reset css -------------------------------------------- */
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5,
 h6, p, blockquote, pre,a, abbr, acronym, address, big,
@@ -249,7 +241,8 @@ nav {
 		.menu a:hover {
 			background: url(../images/menu-hover.png) 0 0 repeat-x;
 		}
-		.menu li:hover .menu__sub {display: block;}
+		.menu li:hover .menu__sub,
+		.menu__sub:hover {display: block;}
 		.menu__sub {
 			display: none;
 			position: absolute;

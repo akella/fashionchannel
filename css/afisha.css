@@ -152,22 +152,29 @@
 
 .afisha-other {
 	padding: 9px;
-	overflow: hidden;
 }
-	.afisha-s__img {
-		float: left;
-		width: 70px;
+	.afisha-s {
 		overflow: hidden;
-		margin-right: 15px;
+		margin-bottom: 20px;
 	}
-	.afisha-s__info {
-		overflow: hidden;
-		font-family: 'myriad_pro_condbold', sans-serif;
-	}
-		.afisha-s__info h4 {
-			font-size: 18px;
+		.afisha-s__img {
+			float: left;
+			width: 70px;
+			overflow: hidden;
+			margin-right: 15px;
 		}
-		.afisha-s__info span {
-			font-size: 14px;
-			color: #a8a8a8;
+			.afisha-s__img img {
+				display: block;
+			}
+		.afisha-s__info {
+			overflow: hidden;
+			font-family: 'myriad_pro_condbold', sans-serif;
 		}
+			.afisha-s__info h4 a {
+				font-size: 18px;
+			}
+			.afisha-s__info span {
+				font-size: 14px;
+				color: #a8a8a8;
+				font-family: 'MyriadPro-Cond';
+			}
