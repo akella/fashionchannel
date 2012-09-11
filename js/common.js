@@ -105,6 +105,15 @@ $('.add-resume').change(function() {
 	$(this).prev().prev().val(arv);
 });
 
+// ---------------------- Edit detail ---------------------------- //
+$('.new-look__added a').toggle(function() {
+  $(this).parent().next().slideDown();
+	return false;
+}, function() {
+  $(this).parent().next().slideUp();
+	return false;
+});
+
 // ---------------------- Gallery -------------------------------- //
 Galleria.run('#gallery', {
     showInfo: false,
