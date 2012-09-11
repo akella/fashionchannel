@@ -92,7 +92,7 @@ a {
 	font: normal 30px 'myriad_pro_condbold', Arial, sans-serif;
 	color: #2a7b9e;
 }
-.h3 {
+.h3, .h2_mod {
 	font: normal 24px/24px 'myriad_pro_condbold', Arial, sans-serif;
 	color: #003146;
 }

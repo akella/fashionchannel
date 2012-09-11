@@ -35,7 +35,21 @@ $(document).ready(function () {
 			next:'.article__scroll-next',
 			prev:'.article__scroll-prev'
 	});
-
+// -------------------- afisha scroll video ---------------------------- //
+	$('.afisha-v').scrollable({
+			next:'.afisha-v-nav__next',
+			prev:'.afisha-v-nav__prev'
+	});
+// -------------------- afisha scroll photo ---------------------------- //
+	$('.afisha-p').scrollable({
+			next:'.afisha-p-nav__next',
+			prev:'.afisha-p-nav__prev'
+	});
+// -------------------- afisha scroll article ---------------------------- //
+	$('.afisha-a').scrollable({
+			next:'.afisha-a-nav__next',
+			prev:'.afisha-a-nav__prev'
+	});
 	var video_url = $('.article__scroll-item:first a').attr("href");
 	$(".article__video iframe").attr("src", video_url);
 	$('.article__scroll-item:first a').addClass("article__video-active");

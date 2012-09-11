@@ -176,3 +176,46 @@
 				color: #a8a8a8;
 				font-family: 'MyriadPro-Cond';
 			}
+/* Afisha scroll */
+.afisha-title-wrapper {
+	position: relative;
+	margin: 20px 0 11px;
+	padding: 0 11px;
+}
+.afisha-v-nav {
+	position: absolute;
+	left: 214px;
+	top: 0;
+}
+	.prev, .next {
+		color: #ddd;
+		font: normal 20px Arial, sans-serif;
+		cursor: pointer;
+	}
+	.prev:hover, .next:hover {color: #a5a2a2;}
+	.prev {padding-right: 10px;}
+	.afisha-scroll {
+		position: relative;
+		overflow: hidden;
+		height: 190px;
+		width: 617px;
+		margin: 0 auto;
+	}
+	.afisha-p {
+		height: 129px;
+		margin-bottom: 26px;
+	}
+		.afisha-scroll__items {
+			position: absolute;
+			width: 2000em;
+			overflow: hidden;
+		}
+			.afisha-scroll_item {float: left;}
+			.afisha-scroll__items 
+			.pop-news__img {
+				margin-bottom: 2px;
+			}
+			.afisha-scroll__items 
+			.date {
+				margin-top: 6px;
+			}
