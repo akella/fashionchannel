@@ -1,0 +1,53 @@
+.look-sel-wrap {
+	position: relative;
+	height: 27px;
+	margin-bottom: 33px;
+	padding: 5px;
+	background: url(../images/menu-hover.png) 0 0 repeat;
+}
+	.select {
+		width: 129px;
+		height: 27px;
+		font: normal 13px 'Conv_DINCondensedC', Arial, sans-serif;
+		text-transform: uppercase;
+	}
+	.dwnld-look-btn {
+		position: absolute;
+		top: 50%;
+		right: 5px;
+		margin-top: -13px;
+		height: 27px;
+		width: 108px;
+		padding-left: 21px;
+		font: normal 13px/30px 'Conv_DINCondensedC', Arial, sans-serif;
+		text-transform: uppercase;
+		color: #fff;
+		background: #2a7b9e url(../images/arrow-dwnld.png) 8px 50% no-repeat;
+	}
+.str-looks-wrap {
+	overflow: hidden;
+	margin-right: -22px;
+	padding-top: 11px;
+}
+	.look {
+		display: inline-block;
+		vertical-align: top;
+		width: 220px;
+		margin: 0 22px 33px 0;
+	}
+		.look__img {
+			display: block;
+			padding: 3px;
+			border: 1px solid #dadada;
+			margin-bottom: 7px;
+		}
+			.look__img img {display: block;}
+		.look__link {
+			display: block;
+			font: normal 24px/24px 'myriad_pro_condbold', Arial, sans-serif;
+		}
+		.look__info {
+			padding-right: 3px;
+			color: #a8a8a8;
+			font: normal 14px 'MyriadPro-Cond', Arial, sans-serif;
+		}
