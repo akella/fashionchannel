@@ -717,6 +717,14 @@ nav {
 	.content__title_mod .h1 {
 		font: normal 72px/62px 'myriad_pro_condbold';
 	}
+	.content__title-under {
+		margin-bottom: 17px;
+	}
+		.content__title-info {
+			padding-right: 10px;
+			color: #8a8a8a;
+			font: normal 14px 'MyriadPro-Cond', Arial, sans-serif;
+		}
 .content__title_s 
 .content__subscribe {
 	top: -3px;

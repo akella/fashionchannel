@@ -94,24 +94,22 @@
 		color: #2a7b9e;
 		font: normal 36px/35px 'myriad_pro_condbold', sans-serif;
 	}
-	.afisha-item__opt {
-		color: #a8a8a8;
-		font: normal 14px 'Conv_DINCondensedC',Arial, sans-serif;
-		margin-top: 4px;
-	}
-		.afisha-item__opt span {
+	.afisha-item__opt {margin-top: 4px;}
+		.icon {
+			color: #a8a8a8;
+			font: normal 14px 'MyriadPro-Cond',Arial, sans-serif;
 			background-image: url(../images/view.png);
 			background-repeat: no-repeat;
 			padding: 0 13px 0 17px;
 		}
-		.afisha-item__viewed {
-			background-position: 0 2px;
+		.icon_viewed {
+			background-position: 0 3px;
 			
 		}
-		.afisha-item__video {
+		.icon_video {
 			background-position: 0 -18px;
 		}
-		.afisha-item__photo {
+		.icon_photo {
 			background-position: 0 -40px;
 		}
 .afisha-ban {
