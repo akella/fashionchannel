@@ -38,6 +38,9 @@
 		top: 15px;
 		left: 15px; 
 	}
+.new-look__pic_active img {
+	border-bottom: 3px solid #003416;
+}
 .new-look__load {
 	position: relative;
 	height: 32px;
@@ -53,10 +56,7 @@
 		color: #fff;
 		text-transform: uppercase;
 	}
-.new-look__add-detail {
-	width: 150px;
-}
-	.new-look__add-detail a {
+	.new-look__add-detail {
 		display: block;
 		width: 115px;
 		height: 32px;
@@ -116,21 +116,34 @@
 			font: 12px/32px Arial, sans-serif;
 		}
 	.new-look .new-look__save {
-		height: 32px;
-		background: #d9d9d9;
-		border: none;
 		margin-top: 10px;
-		padding: 0 15px;		
-		font: 15px/32px 'myriad_pro_condbold', Arial, sans-serif;
-		color: #fff;
-		text-transform: uppercase;
+		overflow: hidden;
+	}
+		.new-look .new-look__save input {
+			float: left;
+			height: 32px;
+			background: #d9d9d9;
+			border: none;
+			margin: 0;
+			padding: 0 15px;		
+			font: 15px/32px 'myriad_pro_condbold', Arial, sans-serif;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.new-look__save .new-look__step {
+			float: left;
+			margin-right: 5px;
+		}
+	.new-look .new-look__save_active input {
+		padding: 0 10px 0 30px;
+		background:url(../images/ok.png) no-repeat 8px 50% #003146;
 	}
 	.new-look h2 {
 		margin-top: 10px;		
 		font: 30px/32px 'myriad_pro_condbold', Arial, sans-serif;
 		overflow: hidden;
 	}
-		.new-look .new-look__step {
+		.new-look h2 .new-look__step {
 			float: left;
 			margin-right: 5px;
 		}
@@ -147,41 +160,88 @@
 	   font: normal 20px 'MyriadPro-Cond', Arial, sans-serif;
 	   color: #d9d9d9;
 	}
-	.new-look__dress {
-		margin-top: 10px;
-		padding: 11px 12px 17px 15px;
-		background:url(../images/menu-hover.png);
-		overflow: hidden;
-	}	
-		.new-look__dress .new-look__field {
-
+.new-look__added {
+	position: relative;
+	height: 38px;
+	padding: 0 40px 0 15px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+	.new-look__added p, .new-look__added a {
+		font: 16px/38px 'Conv_DINCondensedC', Arial, sans-serif;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	.new-look__added a {
+		float: right;
+	}
+	.new-look__added p {
+		float: left;
+	}
+	.new-look__added i {
+		position: absolute;
+		top: 5px;
+		right: 12px;
+		width: 8px;
+		height: 8px;
+		background:url(../images/new-look-del.png) no-repeat 0 0;
+		cursor: pointer;
+	}
+		.new-look__added span {
+			margin: 0 20px 0 5px;
+			font: 16px/38px 'myriad_pro_condbold', Arial, sans-serif;
+			text-transform: uppercase;
+			color: #fff;
 		}
-			.new-look__dress .new-look__field span {
-				width: 90px;
-				font: 23px/27px 'MyriadPro-Cond', Arial, sans-serif;
-			}
-			.new-look__dress .new-look__field input {
-				border: none;
-				width: 410px;
-				padding-left: 10px;
-				height: 27px;
-				font: 20px/27px 'myriad_pro_condbold', Arial, sans-serif;
-			}
-			.new-look__dress .new-look__field-bg {
-				background:url(../images/arr.png) no-repeat 98% 50% #fff;
-			}
-			.new-look__dress .new-look__field .new-look__price {
-				width: 170px;
-				margin-right: 10px;
-			}
-			.new-look__dress a {
-				float: left;
-				margin-left: 90px;
-				height: 27px;
-				padding: 0 8px;
-				background: #2a7b9e;
-				font: 16px/27px 'MyriadPro-Cond', Arial, sans-serif;
-				color: #fff;
-				text-transform: uppercase;
-			}
+.new-look__dress {
+	margin-top: 10px;
+	padding: 11px 12px 17px 15px;
+	background:url(../images/menu-hover.png);
+	overflow: hidden;
+}	
+	.new-look__dress .new-look__field {
+
+	}
+		.new-look__dress .new-look__field span {
+			width: 90px;
+			font: 23px/27px 'MyriadPro-Cond', Arial, sans-serif;
+		}
+		.new-look__dress .new-look__field p, .new-look__dress .new-look__field input {
+			float: left;
+			border: none;
+			width: 410px;
+			padding-left: 10px;
+			height: 27px;			
+		}
+		.new-look__dress .new-look__field input {
+			font: 20px/27px 'myriad_pro_condbold', Arial, sans-serif;
+		}
+		.new-look__dress .new-look__field p {
+			background: url(../images/arr.png) no-repeat 98% 50% #fff;
+			font: 20px/27px 'MyriadPro-Cond', Arial, sans-serif;
+			color: #ccc;
+			cursor: pointer;
+		}
+		.new-look__dress .new-look__field p strong {
+			background: url(../images/arr.png) no-repeat 98% 50% #fff;
+			font: 20px/27px 'myriad_pro_condbold', Arial, sans-serif;
+			color: #000;
+		}
+		.new-look__dress .new-look__field-bg {
+			background:url(../images/arr.png) no-repeat 98% 50% #fff;
+		}
+		.new-look__dress .new-look__field .new-look__price {
+			width: 170px;
+			margin-right: 10px;
+		}
+		.new-look__dress a {
+			float: left;
+			margin-left: 90px;
+			height: 27px;
+			padding: 0 8px;
+			background: #2a7b9e;
+			font: 16px/27px 'MyriadPro-Cond', Arial, sans-serif;
+			color: #fff;
+			text-transform: uppercase;
+		}
 		
