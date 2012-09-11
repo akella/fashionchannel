@@ -22,7 +22,10 @@
 		font: normal 13px/30px 'Conv_DINCondensedC', Arial, sans-serif;
 		text-transform: uppercase;
 		color: #fff;
-		background: #2a7b9e url(../images/arrow-dwnld.png) 8px 50% no-repeat;
+		background: #2a7b9e url(../images/arrow-dwnld.png) 8px 11px no-repeat;
+	}
+	.dwnld-look-btn:hover {
+		background: #3ea7d4 url(../images/arrow-dwnld.png) 8px -9px no-repeat;;
 	}
 .str-looks-wrap {
 	overflow: hidden;
@@ -51,3 +54,44 @@
 			color: #a8a8a8;
 			font: normal 14px 'MyriadPro-Cond', Arial, sans-serif;
 		}
+.soc-prof {padding-top: 16px;}
+	.soc-prof li {
+		margin-bottom: 10px;
+	}
+		.soc-prof a {
+			display: inline-block;
+			height: 27px;
+			width: 129px;
+			padding-left: 29px;
+			font: normal 20px 'MyriadPro-Cond';
+			color: #fff;
+			background-image: url(../images/soc-footer-hover.png);
+			background-repeat: no-repeat;
+		}
+		.soc-prof 
+		.soc-prof__active {
+			background-color: transparent;
+			color: #003146;
+			width: 121px;
+			padding-left: 34px;
+		}
+		.soc-prof__fb {
+			background-color: #3B5998;
+		}
+		.soc-prof__tw {
+			background-color: #55B7E0;
+			background-position: 0 -41px;
+		}
+		.soc-prof__vk {
+			background-color: #597A99;
+			background-position: 0 -117px;
+		}
+		.soc-prof 
+		.soc-prof__del {
+			color: #2a7b9e;
+			font: normal 12px Helvetica,sans-serif;
+			background: none;
+			width: auto;
+			padding-left: 19px;
+		}
+
