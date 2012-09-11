@@ -222,7 +222,9 @@ a {
 
 /* ------------------------------------- Menu -------------------------------------------- */
 nav {
+	position: relative;
 	border-bottom: 3px solid #ececec;
+	z-index: 100;
 }
 .menu {
 	position: relative;
@@ -269,7 +271,7 @@ nav {
 					color: #76a8be;
 					font-size: 18px;
 					line-height: 37px;
-					padding: 8px 13`px;
+					padding: 8px 13px;
 					text-transform: capitalize;
 				}
 				.menu__sub a:hover {
