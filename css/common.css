@@ -252,7 +252,6 @@ nav {
 		.menu__sub {
 			display: none;
 			position: absolute;
-			z-index: 2;
 			top: 40px;
 			left: 0;
 			height: 36px;
@@ -398,6 +397,10 @@ nav {
 				font: normal 22px/18px 'myriad_pro_condbold';
 				color: #003146;
 				border-bottom: 1px dashed #b6c9d0;
+			}
+			.describe__label a {
+				font: normal 13px Helvetica, sans-serif;
+				background: #cde3eb;
 			}
 		.describe__form {
 			overflow: hidden;
@@ -570,19 +573,19 @@ nav {
 	}
 	.pagin .pagin_prev {
 		border-right: 1px solid #d0e2ea;
-		background: url(../images/pagin-prev.png) 2% 48% no-repeat;
+		background: url(../images/pagin-prev.png) 2% 50% no-repeat;
 	}
 	.pagin .pagin_prev:hover {
 		color: #2a7b9e;
-		background: #d8e9f1 url(../images/pagin-prev-hover.png) 2% 48% no-repeat;
+		background: #d8e9f1 url(../images/pagin-prev-hover.png) 2% 50% no-repeat;
 	}
 	.pagin .pagin_next {
 		border-left: 1px solid #d0e2ea;
-		background: url(../images/pagin-next.png) 98% 48% no-repeat;
+		background: url(../images/pagin-next.png) 98% 50% no-repeat;
 	}
 	.pagin .pagin_next:hover {
 		color: #2a7b9e;
-		background: #d8e9f1 url(../images/pagin-next-hover.png) 98% 48% no-repeat;
+		background: #d8e9f1 url(../images/pagin-next-hover.png) 98% 50% no-repeat;
 	}
 	.pagin .pagin__active,
 	.pagin .pagin__active:hover {
@@ -659,6 +662,8 @@ nav {
 .breadcrumps {
 	padding: 9px 0;
 	overflow: hidden;
+	position: relative;
+	z-index: 1;
 }
 	.breadcrumps a {
 		position: relative;
@@ -672,7 +677,7 @@ nav {
 		line-height: 14px;
 		color: #2a7b9e;
 		text-decoration: none;
-		text-transform: uppercase;
+		text-transform: uppercase
 	}
 	.breadcrumps span {
 		position: absolute;
@@ -1214,7 +1219,8 @@ nav {
 *+html .last-albums__item-b,
 *+html .footer__friends li,
 *+html .video,
-*+html .afisha-item {
+*+html .afisha-item,
+*+html .afisha-ban__info span {
 	display: inline;
 	zoom: 1;
 }  
