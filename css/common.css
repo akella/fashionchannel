@@ -925,7 +925,7 @@ nav {
 						overflow: hidden;
 						padding-left: 13px;
 						background: url(../images/comm-border.png) 0 100% repeat-x;
-						padding-left: 20px;
+						padding-right: 20px;
 					}
 						.comment__cont p {margin-bottom: 10px;}
 						.comment__author {
