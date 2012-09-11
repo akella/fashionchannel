@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>contacts</title>
+	<title>control</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/master.css" media="screen" />
 	<!--[if lt IE 9]> 
@@ -80,145 +80,57 @@
 	</div>
 	<!-- content title -->
 	<div class="content__title content__title_s">
-		<h2 class="h2">ТВ-программа</h2>
+		<h2 class="h2">Вакансии</h2>
 	</div>	
-	<!-- schedule -->
-	<div class="schedule">
-		<div class="schedule__days">
-			<i class="schedule__days-prev"></i>
-			<i class="schedule__days-next"></i>
-			<ul>
-				<li class="schedule__days-last"><a href="#"><b>понедельник</b><span>6 августа</span></a><em></em></li>
-				<li class="schedule__days-curr"><a href="#"><b>вторник</b><span>7 августа</span></a><em></em></li>
-				<li><a href="#"><b>среда</b><span>8 августа</span></a><em></em></li>
-				<li><a href="#"><b>четверг</b><span>9 августа</span></a><em></em></li>
-				<li><a href="#"><b>пятница</b><span>10 августа</span></a><em></em></li>
-				<li><a href="#"><b>суббота</b><span>11 августа</span></a><em></em></li>
-				<li><a href="#"><b>воскресенье</b><span>12 августа</span></a><em></em></li>
-			</ul>                                               
-		</div>
-		<div class="schedule__times">
-			<div class="schedule__slide"></div>
-			<ul>
-				<li class="schedule__times-last">06:00</li>
-				<li class="schedule__times-last">08:00</li>
-				<li class="schedule__times-last">10:00</li>
-				<li class="schedule__times-last">12:00</li>
-				<li class="schedule__times-last">14:00</li>
-				<li>16:00</li>
-				<li>18:00</li>
-				<li>20:00</li>
-				<li>22:00</li>
-				<li>24:00</li>
-				<li>02:00</li>
-			</ul>                                        
-		</div>
-	</div>
-	<div class="two-cols-wrapper two-cols-wrapper_schedule">
+	<!-- vacancy -->
+	<div class="two-cols-wrapper two-cols-wrapper_vacancy">
 		<div class="left-col">
 			<div class="left-col__wrapper">
-				<p class="programm-all">Показаны все передачи. <span>Выбрать отдельную.</span></p>
-				<div class="programm">
-					<ul>
-						<li class="programm__last"><span>14:15</span>Ukrainian Fashion Week Diary: Defile</li>
-						<li class="programm__curr"><span>14:30</span>Showroom</li>
-						<li><span>14:45</span>Photosession</li>
-						<li><span>15:00</span>Beauty & Style / Backstage</li>
-						<li><span>15:15</span>People & Party</li>
-						<li><span>15:30</span>World Fashion</li>
-						<li><span>15:45</span>Art De Vivre</li>
-						<li><span>16:00</span>People & Party</li>
-						<li><span>16:10</span>Photosession</li>
-						<li><span>16:20</span>World Fashion</li>
-						<li><span>16:30</span>People & Party</li>
-						<li><span>16:45</span>Photosession</li>
-						<li><span>16:55</span>World Fashion</li>
-						<li><span>17:00</span>People & Party</li>
-						<li><span>17:10</span>People & Party</li>
-						<li><span>17:15</span>Photosession</li>
-						<li><span>17:20</span>People & Party</li>
-						<li><span>17:25</span>World Fashion</li>
-						<li><span>17:30</span>Photosession</li>
-						<li><span>17:35</span>People & Party</li>
-						<li><span>17:40</span>People & Party</li>
-						<li><span>17:45</span>World Fashion</li>
-						<li><span>17:50</span>Photosession</li>
-						<li><span>17:55</span>Ukrainian Fashion Week Diary: Defile</li>
-						<li><span>18:00</span>People & Party</li>
-						<li><span>18:10</span>World Fashion</li>
-						<li><span>18:15</span>People & Party</li>
-					</ul>
+				<div class="vacancy-detail">
+					<img src="http://placehold.it/122x122" alt="">
+					<p>Если вы мечатете работать на телевидении, но не знаете с чего начать, приходите работать на канал Ukrainian Fashion. Мы ищем творческих, телантливых, увлеченных своим делом молодых специалистов, как творческих так и технических специальностей. Для этого заполните анкету. Мы с радостью рассмотрим вашу кандидатуру.</p>
 				</div>
-				<ul class="pagin pagin_article">
-			      	<li>
-			       		<a href="#" class="pagin_prev">
-				        	<span>Предыдущие 4 часа</span>
-				        	<b>10:00 – 14:00</b>
-			       		</a>
-			    	</li>
-			      	<li>
-			      		<a href="#" class="pagin_next">
-			        		<span>Следующие 4 часа</span>
-			        		<b>16:00 – 20:00</b>
-			       		</a>
-			        </li>
-			    </ul>
+				<form action="" class="vacancy-form">
+					<h3 class="h3">Расскажите о себе<span>Все поля обязательны для заполнения</span></h3>
+					<div class="vacancy-form__user">
+						<div class="vacancy-field"><span>Имя и фамилия</span><input type="text" value="Алина Степанова"></div>
+						<div class="vacancy-field">
+							<span>Город</span>
+							<b>Киев</b>
+							<select name="city" id="">
+								<option value="Kiev">Kiev</option>
+								<option value="Moskow">Moscow</option>
+							</select>
+						</div>
+						<div class="vacancy-field"><span>Возраст</span><input class="vacancy-form__age" type="text" value="21"><span>год</span></div>
+						<div class="vacancy-field"><span>Пол</span><strong>парень</strong><strong class="active">девушка</strong></div>
+						<div class="vacancy-field"><span>E-mail</span><input type="text" value="alina@mail.ru"></div>
+					</div>
+					<div class="vacancy-form__resume">
+						<div class="vacancy-field">
+							<span>Желаемая должность</span>
+							<b>Дизайнер</b>
+							<select name="" id="">
+								<option value="Designer">Designer</option>
+								<option value="Designer">Manager</option>
+							</select>
+						</div>
+						<div class="vacancy-field">
+							<span>Почему вы хотите у нас работать</span>
+							<textarea name="" placeholder="Кратко опишите ваши ожидания"></textarea>
+						</div>
+						<div class="vacancy-field">
+							<span>Желаемая должность</span>
+							<input type="text" placeholder="Добавьте резюме">
+							<input class="add-resume" type="file">
+						</div>
+					</div>					
+				</form>
 			</div>
 		</div>
 		<div class="right-col">
 			<div class="right-col__wrapper">
-				<div class="now-ether">
-					<h3 class="h3 h3_mod"><b>Сейчас в эфире</b><span>14:20-14:30</span></h3>
-					<div class="now-ether__title">
-						<span>Showroom</span>
-						<div class="now-ether__air">
-							<b>On Air</b><i>Прямой эфир</i>
-						</div>						
-					</div>
-					<img src="http://placehold.it/300x190" alt="">
-				</div>
-				<div class="programm-next">
-					<h3 class="h3 h3_mod"><b>Следующие программы</b><span>14:30</span></h3>
-					<div class="programm-next__item">
-						<a href="#"><img src="http://placehold.it/139x88" alt=""></a>
-						<div class="programm-next__info">
-							<a href="#">Photosession</a>
-							<p>Відкриття модних бутиків. Презентації fashion-корнерів. Покази капсульних колекцій.</p>
-						</div>						
-					</div>
-				</div>
-				<div class="programm-download">
-					<a href="#">
-						<i></i>
-						<b>Скачать программу</b>	
-						<span>XML, 1.8 Mb</span>					
-					</a>					
-				</div>
-				<div class="programm-pop">
-					<h3 class="h3">Популярные программы</h3>
-					<ul>
-						<li>
-							<a href="#"><img src="http://placehold.it/50x30" alt="">
-							<a href="#"><span>World Fashion</span>, 15:45</a>
-						</li>
-						<li>
-							<a href="#"><img src="http://placehold.it/50x30" alt="">
-							<a href="#"><span>Backstage</span>, 15:45</a>
-						</li>
-						<li>
-							<a href="#"><img src="http://placehold.it/50x30" alt="">
-							<a href="#"><span>People&Parties</span>, 15:45</a>
-						</li>
-						<li>
-							<a href="#"><img src="http://placehold.it/50x30" alt="">
-							<a href="#"><span>Voyage</span>, 15:45</a>
-						</li>
-						<li>
-							<a href="#"><img src="http://placehold.it/50x30" alt="">
-							<a href="#"><span>Gourmet</span>, 15:45</a>
-						</li>
-					</ul>
-				</div>
+				
 			</div>
 		</div>
 	</div>
