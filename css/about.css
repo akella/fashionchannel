@@ -703,8 +703,8 @@
 		.vacancy-form__user .vacancy-field span {
 			float: left;
 			width: 240px;
-			height: 28px;
-			font: 20px/28px 'MyriadPro-Cond', Arial, sans-serif;		
+			height: 27px;
+			font: 20px/27px 'MyriadPro-Cond', Arial, sans-serif;		
 		}
 		.vacancy-form__user .vacancy-field input, .vacancy-form__user .vacancy-field b {
 			float: left;
@@ -766,6 +766,16 @@
 			background:url(../images/arr.png) no-repeat 98% 50% #fff;
 			font: 20px/28px 'Conv_DINCondensedC', Arial, sans-serif;
 		}
+		.vacancy-form__resume .vacancy-field i {
+			float: left;
+			width: 75px;
+			height: 27px;
+			background: #2a7b9e;
+			font: 20px/27px 'MyriadPro-Cond', Arial, sans-serif;
+			color: #fff;
+			text-align: center;
+			text-transform: uppercase;
+		}
 		.vacancy-form__resume .vacancy-field select {
 			position: absolute;
 			top: 0;
@@ -776,6 +786,7 @@
 			filter: alpha(opacity=0);
 		}
 		.vacancy-form__resume .vacancy-field textarea {
+			float: left;
 			width: 360px;
 			height: 140px;
 			padding: 5px;
@@ -788,20 +799,44 @@
 			float: left;
 			width: 290px;
 			height: 27px;
-			padding-left: 5px;
+			padding: 0 0 0 5px;
 			background: #fff;
 			border: none;
-			font: normal 20px 'Conv_DINCondensedC', Arial, sans-serif;
+			font: normal 20px/27px 'Conv_DINCondensedC', Arial, sans-serif;
 			color: #000;
+		}
+		.vacancy-form__resume .vacancy-field .add-resume {
+			position: absolute;
+			top: 0;
+			left: 225px;
+			width: 370px;
+			height: 27px;
+			opacity: 0;
+			filter: alpha(opacity=0);
 		}
 		.vacancy-form__resume .vacancy-field textarea::-webkit-input-placeholder, 
 		.vacancy-form__resume .vacancy-field input::-webkit-input-placeholder {
-		   font: normal 20px 'Conv_DINCondensedC', Arial, sans-serif;
+		   font: normal 20px 'MyriadPro-Cond', Arial, sans-serif;
 		   color: #d9d9d9;
 		}
 		.vacancy-form__resume .vacancy-field textarea:-moz-placeholder,
 		.vacancy-form__resume .vacancy-field input:-moz-placeholder {
 		   font: normal 20px 'MyriadPro-Cond', Arial, sans-serif;
 		   color: #d9d9d9;
+		}
+	.vacancy-form .send-vacancy {
+		height: 32px;
+		margin: 10px 0 30px 0;
+		background: #013348;
+		border: none;
+		font: normal 15px/32px 'Conv_DINCondensedC', Arial, sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.vacancy-list ul {
+
+	}
+		.vacancy-list li {
+			line-height: 30px;
 		}
 

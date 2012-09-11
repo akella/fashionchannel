@@ -8,13 +8,14 @@
     font-style: normal;
 }
 @font-face {
-	font-family: 'Conv_DINCondensedC';
-	src: url('../fonts/DINCondensedC.eot');
-	src: local('☺'), url('../fonts/DINCondensedC.woff') format('woff'), 
-	url('../fonts/DINCondensedC.ttf') format('truetype'), 
-	url('../fonts/DINCondensedC.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+		font-family: 'MyriadPro-Cond';
+		src: url('../fonts/myriadpro-cond.eot');
+		src: url('../fonts/myriadpro-cond.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/myriadpro-cond.woff') format('woff'),
+				 url('../fonts/myriadpro-cond.ttf') format('truetype'),
+				 url('../fonts/myriadpro-cond.svg#myriadpro-cond') format('svg');
+		font-weight: normal;
+		font-style: normal;
 }
 @font-face {
 	font-family: 'Conv_DINCondensedC';
@@ -1016,6 +1017,9 @@ nav {
 	border-top: 0;
 	overflow: hidden;
 	background: url(../images/border.png) 638px 0 repeat-y;
+}
+.two-cols-wrapper_vacancy {
+	border: 1px solid #ececec;
 }
 .two-cols-wrapper_schedule {
 	background:url(../images/two-col-schedule.jpg) repeat-x;

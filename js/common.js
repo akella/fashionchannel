@@ -77,6 +77,20 @@ $(".on-air-popup__close").click(function() {
       return false; 
   });
 
+// -------------- Vacancy select and input----------------------- //
+$('.vacancy-form__user select').change(function() {
+    vfu = $('.vacancy-form__user select option:selected').html();
+    $(this).prev().html(vfu);
+});
+$('.vacancy-form__resume select').change(function() {
+    vfr = $('.vacancy-form__resume select option:selected').html();
+    $(this).prev().html(vfr);
+});
+$('.add-resume').change(function() {
+	arv = $(this).val();
+	$(this).prev().prev().val(arv);
+});
+
 // ---------------------- Gallery -------------------------------- //
 Galleria.run('#gallery', {
     showInfo: false,
