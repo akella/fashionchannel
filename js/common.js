@@ -151,6 +151,7 @@ $("#lupa").imageLens({ lensSize: 180, borderSize: 10, borderColor: "#fff" });
         var pixel = imageData.data;
         var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", "+pixel[3]+")";
         $('#preview').css('backgroundColor', pixelColor);
+        contex.scale(2, 2)
     });
     console.log(imageData);
 
