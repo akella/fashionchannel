@@ -1239,3 +1239,6 @@ nav {
 	display: inline;
 	zoom: 1;
 }  
+*+html .breadcrumps a {
+	margin-right: 5px;
+}
