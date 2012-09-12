@@ -50,6 +50,21 @@ $(document).ready(function () {
 			next:'.afisha-a-nav__next',
 			prev:'.afisha-a-nav__prev'
 	});
+// -------------------- calendar scroll ---------------------------- //
+	$('.calendar__scroll').scrollable({
+			next:'.calendar__next',
+			prev:'.calendar__prev'
+	});
+
+$('.calendar').hide();
+$('.afisha-title__date, .calendar').click(function() {
+	$('.calendar').show();
+	return false;
+});
+$('body').click(function() {
+	$('.calendar').hide();
+	return false;
+});
 	var video_url = $('.article__scroll-item:first a').attr("href");
 	$(".article__video iframe").attr("src", video_url);
 	$('.article__scroll-item:first a').addClass("article__video-active");

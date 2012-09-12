@@ -52,7 +52,6 @@
 .afisha-title {
 	position: relative;
 	background: url(../images/filter2.png) 0 0 repeat;
-	overflow: hidden;
 	text-align: center;
 	padding:10px;
 	min-height: 16px;

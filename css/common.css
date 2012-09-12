@@ -1060,6 +1060,90 @@ nav {
 		.right-col__wrapper {
 			padding: 9px;
 		}
+
+/* calendar */
+.calendar {
+	position: absolute;
+	top: 64px;
+	right: 0;
+	width: 230px;
+	height: 230px;
+	padding: 10px;
+	background: url(../images/filter2.png) 0 0 repeat; 
+	-webkit-box-shadow: 0px -5px 30px #DBEEF6 inset;
+	   -moz-box-shadow: 0px -5px 30px #dbeef6 inset;
+		 -o-box-shadow: 0px -5px 30px #DBEEF6 inset;
+	        box-shadow: 0px -5px 30px #DBEEF6 inset;
+}
+	.calendar__wrapper {
+		background: #fff;
+		padding: 8px 13px;
+	}
+	.calendar__scroll {
+		position: relative;
+		overflow: hidden;
+		height: 217px;
+	}
+		.calendar__items {
+			width: 2000em;
+			overflow: hidden;
+			position: absolute;
+			height: 217px;
+		}
+			.calendar__item {
+				float: left;
+				width: 217px;
+				text-align: center;
+			}
+				.calendar__table {
+					width: 202px;
+					margin-top: 15px;
+					text-align: center;
+				}
+					.calendar__table th {
+						font: normal 12px Helvetica,sans-serif;
+						padding: 4px 6px;
+						border-bottom: 1px solid #dadada;
+					}
+					.calendar__table td {
+						padding: 7px 6px;
+						color: #a8a8a8;
+						font: normal 14px Helvetica,sans-serif;
+					}
+						.calendar__table td a {
+							font: bold 14px Helvetica,sans-serif;
+							color: #000;
+						}
+						.calendar__afisha a {
+							color: #2a7b9e !important;
+						}
+						.calendar__act {
+							background: #56b1d8;
+							color: #fff !important;
+							font-weight: bold !important;
+						}
+	.calendar__nav {
+		position: absolute;
+		top: 20px;
+		left: 10px;
+		height: 19px;
+		overflow: hidden;
+		width: 202px;
+		padding:0 14px;
+		z-index: 2;
+	}
+		.calendar__prev,
+		.calendar__next {
+			float: left;
+			height: 19px;
+			width: 19px;
+			background: url(../images/call-arrow.png) 0 0 no-repeat;
+			cursor: pointer;
+		}
+			.calendar__next {
+				float: right;
+				background-position: -19px 0;
+			}
 /* ------------------------------------- //END Independent blocks -------------------------- */
 
 /* ------------------------------------- Footer -------------------------------------------- */
