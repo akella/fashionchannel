@@ -114,6 +114,10 @@ $('.new-look__added a').toggle(function() {
 	return false;
 });
 
+
+// ---------------------- Lupa ------------------------------- //
+$("#lupa").imageLens({ lensSize: 180, borderSize: 10, borderColor: "#fff" });
+
 // ---------------------- Pipetka ---------------------------- //
 
     var canvas = document.getElementById("mycanvas");
@@ -142,8 +146,6 @@ $('.new-look__added a').toggle(function() {
 
 
 
-// ---------------------- Lupa ------------------------------- //
-$("#lupa").imageLens({ lensSize: 180, borderSize: 10, borderColor: "#fff" });
 
 // ---------------------- Gallery -------------------------------- //
 Galleria.run('#gallery', {
