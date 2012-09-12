@@ -8,6 +8,7 @@
  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
 	<![endif]-->
     <script src="js/jquery.tools.min.js"></script>
+    <script src="js/jquery.imageLens.js"></script>    
     <script src="js/common.js"></script>
 </head>
 <body>
@@ -83,8 +84,10 @@
 		<div class="left-col">
 			<div class="left-col__wrapper">
 				<div class="new-look">
+					<div id="preview" style="width: 100px; height: 100px;"></div>
 					<div class="new-look__pic">
-						<img src="images/new-look.jpg" alt="">	
+						<canvas id="mycanvas" width="380" height="570"></canvas>
+						<img id="lupa" src="images/new-look_b.jpg" width="380" height="570">	
 					</div>
 					<div class="new-look__load">
 						<a class="new-look__add-detail" href="#">Добавить детали</a>
