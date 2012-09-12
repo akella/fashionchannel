@@ -114,6 +114,37 @@ $('.new-look__added a').toggle(function() {
 	return false;
 });
 
+// ---------------------- Pipetka ---------------------------- //
+
+    var canvas = document.getElementById("mycanvas");
+    var context = canvas.getContext("2d");
+ 	var img = new Image();   
+ 	img.onload = function(){
+	    context.drawImage(img, 0, 0);
+	};
+ 	img.src = 'images/new-look.jpg'; 
+
+    $('#mycanvas').mousemove(function(e) { // Обработчик события mousemove (движение мыши)
+        var canvasOffset = $(canvas).offset();
+        var canvasX = Math.floor(e.pageX - canvasOffset.left);
+        var canvasY = Math.floor(e.pageY - canvasOffset.top);
+        var imageData = context.getImageData(canvasX, canvasY, 1, 1);
+        var pixel = imageData.data;
+        var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", "+pixel[3]+")";
+        $('#preview').css('backgroundColor', pixelColor);
+    });
+    console.log(imageData);
+
+  
+
+
+	//data = context.getImageData(x, y, 1, 1).data;
+
+
+
+// ---------------------- Lupa ------------------------------- //
+$("#lupa").imageLens({ lensSize: 180, borderSize: 10, borderColor: "#fff" });
+
 // ---------------------- Gallery -------------------------------- //
 Galleria.run('#gallery', {
     showInfo: false,
