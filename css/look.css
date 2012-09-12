@@ -110,6 +110,7 @@
 		}
 .new-look__user {
 	margin-top: 8px;
+	overflow: hidden;
 }
 	.new-look .new-look__field {
 		overflow: hidden;
@@ -118,7 +119,7 @@
 		.new-look .new-look__field span {
 			float: left;
 			width: 115px;
-			font: 23px/23px 'MyriadPro-Cond', Arial, sans-serif;
+			font: 20px 'MyriadPro-Cond', Arial, sans-serif;
 		}
 		.new-look .new-look__field b {
 			color: #d9d9d9;
@@ -226,18 +227,19 @@
 			text-transform: uppercase;
 			color: #fff;
 		}
-.new-look__dress {
+.new-look__dress,
+.new-look__pass {
 	margin-top: 10px;
 	padding: 11px 12px 17px 15px;
 	background:url(../images/menu-hover.png);
 	overflow: hidden;
 }	
-	.new-look__dress .new-look__field {
-
-	}
+.new-look__pass {
+	width: 514px;
+}
 		.new-look__dress .new-look__field span {
 			width: 90px;
-			font: 23px/27px 'MyriadPro-Cond', Arial, sans-serif;
+			font: 20px 'MyriadPro-Cond', Arial, sans-serif;
 		}
 		.new-look__dress .new-look__field p, .new-look__dress .new-look__field input {
 			float: left;
