@@ -987,7 +987,7 @@ nav {
 					max-width: 492px;
 					min-height: 56px;
 					padding: 10px;
-					margin: 0;
+					margin: 0 0 10px;
 					border: 0;
 				}
 				.add-comment__cont span {
@@ -1231,14 +1231,26 @@ nav {
 	width: 263px;
 	line-height: 15px;
 }
+*+html .header__input {
+	width: 263px;
+	line-height: 15px;
+}
 *+html .last-albums__item-b,
 *+html .footer__friends li,
 *+html .video,
 *+html .afisha-item,
-*+html .afisha-ban__info span {
+*+html .afisha-ban__info span,
+*+html .look {
 	display: inline;
 	zoom: 1;
 }  
 *+html .breadcrumps a {
 	margin-right: 5px;
+}
+.index-col .entry {
+	border-top: 0;
+   _background: expression(nextSibling == null ? '0' : previousSibling == null ? '0' : '0');
+ }
+.index-col .entry:first-child {
+	border-top: 0;
 }
