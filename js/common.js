@@ -4,6 +4,7 @@ $(".tab-big-banner__1 a").addClass("tab-big-banner__active");
 	$('.big-banner').scrollable({
 			next:'.next',
 			prev:'.prev',
+      circular: true,
       onSeek: function() {
 
         var currentItem = this.getItems().eq(this.getIndex());
