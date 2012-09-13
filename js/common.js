@@ -45,6 +45,29 @@ $(document).ready(function () {
 			next:'.afisha-p-nav__next',
 			prev:'.afisha-p-nav__prev'
 	});
+/*
+	// Get the Scrollable control
+  var scrollable_list = $(".afisha-p'").data("scrollable");
+  // Set to the number of visible items
+  var number_list = 4;
+  // Handle the Scrollable control's onSeek event
+  scrollable_list.onSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list) {      // Disable the Next link
+      $(".afisha-p-nav__next").addClass("disabled");
+    }
+  });
+  // Handle the Scrollable control's onBeforeSeek event
+  scrollable_list.onBeforeSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list) { 
+      // Check to see if we're trying to move forward
+      if (index > this.getIndex()) {
+        // Cancel navigation
+        return false;
+      }
+    }
+  });*/
 // -------------------- afisha scroll article ---------------------------- //
 	$('.afisha-a').scrollable({
 			next:'.afisha-a-nav__next',
