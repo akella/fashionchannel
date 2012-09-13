@@ -198,9 +198,95 @@ $('.new-look__added a').toggle(function() {
 	return false;
 });
 
+// ---------------------- look list ---------------------------- //
+$('.new-look__sex input').click(function() {
+    $(this).next().css('display', 'block');
+});
+$('.new-look__sex li').click(function() {
+    nls = $(this).text();
+    $(this).parent().prev().attr('value', nls);
+    $('.new-look__sex ul').css('display', 'none');
+});
+$('.new-look__dl').toggle(function() {
+  $('.new-look__dl').removeClass('new-look__dl_active')
+  $(this).addClass('new-look__dl_active');
+}, function() {
+  $('.new-look__dl').removeClass('new-look__dl_active')
+  $(this).removeClass('new-look__dl_active');
+});
+$('.new-look__scr li').click(function() {
+    nlid = $(this).parent().attr('item-data');
+    nll = $(this).text();
+    $('#' + nlid).attr('value', nll);
+});
 
 // ---------------------- Lupa ------------------------------- //
-$("#lupa").imageLens({ lensSize: 180, borderSize: 10, borderColor: "#fff" });
+(function ($) {
+    $.fn.imageLens = function (options) {
+
+        var defaults = {
+            lensSize: 100,
+            borderSize: 4,
+            borderColor: "#888"
+        };
+        var options = $.extend(defaults, options);
+        var lensStyle = "background-position: 0px 0px;width: " + String(options.lensSize) + "px;height: " + String(options.lensSize)
+            + "px;float: left;display: none;border-radius: " + String(options.lensSize / 2 + options.borderSize)
+            + "px;border: " + String(options.borderSize) + "px solid " + options.borderColor 
+            + ";background-repeat: no-repeat;position: absolute;";
+
+        return this.each(function () {
+            obj = $(this);
+
+            var offset = $(this).offset();
+
+            // Creating lens
+            var target = $("<div style='" + lensStyle + "' class='" + options.lensCss + "'>&nbsp;</div>").appendTo($(this).parent());
+            var targetSize = target.size();
+
+            // Calculating actual size of image
+            var imageSrc = options.imageSrc ? options.imageSrc : $(this).attr("src");
+            var imageTag = "<img style='display:none;' src='" + imageSrc + "' />";
+
+            var widthRatio = 0;
+            var heightRatio = 0;
+
+            $(imageTag).load(function () {
+                widthRatio = $(this).width() / obj.width();
+                heightRatio = $(this).height() / obj.height();
+            }).appendTo($(this).parent());
+
+            target.css({ backgroundImage: "url('" + imageSrc + "')" });
+
+            target.mousemove(setPosition);
+            $(this).mousemove(setPosition);
+
+            function setPosition(e) {
+
+                var leftPos = parseInt(e.pageX - offset.left);
+                var topPos = parseInt(e.pageY - offset.top);
+                alert(''+leftPos+'____'+ topPos+'');
+                if (leftPos < 0 || topPos < 0 || leftPos > obj.width() || topPos > obj.height()) {
+                    target.hide();
+                }
+                else {
+                    target.show();
+
+                    leftPos = String(((e.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
+                    topPos = String(((e.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
+                    target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+
+                    leftPos = String(e.pageX - target.width() / 2);
+                    topPos = String(e.pageY - target.height() / 2);
+                    target.css({ left: leftPos - 479 + 'px', top: topPos - 11 + 'px' });
+                }
+            }
+        });
+    };
+})(jQuery);
+if ($("#lupa").length > 0) {
+    $("#lupa").imageLens({ lensSize: 180, borderSize: 10, borderColor: "#fff" });
+};
 
 // ---------------------- Pipetka ---------------------------- //
 
@@ -220,23 +306,24 @@ $("#lupa").imageLens({ lensSize: 180, borderSize: 10, borderColor: "#fff" });
         var pixel = imageData.data;
         var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", "+pixel[3]+")";
         $('#preview').css('backgroundColor', pixelColor);
-        contex.scale(2, 2)
+
     });
     console.log(imageData);
 
   
 
 
-	//data = context.getImageData(x, y, 1, 1).data;
+	data = context.getImageData(x, y, 1, 1).data;
 
 
 
 
 // ---------------------- Gallery -------------------------------- //
-Galleria.run('#gallery', {
-    showInfo: false,
-    showCounter: false
-});
-
+if ($('#gallery').length > 0) {
+    Galleria.run('#gallery', {
+        showInfo: false,
+        showCounter: false
+    });
+};
 
 })

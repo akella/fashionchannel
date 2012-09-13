@@ -118,6 +118,9 @@
 	margin-top: 8px;
 	overflow: hidden;
 }
+	.new-look__user_mod .new-look__sex ul {
+		left: 129px;
+	}
 	.new-look .new-look__field {
 		overflow: hidden;
 		margin-bottom: 15px;
@@ -146,10 +149,36 @@
 		.new-look .new-look__field input.new-look__city {
 			background:url(../images/arr.png) no-repeat 98% 70%;
 		}
-		.new-look .new-look__field input.new-look__sex {
-			width: 90px;
-			background:url(../images/arr.png) no-repeat 98% 70%;
+		.new-look .new-look__sex {
+			position: relative;
+			overflow: visible;
 		}
+			.new-look__sex input {
+				width: 90px;
+				background:url(../images/arr.png) no-repeat 98% 70%;
+				cursor: pointer;
+			}
+				.new-look__sex ul {
+					display: none;
+					position: absolute;
+					top: -11px;
+					left: 102px;
+					padding: 5px;
+					width: 90px;
+					border: 3px solid #2a7b9e;
+					background: #fff;
+				}
+					.new-look__sex li {
+						height: 32px;
+						padding-left: 5px;
+						font: 20px/32px 'myriad_pro_condbold', Arial, sans-serif;
+						color: #2a7b9e;
+						cursor: pointer;
+					}
+						.new-look__sex li:hover {
+							background: #2a7b9e;
+							color: #fff;
+						}
 		.new-look .new-look__field span.new-look__mail {
 			width: auto;
 			margin-left: 115px;
@@ -237,9 +266,11 @@
 .new-look__pass {
 	margin-top: 10px;
 	padding: 11px 12px 17px 15px;
-	background:url(../images/menu-hover.png);
-	overflow: hidden;
+	background:url(../images/menu-hover.png);	
 }	
+.new-look__pass {
+	overflow: hidden;
+}
 .new-look__pass {
 	width: 514px;
 }
@@ -258,7 +289,7 @@
 			font: 20px/27px 'myriad_pro_condbold', Arial, sans-serif;
 		}
 		.new-look__dress .new-look__field p {
-			background: url(../images/arr.png) no-repeat 98% 50% #fff;
+			background: #fff;
 			font: 20px/27px 'MyriadPro-Cond', Arial, sans-serif;
 			color: #ccc;
 			cursor: pointer;
@@ -297,9 +328,83 @@
 			margin: 5px 5px 0 0;
 			width: 16px;
 			height: 16px;
-		}		
-
-
+		}
+.new-look .new-look__field_dl {
+	position: relative;
+	height: 27px;
+	overflow: visible;
+}		
+.new-look__dl {
+	position: absolute;
+	top: 0;
+	left: 90px;
+}
+	.new-look .new-look__dl_active input {		
+		position: absolute;
+		top: -3px;
+		left: -3px;
+		border: 3px solid #2a7b9e;
+		background: url(../images/arr1.png) no-repeat 98% 50% #fff;
+	}
+	.new-look .new-look__dl_active .new-look__list {
+		display: block;
+		z-index: 100;
+	}
+	.new-look__list {
+		display: none;
+		position: absolute;
+		top: 27px;
+		left:-3px;
+		width: 420px;
+		height: 240px;
+		border: 3px solid #2a7b9e;
+		border-top: none;
+		background: #fff;
+	}
+		.new-look__scr {
+			position: absolute;
+			top: 10px;
+			left: 5px;
+			width: 406px;
+			height: 225px;			
+			overflow: auto;
+			-ms-scrollbar-base-color: #dbdbdb;
+			-ms-scrollbar-arrow-color: #fff;
+			-ms-scrollbar-darkshadow-color: #fff;
+			-ms-scrollbar-shadow-color: #fff;
+			-ms-scrollbar-3dlight-color: #fff;
+			/*-ms-scrollbar-face-color: #fff;*/
+			-ms-scrollbar-highlight-color: #fff;			
+		}
+		.new-look__scr::-webkit-scrollbar {
+			width: 9px;
+		}
+		.new-look__scr::-webkit-scrollbar-thumb {
+			background: #dbdbdb;
+		}
+			.new-look__scr ul {
+				width: 385px;
+			}
+				.new-look__scr li {
+					height: 32px;
+					line-height: 32px;
+					padding-left: 5px;
+					font: 20px/32px 'myriad_pro_condbold', Arial, sans-serif;
+					color: #003146;
+				}
+					.new-look__scr li:hover {
+						background: #2a7b9e;
+						color: #fff;
+						cursor: pointer;
+					}
+		.new-look__brd {
+			position: absolute;
+			top: 0;
+			left:5px;
+			width: 410px;
+			height: 1px;
+			background: #dbdbdb;
+		}
 .look-sel-wrap {
 	position: relative;
 	height: 27px;
@@ -438,4 +543,118 @@
 		border: 0 !important;
 		width: 361px;
 	}
-	
+	.new-look__user_mod {
+		padding-bottom: 5px;
+	}
+/*scroll
+=================================================================*/
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 4px;
+	width: 9px;
+	height: 100%;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #dbdbdb;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}

@@ -112,9 +112,14 @@
 							<input class="new-look__age" type="text" value="21">
 							<span>год</span>
 						</div>
-						<div class="new-look__field">
+						<div class="new-look__field new-look__sex">
 							<span>Пол</span>
-							<input class="new-look__sex" type="text" value="девушка ">
+							<input type="text" value="девушка">
+							<ul>
+								<li>девушка</li>
+								<li>мальчик</li>
+							</ul>
+							<div class="clr"></div>
 						</div>
 						<div class="new-look__field">
 							<span>E-mail</span>
@@ -125,13 +130,85 @@
 					</div>
 					<h2><span class="new-look__step">2</span>Одежда<i>Все поля, кроме ссылки и цены обязательные</i></h2>
 					<div class="new-look__dress">
-						<div class="new-look__field">
+						<div class="new-look__field new-look__field_dl">
 							<span>Вещь<b>*</b></span>
-							<p><strong>Выбрать вещь</strong></p>
+							<div class="new-look__dl">
+								<input id="newlook-thing" class="new-look__field-bg" type="text" placeholder="Выбрать вещь" value="">	
+								<div class="new-look__list">
+									<div class="new-look__brd"></div>
+									<div class="new-look__scr">
+										<ul item-data="newlook-thing">
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+										</ul>
+									</div>
+								</div>
+							</div>							
 						</div>
-						<div class="new-look__field">
+						<div class="new-look__field new-look__field_dl">
 							<span>Бренд<b>*</b></span>
-							<p>Выбрать бренд</p>
+							<div class="new-look__dl">
+								<input id="newlook-brand" class="new-look__field-bg" type="text" placeholder="Выбрать бренд" value="">	
+								<div class="new-look__list">
+									<div class="new-look__brd"></div>
+									<div class="new-look__scr">
+										<ul item-data="newlook-brand">
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+											<li>Пальто</li>
+											<li>Парка</li>
+											<li>Платье</li>
+										</ul>
+									</div>
+								</div>
+							</div>							
 						</div>
 						<div class="new-look__field">
 							<span>Цвет<b>*</b></span>
@@ -147,6 +224,7 @@
 							<span>грн.</span>
 						</div>
 						<a href="#" class="new-look__add-dress">Добавить вещь</a>
+						<div class="clr"></div>
 					</div>
 					<div class="new-look__save">
 						<input type="submit" value="Сохранить">
