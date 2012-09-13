@@ -185,12 +185,17 @@
 	position: absolute;
 	left: 214px;
 	top: 0;
+	width: 50px;
+	overflow: hidden;
 }
 	.prev, .next {
 		color: #ddd;
 		font: normal 20px Arial, sans-serif;
 		cursor: pointer;
+		float: left;
 	}
+	.next {float: right;}
+
 	.prev:hover, .next:hover {color: #a5a2a2;}
 	.prev {padding-right: 10px;}
 	.afisha-scroll {
@@ -218,3 +223,25 @@
 			.date {
 				margin-top: 6px;
 			}
+			.afisha-v-nav .disabled {
+				display: none;
+			}
+.afisha-nav {
+	position: absolute;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	width: 105px;
+	color: #ddd;
+	font: normal 36px Arial,sans-serif;
+}
+	.afisha-nav__prev,
+	.afisha-nav__next {
+		cursor: pointer;
+		float: left;
+	}
+	.afisha-nav__next {
+		cursor: pointer;
+		float: right;
+	}
+.two-cols-wrapper_af {border-top: 1px solid #ececec;}

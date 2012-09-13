@@ -2,7 +2,17 @@ $(document).ready(function () {
 // -------------------- big banner scroll ----------------------- //
 	$('.big-banner').scrollable({
 			next:'.next',
-			prev:'.prev'
+			prev:'.prev',
+      onSeek: function() {
+        var currentItem = this.getItems().eq(this.getIndex());
+        if(currentItem.next()){
+          $('.next span').html(currentItem.next().attr('alt'));
+        }
+        if(currentItem.prev()){
+          $('.prev span').html(currentItem.prev().attr('alt'));
+        }
+
+      }
 	}).autoscroll({ autoplay: true });
 	api = $('.big-banner').data('scrollable');
 	$('.tab-big-banner a').hover(function() {
@@ -40,25 +50,20 @@ $(document).ready(function () {
 			next:'.afisha-v-nav__next',
 			prev:'.afisha-v-nav__prev'
 	});
-// -------------------- afisha scroll photo ---------------------------- //
-	$('.afisha-p').scrollable({
-			next:'.afisha-p-nav__next',
-			prev:'.afisha-p-nav__prev'
-	});
-/*
-	// Get the Scrollable control
-  var scrollable_list = $(".afisha-p'").data("scrollable");
+if ($(".afisha-v").length>0) {
+  // Get the Scrollable control
+  var scrollable_list_1 = $(".afisha-v").data("scrollable");
   // Set to the number of visible items
-  var number_list = 4;
+  var number_list = 3;
   // Handle the Scrollable control's onSeek event
-  scrollable_list.onSeek(function(event, index) {
+  scrollable_list_1.onSeek(function(event, index) {
     // Check to see if we're at the end
     if (this.getIndex() >= this.getSize() - number_list) {      // Disable the Next link
-      $(".afisha-p-nav__next").addClass("disabled");
+      $(".afisha-v-nav__next").addClass("disabled");
     }
   });
   // Handle the Scrollable control's onBeforeSeek event
-  scrollable_list.onBeforeSeek(function(event, index) {
+  scrollable_list_1.onBeforeSeek(function(event, index) {
     // Check to see if we're at the end
     if (this.getIndex() >= this.getSize() - number_list) { 
       // Check to see if we're trying to move forward
@@ -67,18 +72,49 @@ $(document).ready(function () {
         return false;
       }
     }
-  });*/
+  });
+}
+// -------------------- afisha scroll photo ---------------------------- //
+	$('.afisha-p').scrollable({
+			next:'.afisha-p-nav__next',
+			prev:'.afisha-p-nav__prev'
+	});
+	
 // -------------------- afisha scroll article ---------------------------- //
 	$('.afisha-a').scrollable({
 			next:'.afisha-a-nav__next',
 			prev:'.afisha-a-nav__prev'
 	});
+if ($(".afisha-a").length>0) {
+// Get the Scrollable control
+  var scrollable_list_2 = $(".afisha-a").data("scrollable");
+  // Set to the number of visible items
+  var number_list_2 = 4;
+  // Handle the Scrollable control's onSeek event
+  scrollable_list_2.onSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list_2) {      // Disable the Next link
+      $(".afisha-a-nav__next").addClass("disabled");
+    }
+  });
+  // Handle the Scrollable control's onBeforeSeek event
+  scrollable_list_2.onBeforeSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list_2) { 
+      // Check to see if we're trying to move forward
+      if (index > this.getIndex()) {
+        // Cancel navigation
+        return false;
+      }
+    }
+  });
+}
 // -------------------- calendar scroll ---------------------------- //
 	$('.calendar__scroll').scrollable({
 			next:'.calendar__next',
 			prev:'.calendar__prev'
 	});
-
+// --------------------- calendar popup -------------------------------//
 $('.calendar').hide();
 $('.afisha-title__date, .calendar').click(function() {
 	$('.calendar').show();
@@ -88,6 +124,7 @@ $('body').click(function() {
 	$('.calendar').hide();
 	return false;
 });
+// --------------------- video -------------------------------//
 	var video_url = $('.article__scroll-item:first a').attr("href");
 	$(".article__video iframe").attr("src", video_url);
 	$('.article__scroll-item:first a').addClass("article__video-active");
@@ -104,6 +141,11 @@ $('body').click(function() {
 		$(".article__video-descr").html(video_text);
 		return false;
 	});
+// --------------------- show/hide add comment -------------------//
+$(".add-comment").hide();
+$(".comments__write").click(function() { 
+	$(".add-comment").show();
+});
 // ---------------------- entry Tabs ---------------------------- //
 //reset
 $(".entry-slider-wrapper").hide();

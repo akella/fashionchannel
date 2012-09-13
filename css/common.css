@@ -262,7 +262,6 @@ nav {
 			width: 948px;
 			border-bottom: 3px solid #000;
 			background: url(../images/menu.png) 0 0 repeat-x;
-			overflow: hidden;
 			padding-left: 12px;
 			z-index: 100;
 		}
@@ -278,12 +277,52 @@ nav {
 					color: #fff;
 					background: none;
 				}
-		.menu__more {
-			background: url(../images/menu-more.png) 90% 50% no-repeat;
+				.menu__more {
+					background: url(../images/menu-more.png) 100% 50% no-repeat;
+					text-transform: lowercase !important;
+				}
+				.menu__more:hover {
+					background: url(../images/menu-more-hover.png) 100% 50% no-repeat !important;
+				}
+				
+		.menu__sub-2 {
+			display: none;
+			position: absolute;
+			top: 37px;
+			right: 0;
+			z-index: 3;
+			border-bottom: 3px solid #000;
+			padding: 18px 0 0;
 		}
-		.menu__more:hover {
-			background: url(../images/menu-more.png) 90% 50% no-repeat !important;
+		.menu__sub-2:before {
+			content: "";
+			position: absolute;
+			top: 10px;
+			left: 70%;
+			width: 28px;
+			height: 8px;
+			background: url(../images/menu2.png) 0 0 no-repeat;
 		}
+		.menu__sub li:hover .menu__sub-2 {
+			display: block !important;
+		}
+			.menu__sub-2 li {
+				float: none;
+				padding: 0 70px 0 20px;
+				margin: 0; 
+				background: url(../images/menu.png) 0 0 repeat;
+			}
+			.menu__sub-2 li:first-child {
+				padding-top: 10px;
+			} 
+			.menu__sub-2 li:last-child {
+				float: none;
+				padding-bottom: 10px;
+			}
+				.menu__sub-2 li a {
+					padding: 0;
+					line-height: 26px;
+				}
 /* ------------------------------------- //END Menu -------------------------------------- */
 
 /* ------------------------------------- Independent blocks ------------------------------- */
