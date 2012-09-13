@@ -1,17 +1,20 @@
 $(document).ready(function () {
 // -------------------- big banner scroll ----------------------- //
+$(".tab-big-banner__1 a").addClass("tab-big-banner__active");
 	$('.big-banner').scrollable({
 			next:'.next',
 			prev:'.prev',
       onSeek: function() {
-        var currentItem = this.getItems().eq(this.getIndex());
-        if(currentItem.next()){
-          $('.next span').html(currentItem.next().attr('alt'));
-        }
-        if(currentItem.prev()){
-          $('.prev span').html(currentItem.prev().attr('alt'));
-        }
 
+        var currentItem = this.getItems().eq(this.getIndex());
+        var index = this.getIndex();
+
+        $(".tab-big-banner a").each(function () {
+          if ($(this).attr("href") == index) {
+              $(".tab-big-banner a").removeClass("tab-big-banner__active");
+              $(this).addClass("tab-big-banner__active");
+          }
+        });
       }
 	}).autoscroll({ autoplay: true });
 	api = $('.big-banner').data('scrollable');
