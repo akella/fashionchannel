@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
 // -------------------- big banner scroll ----------------------- //
 $(".tab-big-banner__1 a").addClass("tab-big-banner__active");
 	$('.big-banner').scrollable({
@@ -265,22 +266,38 @@ $('.new-look__scr li').click(function() {
 
                 var leftPos = parseInt(e.pageX - offset.left);
                 var topPos = parseInt(e.pageY - offset.top);
-                alert(''+leftPos+'____'+ topPos+'');
-                if (leftPos < 0 || topPos < 0 || leftPos > obj.width() || topPos > obj.height()) {
-                    target.hide();
-                }
-                else {
-                    target.show();
 
-                    leftPos = String(((e.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
-                    topPos = String(((e.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
-                    target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+                var canvas = document.getElementById("mycanvas");
+                var context = canvas.getContext("2d");
+                var img = new Image();   
+                img.onload = function(){
+                    context.drawImage(img, 0, 0);
+                };
+                img.src = 'images/new-look.jpg'; 
+                var canvasOffset = $(canvas).offset();
+                var canvasX = leftPos;
+                var canvasY = topPos;
+                var imageData = context.getImageData(canvasX, canvasY, 1, 1);
+                var pixel = imageData.data;
+                var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", "+pixel[3]+")";
+                $('#preview').css('backgroundColor', pixelColor);
+                //data = context.getImageData(x, y, 1, 1).data;
+                //alert(''+leftPos+'____'+ topPos+'');
+                // if (leftPos < 0 || topPos < 0 || leftPos > obj.width() || topPos > obj.height()) {
+                //     target.hide();
+                // }
+                // else {
+                //     target.show();
 
-                    leftPos = String(e.pageX - target.width() / 2);
-                    topPos = String(e.pageY - target.height() / 2);
-                    target.css({ left: leftPos - 479 + 'px', top: topPos - 11 + 'px' });
-                }
-            }
+                //     leftPos = String(((e.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
+                //     topPos = String(((e.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
+                //     target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+
+                //     leftPos = String(e.pageX - target.width() / 2);
+                //     topPos = String(e.pageY - target.height() / 2);
+                //     target.css({ left: leftPos - 479 + 'px', top: topPos - 11 + 'px' });
+                // }
+            }            
         });
     };
 })(jQuery);
@@ -290,30 +307,12 @@ if ($("#lupa").length > 0) {
 
 // ---------------------- Pipetka ---------------------------- //
 
-    var canvas = document.getElementById("mycanvas");
-    var context = canvas.getContext("2d");
- 	var img = new Image();   
- 	img.onload = function(){
-	    context.drawImage(img, 0, 0);
-	};
- 	img.src = 'images/new-look.jpg'; 
-
-    $('#mycanvas').mousemove(function(e) { // Обработчик события mousemove (движение мыши)
-        var canvasOffset = $(canvas).offset();
-        var canvasX = Math.floor(e.pageX - canvasOffset.left);
-        var canvasY = Math.floor(e.pageY - canvasOffset.top);
-        var imageData = context.getImageData(canvasX, canvasY, 1, 1);
-        var pixel = imageData.data;
-        var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", "+pixel[3]+")";
-        $('#preview').css('backgroundColor', pixelColor);
-
-    });
-    console.log(imageData);
+  
 
   
 
 
-	data = context.getImageData(x, y, 1, 1).data;
+
 
 
 
