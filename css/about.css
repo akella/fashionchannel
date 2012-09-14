@@ -308,6 +308,7 @@
 		-moz-box-shadow: 0px 0px 8px #b6d2de;
 		box-shadow: 0px 0px 8px #b6d2de;
 		background:url(../images/schedule-slide.png) no-repeat 0 0;
+		z-index: 100;
 		cursor: pointer;
 	}
 	.schedule__days {
@@ -373,15 +374,25 @@
 			height: 8px;
 			margin-left: -14px;
 			background:url(../images/days-curr-tr.png) no-repeat 0 0;
-		}
+		}		
 	.schedule__times {
 		position: relative;
 		margin-top: 25px;		
 		background:url(../images/times-bg.jpg);
 	}
+		.schedule__times strong {
+			position: absolute;
+			top: 0;
+			width: 9px;
+			height: 60px;
+			background:url(../images/pr-time.png) no-repeat 0 0;
+			z-index: 20;
+		}
 		.schedule__times ul {
+			position: relative;
 			height: 33px;
 			margin-right: -10px;
+			z-index: 40;
 		}
 			.schedule__times li {
 				float: left;
@@ -406,15 +417,34 @@
 	margin-bottom: 15px;
 }
 	.programm li {
-		width:382px;
-		padding-left: 18px;
-		height: 32px;
-		font: 18px/32px 'myriad_pro_condbold', Arial, sans-serif;
 		color: #003146;
+		overflow: hidden;		
 	}
 		.programm li span {
-			margin-right: 30px;
-			font: 14px/3px Helvetica, Arial, sans-serif;
+			float: left;
+			width: 69px;
+			height: 32px;
+			text-align: center;
+			font: 14px/32px Helvetica, Arial, sans-serif;
+		}
+		.programm li strong {
+			float: left;
+			height: 32px;
+			padding: 0 30px 0 15px;
+			font: 18px/32px 'myriad_pro_condbold', Arial, sans-serif;
+			cursor: pointer;
+		}
+		.programm li b {
+			float: left;
+			display: none;
+			height: 32px;
+			margin-left: 7px;
+			font: normal 8px/36px 'Helvetica',sans-serif;
+			color: #76A8BE;
+			text-transform: uppercase;
+		}
+		.programm li i {
+			font-style: normal;
 		}
 	.programm .programm__last {
 		color: #717171;
@@ -423,6 +453,56 @@
 		background:url(../images/prg-cur.png) no-repeat 0 0;
 		color: #fff;
 	}
+		.programm .programm__curr b {
+			display: block;
+		}
+		.programm .programm__curr span, .programm .programm__curr strong {
+			background: none;
+		}
+	.programm .programm__active {
+		
+	}
+		.programm__active span {
+			background:url(../images/pr-sp.jpg) no-repeat 0 0;
+		}
+		.programm__active strong {
+			background:url(../images/pr-st.png) no-repeat 100% 0;
+		}
+		.programm__active i:hover {
+			border-bottom: 1px dashed #92a3ac;
+		}
+		.programm__info {
+			display: none;
+			position: relative;
+			margin: 10px 0;
+			padding-left: 145px;
+		}
+			.programm__info img {
+				position: absolute;
+				top: 0;
+				left: 83px;
+			}
+			.programm__info p {
+				margin: 0 0 10px 0;
+				font: normal 13px/17px 'Helveticaupright', 'Helvetica', sans-serif;
+				color: #000;
+			}
+				.programm .programm__info p span {
+					float: left;
+					width: auto;
+					height: 20px;
+					line-height: 20px;
+					padding: 0 7px;
+					margin: 0 0 5px 0;
+					background: none;
+					font-size: 12px;
+				}
+				.programm .programm__info .last {
+					color: #8f8f8f;
+				}
+				.programm .programm__info .curr {
+					background: #ececec;
+				}
 .now-ether {
 	margin: 30px 0;
 }

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+var pixelColor;
 // -------------------- big banner scroll ----------------------- //
 $(".tab-big-banner__1 a").addClass("tab-big-banner__active");
 	$('.big-banner').scrollable({
@@ -209,17 +209,30 @@ $('.new-look__sex li').click(function() {
     $('.new-look__sex ul').css('display', 'none');
 });
 $('.new-look__dl').toggle(function() {
-  $('.new-look__dl').removeClass('new-look__dl_active')
-  $(this).addClass('new-look__dl_active');
+    $('.new-look__dl').removeClass('new-look__dl_active')
+    $(this).addClass('new-look__dl_active');
 }, function() {
-  $('.new-look__dl').removeClass('new-look__dl_active')
-  $(this).removeClass('new-look__dl_active');
+    $('.new-look__dl').removeClass('new-look__dl_active')
+    $(this).removeClass('new-look__dl_active');
 });
 $('.new-look__scr li').click(function() {
     nlid = $(this).parent().attr('item-data');
     nll = $(this).text();
     $('#' + nlid).attr('value', nll);
 });
+// ---------------------- programm list ---------------------------- //
+$('.programm strong').toggle(function() {
+    $('.programm__info').hide();
+    $('.programm li').removeClass('programm__active')
+    $(this).next().next().next().show();
+    $(this).parent().addClass('programm__active');
+}, function() {
+    $('.programm__info').hide();
+    $('.programm li').removeClass('programm__active')
+    $(this).next().next().next().hide();
+    $(this).parent().removeClass('programm__active');
+});
+
 
 // ---------------------- Lupa ------------------------------- //
 (function ($) {
@@ -281,28 +294,32 @@ $('.new-look__scr li').click(function() {
                 var pixel = imageData.data;
                 var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", "+pixel[3]+")";
                 $('#preview').css('backgroundColor', pixelColor);
-                //data = context.getImageData(x, y, 1, 1).data;
-                //alert(''+leftPos+'____'+ topPos+'');
-                // if (leftPos < 0 || topPos < 0 || leftPos > obj.width() || topPos > obj.height()) {
-                //     target.hide();
-                // }
-                // else {
-                //     target.show();
-
-                //     leftPos = String(((e.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
-                //     topPos = String(((e.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
-                //     target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
-
-                //     leftPos = String(e.pageX - target.width() / 2);
-                //     topPos = String(e.pageY - target.height() / 2);
-                //     target.css({ left: leftPos - 479 + 'px', top: topPos - 11 + 'px' });
-                // }
+                $('.new-look__pic div').css('border-color', pixelColor)             
+                if (leftPos < 0 || topPos < 0 || leftPos > obj.width() || topPos > obj.height()) {
+                    target.hide();
+                }
+                else {
+                    target.show();
+                    leftPos = String(((e.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
+                    topPos = String(((e.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
+                    target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+                    leftPos = String(e.pageX - target.width());
+                    topPos = String(e.pageY - target.height());
+                    target.css({ left: leftPos - 403 + 'px', top: topPos - 173 + 'px' });
+                    // target.show();
+                    // leftPos = String(((e.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
+                    // topPos = String(((e.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
+                    // target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+                    // leftPos = String(e.pageX - target.width() / 2);
+                    // topPos = String(e.pageY - target.height() / 2);
+                    // target.css({ left: leftPos - 413 + 'px', top: topPos - 266 + 'px' });
+                }
             }            
         });
     };
 })(jQuery);
 if ($("#lupa").length > 0) {
-    $("#lupa").imageLens({ lensSize: 180, borderSize: 10, borderColor: "#fff" });
+    $("#lupa").imageLens({ lensSize: 180, borderSize: 10});
 };
 
 // ---------------------- Pipetka ---------------------------- //
