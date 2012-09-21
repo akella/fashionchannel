@@ -233,26 +233,33 @@ nav {
 }
 	.menu li {
 		float: left;
-		margin-right: 11px;
 	}
+		.menu__video {width: 120px;}
+		.menu__publish {width: 175px;}
+		.menu__gallery {width: 135px;}
+		.menu__afisha {width: 130px;}
+		.menu__fpedia {width: 180px;}
+		.menu__looks {width: 105px;}
+		.menu__about {width: 115px;}
 		.menu a {
+			display: block;
+			height: 41px;
+			line-height: 41px;
+			text-align: center;
 			color: #003146;
 			font: normal 24px/44px 'myriad_pro_condbold';
-			text-transform: uppercase;
-			padding: 8px 25px 6px;
+			text-transform: uppercase;			
 		}
 		.menu__active {
 			color: #fff !important;
-			background: url(../images/menu.png) 0 0 repeat-x;
+			background: url(../images/menu.png);
 		}
 		.menu__active:hover {
-			background: url(../images/menu.png) 0 0 repeat-x !important;
+			background: url(../images/menu.png) !important;
 		}
 		.menu a:hover {
-			background: url(../images/menu-hover.png) 0 0 repeat-x;
-		}
-		.menu li:hover .menu__sub,
-		.menu__sub:hover {display: block;}
+			background: url(../images/menu-hover.png);
+		}		
 		.menu__sub {
 			display: none;
 			position: absolute;
@@ -269,22 +276,23 @@ nav {
 				.menu__sub a {
 					color: #76a8be;
 					font-size: 18px;
+					height: 37px;
 					line-height: 37px;
-					padding: 8px 13px;
+					padding: 0 13px;
 					text-transform: capitalize;
 				}
 				.menu__sub a:hover {
 					color: #fff;
 					background: none;
 				}
-				.menu__more {
-					background: url(../images/menu-more.png) 100% 50% no-repeat;
+				.menu__sub .menu__more {
+					padding: 0 30px 0 13px;
+					background: url(../images/menu-more.png) 80% 50% no-repeat;
 					text-transform: lowercase !important;
 				}
 				.menu__more:hover {
-					background: url(../images/menu-more-hover.png) 100% 50% no-repeat !important;
-				}
-				
+					background: url(../images/menu-more-hover.png) 80% 50% no-repeat !important;
+				}				
 		.menu__sub-2 {
 			display: none;
 			position: absolute;

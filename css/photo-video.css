@@ -126,8 +126,23 @@
 		padding: 10px;
 	}
 		.pop-albums__item_c1 {background: #126288;}
+			.pop-albums__item_c1 .label {
+				margin: 0 0 9px -10px !important;
+				background: #4485a4;
+				color: #fff;
+			}
 		.pop-albums__item_c2 {background: #184459;}
+			.pop-albums__item_c2 .label {
+				margin: 0 0 9px -10px !important;
+				background: #496f80;
+				color: #fff;
+			}
 		.pop-albums__item_c3 {background: #0c2c3d;}
+			.pop-albums__item_c3 .label {
+				margin: 0 0 9px -10px !important;
+				background: #405d6b;
+				color: #fff;
+			}
 		.pop-albums__item img {
 			margin-bottom: 10px;
 		}

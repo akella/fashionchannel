@@ -28,26 +28,23 @@
 				}
 					.tab-big-banner li {
 						float: left;
-						border-left: 1px solid #ececec;
+						width: 20%;				
+						text-overflow: hidden;	
 					}
-						.tab-big-banner__1 {
-							width: 155px;
+						.tab-big-banner__1 a {
 							border-left: 0 !important;
 						}
-						.tab-big-banner__2 {width: 199px;}
-						.tab-big-banner__3 {width: 174px;}
-						.tab-big-banner__4 {width: 172px;}
-						.tab-big-banner__5 {width: 256px;}
+						.tab-big-banner__2 {width: 20%;}
+						.tab-big-banner__3 {width: 20%;}
+						.tab-big-banner__4 {width: 20%;}
+						.tab-big-banner__5 {width: 20%;}
 							.tab-big-banner a {
 								font: normal 18px/37px 'myriad_pro_condbold';
 								color: #003146;
 								display: block;
 								height: 39px;
+								border-left: 1px solid #ececec;
 								text-align: center;
-								-webkit-transition: 0.7s;
-								-moz-transition: 0.7s;
-								-o-transition: 0.7s;
-								transition: 0.7s;
 							}
 							.tab-big-banner__active,
 							.tab-big-banner a:hover {
@@ -99,7 +96,7 @@
 	}
 	.index-right-wrapper {
 		float: left;
-		width: 319px;
+		width: 318px;
 		padding-top: 5px;
 	}
 	.index-col-wrapper {
@@ -108,7 +105,7 @@
 	}
 		.index-col {
 			float: left;
-			width: 319px;
+			width: 318px;
 		}
 		.index-col_center {
 			float: right;
@@ -142,8 +139,8 @@
 							color: #003146;
 							padding: 3px 9px 3px 0;
 						}
-						.entry__title-level-3 a:hover {
-							color: #fff;
+						.entry__title-level-3-active {
+							color: #fff !important;
 							background: #1175a0;
 						}
 					.date {

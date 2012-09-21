@@ -52,10 +52,35 @@
 <!-- BEGIN .menu -->
 <nav>
 	<ul class="menu">
-		<li><a href="#">видео</a></li>
-		<li><a href="#" class="menu__active">публикации</a></li>
-		<li><a href="#">галерея</a></li>
-		<li>
+		<li class="menu__video">
+			<a href="#">видео</a>
+			<ul class="menu__sub">
+				<li><a href="#">Art De Vivre </a></li>
+				<li><a href="#">Showroom</a></li>
+				<li><a href="#">Beauty&amp;Style</a></li>
+				<li><a href="#">UF Week diary </a></li>
+				<li><a href="#">Backstage </a></li>
+				<li><a href="#">Photo shoots </a></li>
+				<li><a href="#">People&amp;Parties</a></li>
+				<li>
+					<a href="#" class="menu__more">еще</a>
+					<ul class="menu__sub-2">
+						<li><a href="#">Trendsetter</a></li>
+						<li><a href="#">Affiche</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Designer</a></li>
+						<li><a href="#">Top Brands</a></li>
+						<li><a href="#">Defile</a></li>
+						<li><a href="#">Gourmet</a></li>
+						<li><a href="#">Art&amp;Design</a></li>
+						<li><a href="#">Voyage</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="menu__publish"><a class="menu__active" href="#">публикации</a></li>
+		<li class="menu__gallery"><a href="#">галерея</a></li>
+		<li class="menu__afisha">
 			<a href="#">афиша</a>
 			<ul class="menu__sub">
 				<li><a href="#">Все</a></li>
@@ -65,11 +90,30 @@
 				<li><a href="#">Фестиваль</a></li>
 				<li><a href="#">Презентация</a></li>
 				<li><a href="#">Прошедшие</a></li>
-			</ul>                                                                             
+			</ul>                                                                         
 		</li>
-		<li><a href="#">fashionpedia</a></li>
-		<li><a href="#">луки </a></li>
-		<li><a href="#">о нас</a></li>
+		<li class="menu__fpedia"><a href="#">fashionpedia</a></li>
+		<li class="menu__looks">
+			<a href="#">луки</a>
+			<ul class="menu__sub">
+				<li><a href="#">Популярные</a></li>
+				<li><a href="#">Street Looks</a></li>
+				<li><a href="#">Evening Looks</a></li>
+				<li><a href="#">Тренды</a></li>
+			</ul>
+		</li>
+		<li class="menu__about">
+			<a href="#">о нас</a>
+			<ul class="menu__sub">
+				<li><a href="#">Команда </a></li>
+				<li><a href="#">Программа</a></li>
+				<li><a href="#">Контроль качества</a></li>
+				<li><a href="#">Контактная информация</a></li>
+				<li><a href="#">Карта сайта</a></li>
+				<li><a href="#">Рекламодателям</a></li>
+				<li><a href="#">Вакансии</a></li>
+			</ul>
+		</li>
 	</ul>
 </nav>                                                                   
 <!-- END .menu -->	
@@ -93,66 +137,26 @@
 			<div class="left-col">
 				<div class="left-col__wrapper left-col__wrapper_article">
 					<!-- BEGIN .gallery-news -->
-					<div class="gallery-news" id="gallery">
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
-						<a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a><a href="images/slide3-big.jpg">
-							<img src="images/slide3-mini.jpg" alt="">
-						</a>
+					<div class="gallery-news">
+						<div class="gallery-news__pic">
+							<img src="http://flickholdr.com/620/430" alt="">
+						</div>
+						<div class="gallery-news__scr">
+							<span class="gallery-news__prev"></span>
+							<span class="gallery-news__next"></span>
+							<div class="gallery-news__slide">								
+								<div class="gallery-news__items">
+									<a href="http://placesheen.com/620/430"><img src="http://flickholdr.com/184/140"></a>
+									<a href="http://flickholdr.com/620/430"><img src="http://flickholdr.com/184/140"></a>
+									<a href="http://flickholdr.com/620/430"><img src="http://flickholdr.com/184/140"></a>
+									<a href="http://flickholdr.com/620/430"><img src="http://flickholdr.com/184/140"></a>
+									<a href="http://flickholdr.com/620/430"><img src="http://flickholdr.com/184/140"></a>
+									<a href="http://flickholdr.com/620/430"><img src="http://flickholdr.com/184/140"></a>
+									<a href="http://flickholdr.com/620/430"><img src="http://flickholdr.com/184/140"></a>
+									<a href="http://flickholdr.com/620/430"><img src="http://flickholdr.com/184/140"></a>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- END .gallery-news -->
 					<p>В Парижі на Вандомській площі відчинив свої двері перший бутік Louis Vuitton, в якому представлені виключно прикраси і годинники. За словами президента Louis Vuitton Ів Карселя, в бутіку буде знаходитись майстерня, де ювеліри Будинку стануть працювати над новими колекціями.</p>

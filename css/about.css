@@ -97,13 +97,16 @@
 		box-shadow: 0px -8px 8px #e4f1f5 inset;
 		background:url(../images/team-bg.png);
 	}
+		.team__all .disabled {
+				display: none;
+			}
 		.team__nav {
 			position: absolute;
 			top: 75px;
 			width: 17px;
 			height: 30px;
 			cursor: pointer;
-		}
+		}			
 			.team__nav-prev {
 				left: 14px;
 				background:url(../images/team-nav.png) no-repeat 0 0;
@@ -222,7 +225,11 @@
 					font: bold 15px/32px 'Conv_DINCondensedC', Arial, sans-serif;
 					color: #fff;
 					text-transform: uppercase;
+					cursor: pointer;
 				}
+					.quality-control__send input:hover {
+						background: #479bbf;
+					}
 	.quality-control__user {
 		float: left;
 		width: 280px;
@@ -855,7 +862,14 @@
 			color: #fff;
 			text-align: center;
 			text-transform: uppercase;
+			cursor: pointer;
 		}
+		.vacancy-field:hover .vacancy-field__obzor {
+			background: #3ea7d4;
+		}
+			.vacancy-form__resume .vacancy-field i:hover {
+				background: #3ea7d4;
+			}
 		.vacancy-form__resume .vacancy-field select {
 			position: absolute;
 			top: 0;
@@ -913,6 +927,9 @@
 		color: #fff;
 		text-transform: uppercase;
 	}
+		.vacancy-form .send-vacancy:hover {
+			background: #479bbf;
+		}
 	.vacancy-list ul {
 
 	}

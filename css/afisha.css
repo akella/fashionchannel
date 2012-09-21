@@ -206,7 +206,7 @@
 		margin: 0 auto;
 	}
 	.afisha-p {
-		height: 129px;
+		height: 130px;
 		margin-bottom: 26px;
 	}
 		.afisha-scroll__items {
@@ -214,7 +214,10 @@
 			width: 2000em;
 			overflow: hidden;
 		}
-			.afisha-scroll_item {float: left;}
+			.afisha-scroll__items a {
+				float: left;
+				margin-right: 5px;
+			}
 			.afisha-scroll__items 
 			.pop-news__img {
 				margin-bottom: 2px;

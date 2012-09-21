@@ -418,11 +418,27 @@
 	background: url(../images/menu-hover.png) 0 0 repeat;
 }
 	.select {
+		position: relative;
+		float: left;
+		margin-right: 4px;
 		width: 129px;
 		height: 27px;
 		font: normal 13px 'Conv_DINCondensedC', Arial, sans-serif;
 		text-transform: uppercase;
+		background: url(../images/arr2.png) no-repeat 90% 50% #fff;
 	}
+		.select span {
+			line-height: 27px;
+			margin-left: 9px;
+		}
+		.select select {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 129px;
+			height: 27px;
+			opacity: 0;
+		}
 	.dwnld-look-btn {
 		position: absolute;
 		top: 50%;

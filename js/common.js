@@ -1,4 +1,24 @@
 $(document).ready(function () {
+
+// -------------------- main menu top ----------------------- //
+$('.menu__active').hover(
+  function () {$(this).next().css('display', 'block');},
+  function () {$(this).next().css('display', 'none');}
+);
+$('.menu__sub').hover(
+  function () {$(this).css('display', 'block');},
+  function () {$(this).css('display', 'none');}
+);
+$('.index-cols .entry__title-level-3').hover(
+  function () {$(this).children('a').addClass('entry__title-level-3-active');},
+  function () {$(this).children('a').removeClass('entry__title-level-3-active');}
+);
+$('.menu__sub').hover(
+  function () {$(this).css('display', 'block');},
+  function () {$(this).css('display', 'none');}
+);
+
+
 var pixelColor;
 // -------------------- big banner scroll ----------------------- //
 $(".tab-big-banner__1 a").addClass("tab-big-banner__active");
@@ -45,11 +65,59 @@ $(".tab-big-banner__1 a").addClass("tab-big-banner__active");
 			next:'.team__nav-next',
 			prev:'.team__nav-prev'
 	});
+if ($(".team__slider").length>0) {
+  // Get the Scrollable control
+  var scrollable_list_1 = $(".team__slider").data("scrollable");
+  // Set to the number of visible items
+  var number_list = 5;
+  // Handle the Scrollable control's onSeek event
+  scrollable_list_1.onSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list) {      // Disable the Next link
+      $(".team__nav-next").addClass("disabled");
+    }
+  });
+  // Handle the Scrollable control's onBeforeSeek event
+  scrollable_list_1.onBeforeSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list) { 
+      // Check to see if we're trying to move forward
+      if (index > this.getIndex()) {
+        // Cancel navigation
+        return false;
+      }
+    }
+  });
+} 
 // -------------------- article scroll video ---------------------------- //
 	$('.article__scroll').scrollable({
 			next:'.article__scroll-next',
 			prev:'.article__scroll-prev'
 	});
+  if ($(".article__scroll").length>0) {
+  // Get the Scrollable control
+  var scrollable_list_1 = $(".article__scroll").data("scrollable");
+  // Set to the number of visible items
+  var number_list = 4;
+  // Handle the Scrollable control's onSeek event
+  scrollable_list_1.onSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list) {      // Disable the Next link
+      $(".article__scroll-next").addClass("disabled");
+    }
+  });
+  // Handle the Scrollable control's onBeforeSeek event
+  scrollable_list_1.onBeforeSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list) { 
+      // Check to see if we're trying to move forward
+      if (index > this.getIndex()) {
+        // Cancel navigation
+        return false;
+      }
+    }
+  });
+}
 // -------------------- afisha scroll video ---------------------------- //
 	$('.afisha-v').scrollable({
 			next:'.afisha-v-nav__next',
@@ -84,7 +152,30 @@ if ($(".afisha-v").length>0) {
 			next:'.afisha-p-nav__next',
 			prev:'.afisha-p-nav__prev'
 	});
-	
+if ($(".afisha-p").length>0) {
+  // Get the Scrollable control
+  var scrollable_list_1 = $(".afisha-p").data("scrollable");
+  // Set to the number of visible items
+  var number_list = 3;
+  // Handle the Scrollable control's onSeek event
+  scrollable_list_1.onSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list) {      // Disable the Next link
+      $(".afisha-p-nav__next").addClass("disabled");
+    }
+  });
+  // Handle the Scrollable control's onBeforeSeek event
+  scrollable_list_1.onBeforeSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list) { 
+      // Check to see if we're trying to move forward
+      if (index > this.getIndex()) {
+        // Cancel navigation
+        return false;
+      }
+    }
+  });
+}
 // -------------------- afisha scroll article ---------------------------- //
 	$('.afisha-a').scrollable({
 			next:'.afisha-a-nav__next',
@@ -114,6 +205,39 @@ if ($(".afisha-a").length>0) {
     }
   });
 }
+// -------------------- gallery-news scroll ---------------------------- //
+$('.gallery-news__slide').scrollable({
+    next:'.gallery-news__next',
+    prev:'.gallery-news__prev'
+});
+if ($(".gallery-news__slide").length>0) {
+// Get the Scrollable control
+  var scrollable_list_2 = $(".gallery-news__slide").data("scrollable");
+  // Set to the number of visible items
+  var number_list_2 = 3;
+  // Handle the Scrollable control's onSeek event
+  scrollable_list_2.onSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list_2) {      // Disable the Next link
+      $(".gallery-news__next").addClass("disabled");
+    }
+  });
+  // Handle the Scrollable control's onBeforeSeek event
+  scrollable_list_2.onBeforeSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list_2) { 
+      // Check to see if we're trying to move forward
+      if (index > this.getIndex()) {
+        // Cancel navigation
+        return false;
+      }
+    }
+  });
+}
+$('.gallery-news__items a').click(function() {
+  gnia = $(this).attr('href');  
+  $('.gallery-news__pic img').attr('src', gnia);
+});
 // -------------------- calendar scroll ---------------------------- //
 	$('.calendar__scroll').scrollable({
 			next:'.calendar__next',
@@ -157,14 +281,14 @@ $(".entry-slider-wrapper").hide();
 $(".entry-tabs li:first a").addClass("entry-tabs__active").show();  
 $(".entry-slider-wrapper:first").show();
 // main
-  $(".entry-tabs a").click(function() { 
-      $(".entry-tabs a").removeClass("entry-tabs__active");  
-      $(this).addClass("entry-tabs__active");  
-      $(".entry-slider-wrapper").hide();  
-      var activeTab = $(this).attr("href");  
-      $(activeTab).show();  
-      return false; 
-  });
+$(".entry-tabs a").click(function() { 
+    $(".entry-tabs a").removeClass("entry-tabs__active");  
+    $(this).addClass("entry-tabs__active");  
+    $(".entry-slider-wrapper").hide();  
+    var activeTab = $(this).attr("href");  
+    $(activeTab).show();  
+    return false; 
+});
 
 // ----------------------- ON AIR popup -------------------------- //
 $(".header__on-air").click(function() { 
