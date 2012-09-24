@@ -446,8 +446,38 @@ if ($("#lupa").length > 0) {
     $("#lupa").imageLens({ lensSize: 180, borderSize: 10});
 };
 
-// ---------------------- Pipetka ---------------------------- //
-
+// ---------------------- tv programm ---------------------------- //
+$(".schedule__slide").draggable({
+  containment:".schedule__slide-out",
+   scroll:false,
+    stop: function(){
+      drg = $('.schedule__slide').position().left;
+      if (drg < 70) {
+        alert('Время от 05:00 до 8:00');
+      };
+      if (drg >= 70 && drg < 210) {
+        alert('Время от 8:00 до 11:00');
+      };
+      if (drg >= 210 && drg < 330) {
+        alert('Время от 11:00 до 14:00');
+      };
+      if (drg >= 330 && drg < 460) {
+        alert('Время от 14:00 до 17:00');
+      };
+      if (drg >= 460 && drg < 590) {
+        alert('Время от 17:00 до 20:00');
+      };
+      if (drg >= 590 && drg < 720) {
+        alert('Время от 20:00 до 23:00');
+      };
+      if (drg >= 720 && drg < 810) {
+        alert('Время от 23:00 до 01:00');
+      };
+      if (drg >= 810) {
+        alert('Время от 01:00 до 03:00');
+      };
+    }
+});
   
 
   
