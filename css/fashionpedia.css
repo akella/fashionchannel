@@ -1,5 +1,7 @@
-.menu__fashion-people {
-	background: url(../img/u.png) 0 0 no-repeat;
+.menu__sub .menu__fashion-people,
+.menu__sub .menu__fashion-people:hover {
+	padding-left: 22px;
+	background: url(../images/u.png) 0 11px no-repeat;
 }
 .search-head_fashion {
 	box-shadow: none;
@@ -12,12 +14,42 @@
 		float: left;
 		width: 540px;
 	}
-	.search-form_fashion .search-form__input {
+	.search-form_fashion \
+	.search-form__input {
 		width: 82%;
 	}
-	.search-diapazon {
+	.search-form_s{
+		float: left;
+		width: 53px;
+		padding-right: 0;
+	}
+	.search-form_s 
+	.search-form__input {
+		width: 22px;
+		padding: 0;
+	}
+	.search-form_s 
+	.search-form__submit {
+		right: 0;
+		width: 33px;
+		background-position: 50% 50%;
+	}
+	.search-letter {
 		float: right;
 		margin-top: 10px;
+		width: 41px;
+		height: 31px;
+		overflow: hidden;
+	}
+	.search-letter_width {
+		width: 546px;
+	}
+	.search-letter_width
+	.search-letter__diapazon {
+		width: 34px;
+	}
+	.search-letter__diapazon {
+		float: left;
 		width: 41px;
 		height: 31px;
 		color: #fff;
@@ -27,6 +59,19 @@
 		background: #002d41;
 		background: rgba(0,45,65,0.9);
 	}
+	.search-letter__list {
+		float: left;
+		height: 31px;
+		width: 502px;
+		background: #fff;
+		padding: 0 0 0 10px;
+	}
+		.search-letter__list a {
+			display: inline-block;
+			margin-right: 7px;
+			font-size: 14px;
+			line-height: 31px;
+		}
 	.search-title {
 		margin: 12px 0 0 -10px;
 		padding-left: 9px;
