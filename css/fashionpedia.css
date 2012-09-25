@@ -164,3 +164,32 @@
 				font: normal 18px/15px 'myriad_pro_condbold';
 				margin-bottom: 8px;
 			}
+.last-albums_s {
+	margin: 0 0 -43px 10px;
+}
+	.last-albums_s .h2 {
+		margin-top: 16px;
+	}
+	.last-albums_s 
+	.last-albums__item-b {
+		width: 176px;
+		height: 123px;
+		margin-bottom: 74px;
+		margin-right: 33px;
+	}
+	.last-albums_s 
+	.last-albums__pic {
+		height: 121px;
+	}
+	.last-albums_s 
+	.last-albums__pic span
+	{
+		height: 117px;
+		width: 170px;
+	}
+	.h3_same {
+		height: 48px;
+		line-height: 48px;
+		padding-left: 10px;
+		background: #E7F2F7 url(../images/menu-hover.png) 0 0 repeat;
+	}
