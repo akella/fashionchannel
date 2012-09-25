@@ -681,6 +681,15 @@ nav {
 	height: 72px;
 	line-height: 72px !important;
 }
+.pagin_small {
+	margin-top: 45px;
+	height: 63px;
+}
+	.pagin_small .pagin_prev, 
+	.pagin_small .pagin_next {
+		width: 181px;
+		line-height: 62px;
+	}
 /* video */
 .video-items {
 	overflow: hidden;
@@ -1078,6 +1087,7 @@ nav {
 }
 .two-cols-wrapper_vacancy {
 	border: 1px solid #ececec;
+	background-position: 637px 0;
 }
 .two-cols-wrapper_schedule {
 	background:url(../images/two-col-schedule.jpg) repeat-x;
@@ -1365,6 +1375,11 @@ nav {
 *+html .header__input {
 	width: 263px;
 	line-height: 15px;
+}
+*:first-child+html .search-form__input {
+	width: 708px;
+	line-height: 30px;
+	height: 30px;
 }
 *+html .last-albums__item-b,
 *+html .footer__friends li,

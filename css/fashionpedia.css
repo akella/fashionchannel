@@ -1,0 +1,40 @@
+.search-head_fashion {
+	box-shadow: none;
+	padding: 0 10px 0 0;
+	background: url(../images/filter3.png) 0 0 repeat;
+	overflow: hidden;
+
+}
+	.search-form_fashion {
+		float: left;
+		width: 540px;
+	}
+	.search-form_fashion .search-form__input {
+		width: 82%;
+	}
+	.search-diapazon {
+		float: right;
+		margin-top: 10px;
+		width: 41px;
+		height: 31px;
+		color: #fff;
+		text-align: center;
+		line-height: 31px;
+		font-size: 15px;
+		background: #002d41;
+		background: rgba(0,45,65,0.9);
+	}
+	.search-title {
+		margin: 12px 0 0 -10px;
+		padding-left: 9px;
+		color: #003146;
+		background: #E7F2F7 url(../images/menu-hover.png) 0 0 repeat;
+		font: normal 18px/34px 'myriad_pro_condbold';
+	}
+	.two-cols-wrapper_vacancy 
+	.search-result__img {
+		width: 110px;
+	}.two-cols-wrapper_vacancy 
+	.search-result__block {
+		margin-right: 110px;
+	}
