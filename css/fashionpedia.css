@@ -92,3 +92,75 @@
 	.search-result__block {
 		margin-right: 110px;
 	}
+
+.index-cols_mod {
+	border-top: 1px solid #ececec;
+}
+	.index-left-search {
+		padding: 10px;
+		background: #fff;
+	}
+
+.letters {
+	height: 29px;
+	padding: 8px 10px 0;
+	overflow: hidden;
+	background: #E7F2F7 url(../images/menu-hover.png) 0 0 repeat;
+	-webkit-box-shadow: inset 0 1px 2px #c1d4de;
+	-moz-box-shadow: inset 0 1px 2px #c1d4de;
+	-o-box-shadow: inset 0 1px 2px #c1d4de;
+	box-shadow: inset 0 1px 2px #c1d4de;
+}
+	.letter__list {
+		float: left;
+		width: 909px;
+		height: 23px;
+		line-height: 23px;
+		text-align: center;
+	}
+		.letter__list a {
+			display: inline-block;
+			margin-right: 19px;
+		}
+		.letter__inact {
+			color: #fff;
+		}
+	.letters 
+	.search-letter__diapazon {
+		float: right;
+		width: 31px;
+		height: 23px;
+		line-height: 23px;
+	}
+.best-week {
+	background: url(../images/filter.png) 0 0 repeat;
+	padding: 11px;
+}
+	.best-week__wrapper {
+		background: #fff;
+		padding: 7px 5px 11px 10px;
+	}
+		.best-week__item {
+			overflow: hidden;
+			margin-bottom: 27px;
+		}
+			.best-week__wrapper
+			.h3 {
+				margin-bottom: 13px;
+			}
+			.best-week__img-link {
+				float: left;
+				margin-right: 8px;
+				width: 87px;
+				height: 65px;
+				border: 1px solid #dadada;	
+			}
+			.best-week__text {
+				overflow: hidden;
+				font-size: 13px;
+			}
+			.best-week__text h4 {
+				color: #003146;
+				font: normal 18px/15px 'myriad_pro_condbold';
+				margin-bottom: 8px;
+			}

@@ -150,6 +150,9 @@
 .afisha-other {
 	padding: 9px;
 }
+	.afisha-other .h2_mod {
+		margin-bottom: 9px;
+	}
 	.afisha-s {
 		overflow: hidden;
 		margin-bottom: 20px;
