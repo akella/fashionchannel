@@ -768,6 +768,7 @@ nav {
 .content__title {
 	position: relative;
 	padding-right: 320px;
+	margin-bottom: 5px;
 }
 .content__title_mod {padding: 0;}
 	.content__title_mod .h1 {

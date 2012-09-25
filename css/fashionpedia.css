@@ -72,6 +72,12 @@
 			font-size: 14px;
 			line-height: 31px;
 		}
+		.search-letter__act {
+			color: #2a7b9e;
+		}
+		.search-letter__inact {
+			color: #c2c2c2;
+		}
 	.search-title {
 		margin: 12px 0 0 -10px;
 		padding-left: 9px;
