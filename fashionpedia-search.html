@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>about-advertising</title>
+	<title>fashionpedia-search</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/master.css" media="screen" />
 	<!--[if lt IE 9]> 
@@ -91,7 +91,7 @@
 			</ul>                                                                         
 		</li>
 		<li class="menu__fpedia">
-			<a href="#">fashionpedia</a>
+			<a href="#" class="menu__active">fashionpedia</a>
 			<ul class="menu__sub">
 				<li><a href="#">Бренды</a></li>
 				<li><a href="#">Дизайнеры</a></li>
@@ -111,7 +111,7 @@
 			</ul>
 		</li>
 		<li class="menu__about">
-			<a class="menu__active" href="#">о нас</a>
+			<a href="#">о нас</a>
 			<ul class="menu__sub">
 				<li><a href="#">Команда </a></li>
 				<li><a href="#">Программа</a></li>
@@ -123,77 +123,156 @@
 			</ul>
 		</li>
 	</ul>
-</nav>                                                                      
+</nav>                                                                   
 <!-- END .menu -->	
 <!-- BEGIN .content -->
 <div class="content content_mod">
+	<!-- breadcrumps -->
+	<div class="breadcrumps">
+		<a href="#">Главная<span></span><i></i></a>
+	</div>
 	<!-- content title -->
-	<div class="content__title content__title_s">
-		<h2 class="h2">Рекламодателям</h2>
-	</div>	
-	<!-- advertising -->
-	<a href="#" class="advt-top"></a>
-	<div class="two-cols-wrapper">
-		<div class="left-col">
-			<div class="left-col__wrapper">
-				<div class="advt">
-					<h3 id="advt-1" class="h3">Посещаемость сайта</h3>
-					<p>Ежемесячно на сайт заходит более 1 200 000 уникальных посетителей, которые делают около 6 млн просмотров.</p>
-					<img src="images/adver-graph.jpg" alt="">
-					<div class="advt__banner">
-						<h3 id="advt-2" class="h3">Баннерные места</h3>
-						<p>На нашем сайте возможно размещение баннеров нескольких форматов:</p>
-						<ul class="advt__banner-tips">
-							<li class="banner-1">● 980х120<span>980x120</span></li>
-							<li class="banner-2">● 300х250<span>300х250</span></li>
-							<li class="banner-3">● 600х90<span>600х90</span></li>
-							<li class="banner-4">● 240х400<span>240х400</span></li>
-							<li class="banner-5">● 728х90<span>728х90</span></li>  
-						</ul>
-						<p>А так же нестандартных форматов, таких как:</p>
-						<ul>
-							<li>● Sreen Glide 990x250 со схлопом      до 990х90 (со сдвигом контента вниз)</li>
-							<li>● Expanded Banner 240x400 с расхлопом       до 400х400</li>
-						</ul> 
-					</div>
-					<h3 id="advt-3" class="h3">Размещение статей на сайте</h3>
-					<p>Сделать публикацию на нашем сайте — значит привлечь новых клиентов, быть замеченным в профессиональной среде, получить оценку от коллег на рынке.</p>
-					<br>
-					<p>Стоимость размещения пресс-релиза, авторской статьи, интервью, новости компании — 00 000 рублей. Анонс статьи будет находиться на главной странице 1 неделю, после чего статья уйдет в архив.</p>
-					<br>
-					<br>
-					<br>
-					<h3 id="advt-4" class="h3">Cпонсорство рубрик</h3>
-					<p>Рекламодатель может выступать спонсором одной или нескольких рубрик. Спонсорский пакет включает в себя размещение логотипа спонсора на всех страницах рубрики, надпись «Спонсор рубрики — компания…» на плашке.</p>
-					<br>
-					<p>Разветвлённая система рубрикации на сайте позволит вам выбрать ту нишу, в которой в наибольшей степени сконцентрирована ваша целевая аудитория.</p>
-					<br>
-					<p>Посетители будут видеть ваш логотип на каждой странице рубрики в первом экране, что обеспечивает длительный контакт.</p>
-					<ul class="advt__sponsor">
-						<li><a href="#"><img src="images/advt-sp1.png" alt=""><span>Контактная информация</span></a></li>
-						<li><a href="#"><img src="images/advt-sp2.png" alt=""><span>Прайс-лист</span></a></li>
-						<li><a href="#"><img src="images/advt-sp3.png" alt=""><span>Технические требования</span></a></li>
-					</ul>					
+	<div class="content__title">
+		<h2 class="h2">Поиск по сайту</h2>
+	</div>
+	<!-- BEGIN .search -->
+	<div class="search">
+		<div class="search__head">
+			<div class="search-form">
+				<form>
+					<input type="text" class="search-form__input">
+					<input type="submit" class="search-form__submit" value="Поиск">
+				</form>
+			</div>
+			<div class="search__filter">
+				<span class="search__filter-counter">Всего 26</span>
+				<a href="">Публикации<span>(13)</span> </a>
+				<a href="">Видео<span>(7)</span></a>
+				<a href="">Фото<span>(6)</span></a>
+				<a href="" class="search__filter-empty">Афиша<span>(0)</span></a>
+				<a href="" class="search__filter-empty">Луки<span>(0)</span></a>
+				<a href="" class="search__filter-empty">Тренды<span>(0)</span></a>
+			</div>
+		</div>
+		<div class="search__content">
+			<!-- BEGIN search result -->
+			<div class="search-result">
+				<div class="search-result__categ">
+					<span class="label">новости</span>
+				</div>
+				<div class="search-result__block">
+					<h3 class="search-result__title">
+						<a href="#">Джорджио <span>Армани</span> для W.I.T.C.H</a>
+					</h3>
+					<p>Когда я впервые узнала, что дизайнер Джорджио <span>Армани</span> готовит для героинь сериала W.I.T.C.H. эскизы...</p>
+					<span class="search-date">16 июня, 11:31</span>
+				</div>
+				<div class="search-result__img">
 				</div>
 			</div>
-		</div>
-		<div class="right-col">
-			<div class="right-col__wrapper">
-				<ul class="advt-anchor">
-					<li><a href="#advt-1">Посещаемость сайта</a></li>
-					<li><a href="#advt-2">Баннерные места</a></li>
-					<li><a href="#advt-3">Размещение статей на сайте</a></li>
-					<li><a href="#advt-4">Спонсорство рубрик</a></li>
-				</ul>
-				<h3 class="h3">Медиакит</h3>
-				<ul class="advt-media">
-					<li><a class="pdf" href="#">Презентация<span>(PDF, 2.5 Мb)</span></a></li>
-					<li><a class="exel" href="#">Прайс-лист<span>(XLS, 50 Кb)</span></a></li>
-					<li><a class="word" href="#">Тех. требования к баннерам<span>(Word, 90 Кb)</span></a></li>
-				</ul>
+			<!-- END search result -->
+			<!-- BEGIN search result -->
+			<div class="search-result">
+				<div class="search-result__categ">
+					<span class="label">публикации</span>
+				</div>
+				<div class="search-result__block">
+					<h3 class="search-result__title">
+						<a href="#">Джорджо <span>Армани</span> создаст форму для Олимпийских игр</a>
+					</h3>
+					<p>На травневих святах під час Rixos Fashion Weekend Армани Горобець встигла випити кисневого коктейлю з Андре Таном...</p>
+					<span class="search-date">16 июня, 11:31</span>
+				</div>
+				<div class="search-result__img">
+				</div>
 			</div>
+			<!-- END search result -->
+			<!-- BEGIN search result -->
+			<div class="search-result">
+				<div class="search-result__categ">
+					<span class="label">фото</span>
+				</div>
+				<div class="search-result__block">
+					<h3 class="search-result__title">
+						<a href="#">Леди Гага снова поработает с <span>Армани</span></a>
+					</h3>
+					<p>Легендарний швейцарський бренд Bally запросив канал Ukrainian Fashion до свого київського бутіку.</p>
+					<span class="search-date">16 июня, 11:31</span>
+				</div>
+				<div class="search-result__img">
+					<a href="#">
+						<img src="http://flickholdr.com/90/60" alt="">
+					</a>
+				</div>
+			</div>
+			<!-- END search result -->
+			<!-- BEGIN search result -->
+			<div class="search-result">
+				<div class="search-result__categ">
+					<span class="label">новости</span>
+				</div>
+				<div class="search-result__block">
+					<h3 class="search-result__title">
+						<a href="#">Джорджио <span>Армани</span> для W.I.T.C.H</a>
+					</h3>
+					<p>Когда я впервые узнала, что дизайнер Джорджио <span>Армани</span> готовит для героинь сериала W.I.T.C.H. эскизы...</p>
+					<span class="search-date">16 июня, 11:31</span>
+				</div>
+				<div class="search-result__img">
+				</div>
+			</div>
+			<!-- END search result -->
+			<!-- BEGIN search result -->
+			<div class="search-result">
+				<div class="search-result__categ">
+					<span class="label">публикации</span>
+				</div>
+				<div class="search-result__block">
+					<h3 class="search-result__title">
+						<a href="#">Джорджо <span>Армани</span> создаст форму для Олимпийских игр</a>
+					</h3>
+					<p>На травневих святах під час Rixos Fashion Weekend Армани Горобець встигла випити кисневого коктейлю з Андре Таном...</p>
+					<span class="search-date">16 июня, 11:31</span>
+				</div>
+				<div class="search-result__img">
+				</div>
+			</div>
+			<!-- END search result -->
+			<!-- BEGIN search result -->
+			<div class="search-result">
+				<div class="search-result__categ">
+					<span class="label">фото</span>
+				</div>
+				<div class="search-result__block">
+					<h3 class="search-result__title">
+						<a href="#">Леди Гага снова поработает с <span>Армани</span></a>
+					</h3>
+					<p>Легендарний швейцарський бренд Bally запросив канал Ukrainian Fashion до свого київського бутіку.</p>
+					<span class="search-date">16 июня, 11:31</span>
+				</div>
+				<div class="search-result__img">
+					<a href="#">
+						<img src="http://flickholdr.com/90/60" alt="">
+					</a>
+				</div>
+			</div>
+			<!-- END search result -->
 		</div>
 	</div>
+	<!-- END .search -->
+	<!-- BEGIN pagination -->
+	<ul class="pagin pagin_easy">
+		<li><a href="#" class="pagin_prev">Предыдущая страница</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#" class="pagin__active">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><span>...</span></li>
+		<li><a href="#">19</a></li>
+		<li><a href="#" class="pagin_next">Следующая страница</a></li>
+	</ul>
+	<!-- END pagination -->
 </div>
 <!-- END .content -->
 	<div class="push"></div>

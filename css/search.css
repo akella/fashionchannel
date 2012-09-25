@@ -13,22 +13,26 @@
 		box-shadow: 0 4px 35px #e5eef3;
 	}
 		.search-form {
+			position: relative;
 			padding: 10px;
 			background: #e7f2f7 url(../images/menu-hover.png) 0 0 repeat;
 			overflow: hidden;
 		}
 			.search-form__input {
-				float: left;
 				font: normal 22px 'myriad_pro_condbold';
 				color: #002d41;
 				border: 0;
 				margin: 0;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
 				height: 31px;
-				width: 801px;
-				padding: 0 10px;
+				width: 100%;
+				padding: 0 105px 0 10px;
 			} 
 			.search-form__submit {
-				float: right;
+				position: absolute;
+				top: 10px;
+				right: 10px;
 				font: normal 22px/31px 'myriad_pro_condbold';
 				color: #fff;
 				width: 99px;
