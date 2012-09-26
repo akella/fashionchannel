@@ -447,6 +447,7 @@ if ($("#lupa").length > 0) {
 };
 
 // ---------------------- tv programm ---------------------------- //
+if ($('.schedule__slide').length >0) {
 $(".schedule__slide").draggable({
   containment:".schedule__slide-out",
    scroll:false,
@@ -478,6 +479,7 @@ $(".schedule__slide").draggable({
       };
     }
 });
+};
   
 
   
