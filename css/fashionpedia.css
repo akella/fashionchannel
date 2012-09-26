@@ -234,8 +234,45 @@
 	font: normal 18px/62px 'myriad_pro_condbold' !important;
 }
 
-.brand .photogr__img {
+.photogr_mod .photogr__img {
 	width: 188px;
 	height: 112px;
 	border: 1px solid #dadada;
+}
+
+.title-nav {
+	overflow: hidden;
+}
+	.title-nav .h2,
+	.title-nav__links {
+		display: inline-block;
+	}
+.title-nav__links {
+	margin-left: 33px;
+}
+	.title-nav__links a {
+		display: inline-block;
+		margin-right: 17px;
+		color: #2a7b9e;
+		font: normal 13px Helvetica,sans-serif;
+		border-bottom: 1px dashed #2a7b9e;
+	}
+
+.brand {
+	overflow: hidden;
+}
+	.brand__img {
+		float: left;
+		margin-right: 15px;
+		border: 1px solid #dadada;
+	}
+	.brand p {
+		overflow: hidden;
+	}
+.brand-h3 {
+	display: inline-block;
+	padding-right: 22px;
+	color: #2a7b9e;
+	font: bold 36px 'myriad_pro_condbold';
+	background: url(../images/arr3.png) 100% 50% no-repeat;
 }
