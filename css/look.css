@@ -126,11 +126,11 @@
 	.new-look__user_mod .new-look__sex ul {
 		left: 129px;
 	}
-	.new-look .new-look__field {
+	.new-look .new-look__field, .add-comment__field {
 		overflow: hidden;
 		margin-bottom: 15px;
 	}
-		.new-look .new-look__field span {
+		.new-look .new-look__field span, .add-comment__field span {
 			float: left;
 			width: 115px;
 			font: 20px 'MyriadPro-Cond', Arial, sans-serif;
@@ -283,7 +283,7 @@
 			width: 90px;
 			font: 20px 'MyriadPro-Cond', Arial, sans-serif;
 		}
-		.new-look__dress .new-look__field p, .new-look__dress .new-look__field input {
+		.new-look__dress .new-look__field p, .new-look__dress .new-look__field input, .add-comment__field input {
 			float: left;
 			border: none;
 			width: 410px;

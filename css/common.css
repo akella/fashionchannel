@@ -1001,7 +1001,10 @@ nav {
 						background: url(../images/comm-border.png) 0 100% repeat-x;
 						padding-right: 20px;
 					}
-						.comment__cont p {margin-bottom: 10px;}
+						.comment__cont p {
+							margin-bottom: 10px;
+							font-size: 14px;
+						}
 						.comment__author {
 							font: normal 14px 'Helvetica',sans-serif;
 							color: #2a7b9e;
@@ -1023,7 +1026,7 @@ nav {
 			.add-comment__title {
 				display: block;
 				font: normal 24px 'myriad_pro_condbold';
-				margin-bottom: 5px;
+				margin-bottom: 10px;
 			}
 			.add-comment__pic {
 				float: left;
@@ -1368,6 +1371,64 @@ nav {
 		.footer__links a {
 			margin-left: 10px;
 		}
+/*enter-social*/
+.enter-social {
+	
+}
+	.enter-social__link {
+		float: left;
+		height: 27px;
+		line-height: 27px;
+		margin: 0 7px 11px 0;
+		padding: 0 10px 0 29px;
+		font: normal 20px 'MyriadPro-Cond';
+		color: white;		
+	}
+	.enter-social__fb {
+		background: url(../images/soc-footer-hover.png) no-repeat 0 0 #3B5998;
+	}
+	.enter-social__tw {
+		background: url(../images/soc-footer-hover.png) no-repeat 0 -41px #55B7E0;
+	}
+	.enter-social__vk {
+		background: url(../images/soc-footer-hover.png) no-repeat 0 -117px #597A99;
+	}
+	.enter-another {		
+		font-size: 14px;
+		font-weight: normal;
+	}
+		.enter-another a {
+			font-family: 'Helvetica', 'Arial', sans-serif;
+			font-weight: normal;
+			font-size: 14px;
+			color: #2e789f;
+			border-bottom: 1px dashed #2e789f;
+		}
+/*enter uftv*/
+.enter-uftv .add-comment__field span {
+	width: 80px;
+}
+.enter-uftv .add-comment__field input {
+	width: 270px;
+}
+.enter-uftv .btn {
+	float: left;
+	margin-left: 80px;
+}
+.enter-uftv .enter-another {
+	float: left;
+	margin: 10px 0 0 10px;
+}
+.enter-uftv .enter-another span {
+	display: block;
+	margin-top: 5px;
+}
+
+
+
+
+
+
 
 /* hacks */
 *:first-child+html .search__input {
