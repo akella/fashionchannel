@@ -257,22 +257,114 @@
 		font: normal 13px Helvetica,sans-serif;
 		border-bottom: 1px dashed #2a7b9e;
 	}
-
 .brand {
 	overflow: hidden;
 }
-	.brand__img {
-		float: left;
-		margin-right: 15px;
-		border: 1px solid #dadada;
-	}
+.brand_padd {
+	padding-left: 84px;
+}
 	.brand p {
+		overflow: visible;
+	}
+	.brand a {
+		color: #2a7b9e;
+		font: normal 14px Helvetica,sans-serif;
+	}
+	.brand-header {
+		overflow: hidden;
+		margin-bottom: 22px;
+	}
+		.brand-header img {
+			float: left;
+			margin-right: 15px;
+			border: 1px solid #dadada;
+		}
+		.brand-header p {
+			overflow: hidden;
+		}
+	.brand-h3 {
+		display: inline-block;
+		margin-bottom: 4px;
+		padding-right: 22px;
+		color: #2a7b9e;
+		font: bold 36px 'myriad_pro_condbold';
+		background: url(../images/arr3.png) 100% 50% no-repeat;
+	}
+	.brand-h3_mod {
+		display: block;
+		background: none;
+	}
+		.brand-h3__key {
+			font: normal 13px Helvetica,sans-serif;
+			border-bottom: 1px dashed #2a7b9e;
+			cursor: pointer;
+		}
+	.brand-h4 {
+		margin-top: 7px;
+		font: bold 18px 'myriad_pro_condbold';
+	}
+	.brand-img {
+		float: left;
+		color: #999;
+		font-size: 13px;
+		margin-right: 25px;
+		padding-bottom: 5px;
+	}
+	.brand-img_right {
+		float: right;
+		margin: 0 0 0 25px;
+	}
+.mark-list {
+	margin-bottom: 21px;
+}
+	.mark-list li {
+		padding-left: 16px;
+		background: url(../images/cicle.png) 0 50% no-repeat;
+	}
+
+.brand .soc-buttons {
+	margin-top: 25px;
+}
+
+.anchor-nav {
+	position: fixed;
+	top: 238px;
+	margin-left: -21px;
+	width: 82px;
+	padding: 5px 0;
+	border: 1px solid #bdccd2;
+	background: #E7F2F7 url(../images/menu-hover.png) 0 0 repeat;
+}
+.anchor-nav:after {
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	height: 11px;
+	width: 11px;
+	background: url(../images/anchor-bg.png) 0 0 no-repeat;
+}	
+	.anchor-nav span {
+		font: normal 15px 'Conv_DINCondensedC';
+		text-transform: uppercase;
+		padding-left: 7px;
+	}
+	.anchor-nav ul {
+		margin: 7px 0 0 -1px;
+		width: 84px;
 		overflow: hidden;
 	}
-.brand-h3 {
-	display: inline-block;
-	padding-right: 22px;
-	color: #2a7b9e;
-	font: bold 36px 'myriad_pro_condbold';
-	background: url(../images/arr3.png) 100% 50% no-repeat;
-}
+		.anchor-nav li {
+		}
+			.anchor-nav a {
+				display: block;
+				padding: 7px 8px 7px 8px;
+				color: #2a7b9e;
+				font: normal 15px 'Conv_DINCondensedC';
+				text-transform: uppercase;
+			}
+			.anchor-nav .active {
+				color: #fff;
+				background: #2a7b9e;
+			}
+

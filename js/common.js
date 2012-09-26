@@ -118,6 +118,24 @@ if ($(".team__slider").length>0) {
     }
   });
 }
+
+// --------------------------- anchor nav ------------------------------ //
+$(".anchor-nav a").click(function(){
+  $(".anchor-nav a").removeClass("active");
+  $(this).toggleClass("active");
+});
+
+
+$(".brand-h3__key").click(function(){
+  $(this).parent().next().toggle('fast',function(){
+    height: "100%"
+  });
+  return false;
+});
+$(".brand-h3__key").toggle(
+    function() {$(this).text("Показать");},
+    function() {$(this).text("Скрыть");}
+  );
 // -------------------- afisha scroll video ---------------------------- //
 	$('.afisha-v').scrollable({
 			next:'.afisha-v-nav__next',
@@ -244,14 +262,14 @@ $('.gallery-news__items a').click(function() {
 			prev:'.calendar__prev'
 	});
 // --------------------- calendar popup -------------------------------//
-$('.calendar').hide();
 $('.afisha-title__date, .calendar').click(function() {
-	$('.calendar').show();
+	$('.calendar').addClass("calendar_act");
 	return false;
 });
 $('body').click(function() {
-	$('.calendar').hide();
-	return false;
+	if($('.calendar').hasClass("calendar_act"))
+  $('.calendar').removeClass("calendar_act");
+	
 });
 // --------------------- video -------------------------------//
 	var video_url = $('.article__scroll-item:first a').attr("href");
