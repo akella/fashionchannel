@@ -270,11 +270,6 @@ $('body').click(function() {
 		$(".article__video-descr").html(video_text);
 		return false;
 	});
-// --------------------- show/hide add comment -------------------//
-$(".add-comment").hide();
-$(".comments__write").click(function() { 
-	$(".add-comment").show();
-});
 // ---------------------- entry Tabs ---------------------------- //
 //reset
 $(".entry-slider-wrapper").hide();
