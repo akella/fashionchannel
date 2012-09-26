@@ -1125,6 +1125,7 @@ nav {
 
 /* calendar */
 .calendar {
+	display: none;
 	position: absolute;
 	top: 64px;
 	right: 0;
@@ -1137,6 +1138,7 @@ nav {
 		 -o-box-shadow: 0px -5px 30px #DBEEF6 inset;
 	        box-shadow: 0px -5px 30px #DBEEF6 inset;
 }
+.calendar_act {display: block;}
 	.calendar__wrapper {
 		background: #fff;
 		padding: 8px 13px;
@@ -1449,7 +1451,9 @@ nav {
 *+html .video,
 *+html .afisha-item,
 *+html .afisha-ban__info span,
-*+html .look {
+*+html .look,
+*+html .afisha-title-wrapper .h2_mod,
+*+html .afisha-v-nav {
 	display: inline;
 	zoom: 1;
 }  

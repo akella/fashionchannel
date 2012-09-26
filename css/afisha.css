@@ -180,17 +180,18 @@
 			}
 /* Afisha scroll */
 .afisha-title-wrapper {
-	position: relative;
 	margin: 20px 0 11px;
 	padding: 0 11px;
 }
-.afisha-v-nav {
-	position: absolute;
-	left: 214px;
-	top: 0;
-	width: 50px;
-	overflow: hidden;
-}
+	.afisha-title-wrapper .h2_mod,
+	.afisha-v-nav {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.afisha-v-nav {
+		width: 50px;
+		margin-left: 10px;
+	}
 	.prev, .next {
 		color: #ddd;
 		font: normal 20px Arial, sans-serif;

@@ -252,10 +252,67 @@ if ($(".gallery-news__slide").length>0) {
     }
   });
 }
+
+// -------------------- looks pop scroll ---------------------------- //
+$('.pop-look-scroll').scrollable({
+    next:'.look-nav__next',
+    prev:'.look-nav__prev'
+});
+if ($(".pop-look-scroll").length>0) {
+// Get the Scrollable control
+  var scrollable_list_2 = $(".pop-look-scroll").data("scrollable");
+  // Set to the number of visible items
+  var number_list_2 = 4;
+  // Handle the Scrollable control's onSeek event
+  scrollable_list_2.onSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list_2) {      // Disable the Next link
+      $(".look-nav__next").addClass("disabled");
+    }
+  });
+  // Handle the Scrollable control's onBeforeSeek event
+  scrollable_list_2.onBeforeSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list_2) { 
+      // Check to see if we're trying to move forward
+      if (index > this.getIndex()) {
+        // Cancel navigation
+        return false;
+      }
+    }
+  });
+}
+
 $('.gallery-news__items a').click(function() {
   gnia = $(this).attr('href');  
   $('.gallery-news__pic img').attr('src', gnia);
+  return false;
 });
+
+if ($(".look-thing-src .gallery-news__slide").length>0) {
+// Get the Scrollable control
+  var scrollable_list_2 = $(".look-thing-src .gallery-news__slide").data("scrollable");
+  // Set to the number of visible items
+  var number_list_2 = 7;
+  // Handle the Scrollable control's onSeek event
+  scrollable_list_2.onSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list_2) {      // Disable the Next link
+      $(".look-thing-src .gallery-news__next").addClass("disabled");
+    }
+  });
+  // Handle the Scrollable control's onBeforeSeek event
+  scrollable_list_2.onBeforeSeek(function(event, index) {
+    // Check to see if we're at the end
+    if (this.getIndex() >= this.getSize() - number_list_2) { 
+      // Check to see if we're trying to move forward
+      if (index > this.getIndex()) {
+        // Cancel navigation
+        return false;
+      }
+    }
+  });
+}
 // -------------------- calendar scroll ---------------------------- //
 	$('.calendar__scroll').scrollable({
 			next:'.calendar__next',
