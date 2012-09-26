@@ -1114,6 +1114,7 @@ nav {
 	.right-col {
 		float: left;
 		width: 319px;
+		padding-top: 5px;
 	}
 		.right-col__wrapper {
 			padding: 9px;

@@ -193,3 +193,46 @@
 		padding-left: 10px;
 		background: #E7F2F7 url(../images/menu-hover.png) 0 0 repeat;
 	}
+.photogr {
+	padding: 0 10px;
+}
+	.photogr__item {
+		overflow: hidden;
+		margin-bottom: 26px;
+	}
+		.photogr__img {
+			float: left;
+			width: 148px;
+			height: 148px;
+			margin-right: 12px;
+			overflow: hidden;
+		}
+			.photogr__img img {
+				display: block;
+			}
+		.photogr__descr {
+			overflow: hidden;
+			font-size: 13px;
+		}
+			.photogr__descr .h3 {
+				margin-bottom: 7px;
+			}
+			.photogr__descr p {
+				margin-bottom: 3px;
+			}
+			.photogr__descr a {
+				color: #2a7b9e;
+				font: normal 11px Helvetica,sans-serif;
+			}
+.pagin_photogr {
+
+}
+	.pagin_photogr li {
+		width: 50%;
+	}
+	.pagin_photogr .pagin_prev,
+	.pagin_photogr .pagin_next {
+		width: 100%;
+		color: #003146;
+		font: normal 18px/62px 'myriad_pro_condbold' !important;
+	}
