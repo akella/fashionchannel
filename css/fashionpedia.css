@@ -198,7 +198,7 @@
 }
 	.photogr__item {
 		overflow: hidden;
-		margin-bottom: 26px;
+		margin: 0 10px 26px 0;
 	}
 		.photogr__img {
 			float: left;
@@ -224,15 +224,18 @@
 				color: #2a7b9e;
 				font: normal 11px Helvetica,sans-serif;
 			}
-.pagin_photogr {
-
+.pagin_photogr li {
+	width: 50%;
 }
-	.pagin_photogr li {
-		width: 50%;
-	}
-	.pagin_photogr .pagin_prev,
-	.pagin_photogr .pagin_next {
-		width: 100%;
-		color: #003146;
-		font: normal 18px/62px 'myriad_pro_condbold' !important;
-	}
+.pagin_photogr .pagin_prev,
+.pagin_photogr .pagin_next {
+	width: 100%;
+	color: #003146;
+	font: normal 18px/62px 'myriad_pro_condbold' !important;
+}
+
+.brand .photogr__img {
+	width: 188px;
+	height: 112px;
+	border: 1px solid #dadada;
+}
