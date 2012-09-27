@@ -1453,7 +1453,8 @@ nav {
 *+html .afisha-ban__info span,
 *+html .look,
 *+html .afisha-title-wrapper .h2_mod,
-*+html .afisha-v-nav {
+*+html .afisha-v-nav,
+*+html .look-nav {
 	display: inline;
 	zoom: 1;
 }  

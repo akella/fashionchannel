@@ -201,6 +201,8 @@
 	.next {float: right;}
 
 	.prev:hover, .next:hover {color: #a5a2a2;}
+	.prev.disabled, 
+	.next.disabled {display: none;}
 	.prev {padding-right: 10px;}
 	.afisha-scroll {
 		position: relative;

@@ -9,7 +9,7 @@ $('.menu__sub').hover(
   function () {$(this).css('display', 'block');},
   function () {$(this).css('display', 'none');}
 );
-$('.index-cols .entry__title-level-3').hover(
+$('.entry__title-level-3').hover(
   function () {$(this).children('a').addClass('entry__title-level-3-active');},
   function () {$(this).children('a').removeClass('entry__title-level-3-active');}
 );
@@ -328,6 +328,13 @@ $('body').click(function() {
   $('.calendar').removeClass("calendar_act");
 	
 });
+
+// ------------------- Gallery look.single ------------------//
+$(".look-thing-src img").click(function() {
+  $(".look-thing-src img").css("opacity","0.5");
+  $(this).css("opacity","1");
+});
+
 // --------------------- video -------------------------------//
 	var video_url = $('.article__scroll-item:first a').attr("href");
 	$(".article__video iframe").attr("src", video_url);
