@@ -445,7 +445,8 @@ $('.programm strong').toggle(function() {
         var defaults = {
             lensSize: 100,
             borderSize: 4,
-            borderColor: "#888"
+            borderColor: "#888", 
+            lensCss: 'tratata'
         };
         var options = $.extend(defaults, options);
         var lensStyle = "background-position: 0px 0px;width: " + String(options.lensSize) + "px;height: " + String(options.lensSize)
@@ -509,14 +510,7 @@ $('.programm strong').toggle(function() {
                     target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
                     leftPos = String(e.pageX - target.width());
                     topPos = String(e.pageY - target.height());
-                    target.css({ left: leftPos - 403 + 'px', top: topPos - 173 + 'px' });
-                    // target.show();
-                    // leftPos = String(((e.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
-                    // topPos = String(((e.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
-                    // target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
-                    // leftPos = String(e.pageX - target.width() / 2);
-                    // topPos = String(e.pageY - target.height() / 2);
-                    // target.css({ left: leftPos - 413 + 'px', top: topPos - 266 + 'px' });
+                    target.css({ left: leftPos + 'px', top: topPos + 'px' });
                 }
             }            
         });
