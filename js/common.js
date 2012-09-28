@@ -505,19 +505,14 @@ $('.programm strong').toggle(function() {
                 }
                 else {
                     target.show();
-                    // leftPos = String(((e.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
-                    // topPos = String(((e.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
-                    //offset
-                    leftO = $('.new-look__pic').offset().left,
+                    leftO = $('.new-look__pic').offset().left;
                     topO = $('.new-look__pic').offset().top;
-                    //alert(leftO+'='+topO);
-
                     leftPos = e.pageX - leftO - 100;
-
                     topPos = e.pageY - topO - 100;
-                    $('.new-look__sex input').val('left:'+leftPos+':'+topPos);
                     target.css({ left: leftPos + 'px', top: topPos + 'px' });
-                    target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+                    leftPos = String(((e.pageX - leftO) * widthRatio - target.width() / 2) * (-1));
+                    topPos = String(((e.pageY - topO) * heightRatio - target.height() / 2) * (-1));
+                    target.css({ backgroundPosition: leftPos + 'px ' + topPos +'px' });
                 }
             }            
         });
