@@ -739,6 +739,11 @@
 		width: 86px;
 		margin: 0;
 	}
+	.gallery-news__items 
+	.other-looks-img {
+		float: left;
+		opacity: 1 !important;
+	}
 	.look-thing-src
 	.gallery-news__slide {
 		width: 578px;

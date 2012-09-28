@@ -1,21 +1,15 @@
 $(document).ready(function () {
 
 // -------------------- main menu top ----------------------- //
-$('.menu__active').hover(
-  function () {$(this).next().css('display', 'block');},
-  function () {$(this).next().css('display', 'none');}
-);
-$('.menu__sub').hover(
-  function () {$(this).css('display', 'block');},
-  function () {$(this).css('display', 'none');}
-);
+if($(".menu a").hasClass("menu__active"))
+  {
+    $(".menu__active").next().css("display","block");
+    $(".menu").css("paddingBottom","35px");
+  }
+  
 $('.entry__title-level-3').hover(
   function () {$(this).children('a').addClass('entry__title-level-3-active');},
   function () {$(this).children('a').removeClass('entry__title-level-3-active');}
-);
-$('.menu__sub').hover(
-  function () {$(this).css('display', 'block');},
-  function () {$(this).css('display', 'none');}
 );
 
 
@@ -118,6 +112,11 @@ if ($(".team__slider").length>0) {
     }
   });
 }
+
+$('.advt__scroll').scrollable({
+      next:'.advt__next',
+      prev:'.advt__prev'
+  });
 
 // --------------------------- anchor nav ------------------------------ //
 $(".anchor-nav a").click(function(){
@@ -313,6 +312,10 @@ if ($(".look-thing-src .gallery-news__slide").length>0) {
     }
   });
 }
+
+$("gallery-news__items .other-looks").click(function(){
+  
+});
 // -------------------- calendar scroll ---------------------------- //
 	$('.calendar__scroll').scrollable({
 			next:'.calendar__next',

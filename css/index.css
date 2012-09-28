@@ -123,6 +123,17 @@
 				}
 				.entry__wrapper {overflow: hidden;}
 					.entry__img {display: block;}
+					.index-col .entry__img:hover {
+						-o-transition:all .3s ease-in-out;
+						-o-transform:scale(1.1);
+						-moz-transition:all .3s ease-in-out;
+						-moz-transform:scale(1.1);
+						-webkit-transition:all .3s ease-in-out;
+						-webkit-transform:scale(1.1);
+						transition:all .3s ease-in-out;
+						transform:scale(1.1);
+					}
+
 					.entry__img_padd {
 						padding: 11px 9px;
 					}

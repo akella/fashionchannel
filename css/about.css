@@ -626,15 +626,42 @@
 		}
 /*advertising
 =================================================================*/
-.advt-top {
-	display: block;
+.advt-wrapp {
+	position: relative;
+	height: 359px;
 	margin-top: 5px;
-	height: 360px;
-	background:url(../images/adver-bg.jpg) no-repeat 0 0;
 }
-.advt {
-	padding: 
-}
+	.advt__prev,
+	.advt__next {
+		position: absolute;
+		top: 1px;
+		z-index: 2;
+		display: block;
+		height: 358px;
+		width: 48px;
+		background: #0c1c29 url(../images/advt-prev.png) 50% 50% no-repeat;
+		cursor: pointer;
+	}
+	.advt__prev {
+		left: 0;
+	}
+	.advt__next {
+		right: 0;
+		background: #0c1c29 url(../images/advt-next.png) 50% 50% no-repeat;
+	}
+	.advt__scroll {
+		position: relative;
+		height: 359px;
+		overflow: hidden;
+	}
+		.advt__items {
+			position: absolute;
+			width: 2000em;
+			overflow: hidden;
+		}
+			.advt__item {
+				float: left;
+			}
 	.advt .h3 {
 		line-height: 44px;
 		margin: 0;
