@@ -631,6 +631,9 @@
 	height: 359px;
 	margin-top: 5px;
 }
+	.advt-wrapp .disabled {
+		display: none;
+	}
 	.advt__prev,
 	.advt__next {
 		position: absolute;
@@ -651,7 +654,7 @@
 	}
 	.advt__scroll {
 		position: relative;
-		height: 359px;
+		height: 360px;
 		overflow: hidden;
 	}
 		.advt__items {
@@ -661,7 +664,40 @@
 		}
 			.advt__item {
 				float: left;
+				width: 485px;
+				height: 290px;
+				padding: 70px 50px 0 425px;
+				background: url(../images/adver-bg.jpg) no-repeat 0 0;
+				color: #fff;
 			}
+				.advt__item h2 {
+					font-size: 40px;
+					padding-bottom: 15px;
+				}
+				.advt__item b {
+					display: block;
+					padding-bottom: 15px;
+					font-size: 18px;
+				}
+				.advt__item li {
+					padding: 3px 0 3px 17px;
+					background: url(../images/cycle.png) no-repeat 0 9px;
+				}
+				.advt__item a {
+					display: block;
+					margin-top: 30px;
+					height: 31px;
+					padding-left: 33px;
+					line-height: 31px;
+					background: url(../images/pdf.png) no-repeat 0 0;
+					font-size: 14px;
+					color: #fff;
+					font-family: Helvetica, Arial, sans-serif
+				}
+				.advt__item span {
+					font-size: 11px;
+					color: #557090;
+				}
 	.advt .h3 {
 		line-height: 44px;
 		margin: 0;

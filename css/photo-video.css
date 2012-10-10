@@ -241,6 +241,23 @@
 			padding-left: 25px;
 			background:url(../images/com.png) no-repeat 5px 50%;
 		}
+	.gallery__coms {
+		height: 500px;
+		padding-right: 10px;
+		overflow: auto;
+		-ms-scrollbar-base-color: #dbdbdb;
+		-ms-scrollbar-arrow-color: #fff;
+		-ms-scrollbar-darkshadow-color: #fff;
+		-ms-scrollbar-shadow-color: #fff;
+		-ms-scrollbar-3dlight-color: #fff;
+		-ms-scrollbar-highlight-color: #fff;
+	}
+	.gallery__coms::-webkit-scrollbar {
+		width: 9px;
+	}
+	.gallery__coms::-webkit-scrollbar-thumb {
+		background: #dbdbdb;
+	}
 	.gallery__com {
 		position: relative;
 		padding-left: 50px;
