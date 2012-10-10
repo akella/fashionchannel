@@ -586,24 +586,34 @@ $('.gallery__close').click(function() {
 // ---------------------- Gallery -------------------------------- //
 if ($('#gallery').length > 0) {
   hash_txt = 'slide';
+  hash_val = 0;
   if (hash_txt == window.location.hash.substring(1,6)) {
     $('.gallery-out, .gallery_all, .gallery_single').fadeIn(300);
-    hash_val = window.location.hash.slice(6);
-    
+    hash_val = window.location.hash.slice(6);    
+    hash_val = hash_val - 1;
   };
-  Galleria.run('#gallery', {
+  if (hash_val > 0) {
+    Galleria.run('#gallery', {
+        showInfo: false,
+        showCounter: false,
+        maxScaleRatio: 1,
+        show: hash_val
+    });
+  }
+  else { 
+    Galleria.run('#gallery', {
       showInfo: false,
       showCounter: false,
       maxScaleRatio: 1
-  });
+    }); 
+  }
   Galleria.ready(function() {
-    this.show(2);
     this.bind("image", function(e) {
       valp = e.index;
       valp_new = valp + 1;
-      window.location.hash = 'slide' + valp_new + '';      
+      window.location.hash = hash_txt + valp_new + '';      
     });    
-  });   
+  }); 
 };
 
 
