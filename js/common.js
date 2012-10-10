@@ -585,11 +585,26 @@ $('.gallery__close').click(function() {
 
 // ---------------------- Gallery -------------------------------- //
 if ($('#gallery').length > 0) {
-    Galleria.run('#gallery', {
-        showInfo: false,
-        showCounter: false,
-        maxScaleRatio: 1
-    });
+  hash_txt = 'slide';
+  if (hash_txt == window.location.hash.substring(1,6)) {
+    $('.gallery-out, .gallery_all, .gallery_single').fadeIn(300);
+    hash_val = window.location.hash.slice(6);
+    
+  };
+  Galleria.run('#gallery', {
+      showInfo: false,
+      showCounter: false,
+      maxScaleRatio: 1
+  });
+  Galleria.ready(function() {
+    this.show(2);
+    this.bind("image", function(e) {
+      valp = e.index;
+      valp_new = valp + 1;
+      window.location.hash = 'slide' + valp_new + '';      
+    });    
+  });   
 };
+
 
 })
