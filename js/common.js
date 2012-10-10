@@ -567,10 +567,19 @@ $(".schedule__slide").draggable({
   
 
   
-
-
-
-
+//open gallery popup 
+$('.album__photo').click(function() {
+  $('.gallery-out, .gallery_single').fadeIn(300);
+});
+$('.gallery__close').click(function() {
+  $('.gallery-out, .gallery_single').fadeOut(300);
+});
+$('.pop-albums a, .last-albums__item-b a').click(function() {
+  $('.gallery-out, .gallery_all').fadeIn(300);
+});
+$('.gallery__close').click(function() {
+  $('.gallery-out, .gallery_all').fadeOut(300);
+});
 
 
 
@@ -579,7 +588,7 @@ if ($('#gallery').length > 0) {
     Galleria.run('#gallery', {
         showInfo: false,
         showCounter: false,
-        imageCrop: false
+        maxScaleRatio: 1
     });
 };
 

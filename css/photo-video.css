@@ -181,6 +181,7 @@
 /*gallery
 =================================================================*/
 .gallery-out {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -206,6 +207,9 @@
 		width: 960px;
 		height: 690px;
 	}
+.gallery_all, .gallery_single {
+	display: none;
+}
 .gallery_all .gallery__ins {
 	width: 640px;
 }	
